@@ -1,0 +1,4046 @@
+{
+  "sentences": [
+    {
+      "text": "Hi everybody.",
+      "startTime": "3.69",
+      "endTime": "4.72"
+    },
+    {
+      "text": "I'm leah and I'm Nikita and welcome to the data cloud live demo.",
+      "startTime": "4.73",
+      "endTime": "9.25"
+    },
+    {
+      "text": "If you're just joining us from this morning's keynote and spotlight you heard some of the latest innovations we launched Earth engine spark on google cloud postgres sequel interface for spanner and vertex Ai Workbench.",
+      "startTime": "9.29",
+      "endTime": "23.0"
+    },
+    {
+      "text": "All to help organizations solve their most complex data driven challenges in this live demo.",
+      "startTime": "23.01",
+      "endTime": "29.65"
+    },
+    {
+      "text": "We're going to take complex fragmented data systems and simplify them bringing together data on a massive scale to explore a real world scenario for climate and supply chain analytics.",
+      "startTime": "29.65",
+      "endTime": "41.6"
+    },
+    {
+      "text": "In order to do this, we're going to need the whole data team say hi everyone.",
+      "startTime": "41.61",
+      "endTime": "46.54"
+    },
+    {
+      "text": "Hello, I'm Brett hi I'm derek now a quick reminder.",
+      "startTime": "47.49",
+      "endTime": "53.31"
+    },
+    {
+      "text": "This demo is truly live and you can engage with us directly.",
+      "startTime": "53.32",
+      "endTime": "56.58"
+    },
+    {
+      "text": "So ask questions.",
+      "startTime": "56.6",
+      "endTime": "57.92"
+    },
+    {
+      "text": "Say hi in the chat window and hit those emojis.",
+      "startTime": "57.93",
+      "endTime": "60.45"
+    },
+    {
+      "text": "I think I see something coming in now.",
+      "startTime": "61.04",
+      "endTime": "63.17"
+    },
+    {
+      "text": "I see lots of hearts and fire a lot of people saying hello in the chat.",
+      "startTime": "63.18",
+      "endTime": "67.65"
+    },
+    {
+      "text": "Thanks everyone for joining us today.",
+      "startTime": "67.66",
+      "endTime": "69.61"
+    },
+    {
+      "text": "So if you can't see the emojis or the chat, just go back to the next event website and click on the blue, join the interactive experience button.",
+      "startTime": "70.38",
+      "endTime": "79.2"
+    },
+    {
+      "text": "Okay let's have a little fun with this today.",
+      "startTime": "79.21",
+      "endTime": "84.65"
+    },
+    {
+      "text": "You're actually joining us for our weekly stand up at symbol superstore a fictional US based grocery chain focused on sourcing from local producers.",
+      "startTime": "84.66",
+      "endTime": "95.05"
+    },
+    {
+      "text": "Like many different industries we need to bring together disparate data sources to build resilience specifically for us drought in the western U.",
+      "startTime": "95.09",
+      "endTime": "104.24"
+    },
+    {
+      "text": "S.",
+      "startTime": "104.24",
+      "endTime": "104.52"
+    },
+    {
+      "text": "Has impacted our producers and our supply chain has been disrupted with decreased shipments week over week.",
+      "startTime": "104.52",
+      "endTime": "111.12"
+    },
+    {
+      "text": "We need to better understand how to manage inventory and to prevent stock outs and ensure we can scale in both how we analyze information and how we run our transactions.",
+      "startTime": "111.54",
+      "endTime": "122.12"
+    },
+    {
+      "text": "Alright Team.",
+      "startTime": "122.67",
+      "endTime": "123.53"
+    },
+    {
+      "text": "So to address the supply and scale challenges that Nikita just mentioned.",
+      "startTime": "123.54",
+      "endTime": "127.67"
+    },
+    {
+      "text": "We have four different workloads.",
+      "startTime": "127.68",
+      "endTime": "129.85"
+    },
+    {
+      "text": "First I'm going to evaluate the best climate information to identify at risk producers then brad will mature our data pipelines to transform that data.",
+      "startTime": "129.86",
+      "endTime": "141.76"
+    },
+    {
+      "text": "Next derek will dig into scaling our transaction processing and finally Nikita will show how we're gaining new insights by evolving our data science capabilities.",
+      "startTime": "141.77",
+      "endTime": "153.14"
+    },
+    {
+      "text": "Let's get into it and let's keep hearing from all of you out.",
+      "startTime": "153.17",
+      "endTime": "156.81"
+    },
+    {
+      "text": "There are data pros leah you're up first.",
+      "startTime": "156.82",
+      "endTime": "160.43"
+    },
+    {
+      "text": "Great thanks Nikita.",
+      "startTime": "160.44",
+      "endTime": "162.08"
+    },
+    {
+      "text": "So in order to gain insight into our supply chain first I need to evaluate the risks.",
+      "startTime": "162.09",
+      "endTime": "168.41"
+    },
+    {
+      "text": "So I'm focusing on figuring out how drought impacts the very source of our grocery products and to do this I turn to google's platform for earth science data and analytics Earth Engine which has a huge catalog of satellite images for things like climate whether croplands and much more.",
+      "startTime": "168.42",
+      "endTime": "187.22"
+    },
+    {
+      "text": "There's currently over like 50 petabytes of data in the catalog plus more and more images are added each day.",
+      "startTime": "187.23",
+      "endTime": "194.68"
+    },
+    {
+      "text": "So let me just go ahead and bring up this cool little application that I built using the Earth engine code editor so I can walk you through the three datasets.",
+      "startTime": "195.35",
+      "endTime": "203.93"
+    },
+    {
+      "text": "We'll be using today first is gonna be crop data from the U.",
+      "startTime": "203.93",
+      "endTime": "208.6"
+    },
+    {
+      "text": "S.",
+      "startTime": "208.6",
+      "endTime": "208.78"
+    },
+    {
+      "text": "D.",
+      "startTime": "208.78",
+      "endTime": "208.98"
+    },
+    {
+      "text": "A.",
+      "startTime": "208.98",
+      "endTime": "209.24"
+    },
+    {
+      "text": "N.",
+      "startTime": "209.25",
+      "endTime": "209.45"
+    },
+    {
+      "text": "A.",
+      "startTime": "209.45",
+      "endTime": "209.59"
+    },
+    {
+      "text": "S.",
+      "startTime": "209.59",
+      "endTime": "209.85"
+    },
+    {
+      "text": "S.",
+      "startTime": "209.85",
+      "endTime": "210.07"
+    },
+    {
+      "text": "Program which I can grab right from the public data catalog by searching.",
+      "startTime": "210.07",
+      "endTime": "214.05"
+    },
+    {
+      "text": "So this data set is going to contain one image of the US for each year.",
+      "startTime": "214.83",
+      "endTime": "220.91"
+    },
+    {
+      "text": "Going back all the way to 1997 And each 10 m pixel in this image has actually been assigned a crop type.",
+      "startTime": "220.92",
+      "endTime": "228.72"
+    },
+    {
+      "text": "Let me just close out of this here.",
+      "startTime": "229.95",
+      "endTime": "231.79"
+    },
+    {
+      "text": "Bring you back to my app.",
+      "startTime": "231.79",
+      "endTime": "233.11"
+    },
+    {
+      "text": "So the second data set contains the outline of agricultural fields and we're gonna use Earth Engine to assign each one of these fields the crop type that is most prevalent among the cells that cover it.",
+      "startTime": "233.12",
+      "endTime": "245.31"
+    },
+    {
+      "text": "So in this view that I'm showing right here the pink fields are alfalfa and the dark green fields are almonds leah these visuals are super super helpful but could we export this data for analysis in other environments? Yeah I'm actually gonna push this into cloud storage and big query injustice sec.",
+      "startTime": "245.9",
+      "endTime": "264.67"
+    },
+    {
+      "text": "But first I want to add in some additional signals on drought.",
+      "startTime": "264.68",
+      "endTime": "268.79"
+    },
+    {
+      "text": "So the third data set that I'm using is a collection of both short and long term drought indicators meaning that we can see what drought looks like for each field over time.",
+      "startTime": "269.49",
+      "endTime": "280.26"
+    },
+    {
+      "text": "Now using data sets like these does require some deep subject matter expertise, expertise.",
+      "startTime": "280.27",
+      "endTime": "286.34"
+    },
+    {
+      "text": "So special thanks to our real world partners at climate engine who build solutions on top of earth engines A.",
+      "startTime": "286.35",
+      "endTime": "293.31"
+    },
+    {
+      "text": "P.",
+      "startTime": "293.31",
+      "endTime": "293.52"
+    },
+    {
+      "text": "I helping organizations ground their analytics projects with scientifically accepted methodologies.",
+      "startTime": "293.52",
+      "endTime": "299.74"
+    },
+    {
+      "text": "Okay, so you just saw how we use geospatial data and I want to know how you use it in your analysis.",
+      "startTime": "300.94",
+      "endTime": "307.52"
+    },
+    {
+      "text": "So go ahead and answer that poll so we can see Alright everyone.",
+      "startTime": "307.53",
+      "endTime": "312.51"
+    },
+    {
+      "text": "So with these layers in place we can start exploring drought risk.",
+      "startTime": "312.51",
+      "endTime": "316.7"
+    },
+    {
+      "text": "Let me just go ahead and zoom to this field and here I'm gonna show an almond orchard northeast of Modesto California and what we're looking at is the long term drought indicator.",
+      "startTime": "317.15",
+      "endTime": "330.28"
+    },
+    {
+      "text": "So this orange tint that you're seeing means that this field has experienced pretty high levels of drought over the last five years.",
+      "startTime": "330.29",
+      "endTime": "338.29"
+    },
+    {
+      "text": "Now if I go ahead and just zoom out a bit we can actually see that the entire central valley in California is pretty drought stressed.",
+      "startTime": "338.3",
+      "endTime": "347.75"
+    },
+    {
+      "text": "So my last step was to calculate drought risk for each of the fields I showed before and this will tell us which farms and produce types are potentially at risk for not meeting customer demand, which is just one consideration to inform symbols resilience strategy better yet we can incorporate this geography data with other spatial stuff like store and customer locations that are already inside a big query and anyone who knows me knows that I love big query.",
+      "startTime": "348.74",
+      "endTime": "378.83"
+    },
+    {
+      "text": "If you agree, let me see in the emojis.",
+      "startTime": "378.84",
+      "endTime": "381.47"
+    },
+    {
+      "text": "Alright, so the code editor has been great for interacting with Earth engine but making these calculations at scale requires a different approach.",
+      "startTime": "382.42",
+      "endTime": "391.35"
+    },
+    {
+      "text": "So I went ahead and created earth engine tasks for batch processing to run these calculations over all the data in five day increments for the past 10 years.",
+      "startTime": "391.36",
+      "endTime": "402.04"
+    },
+    {
+      "text": "I also set up a cloud function to run every five days going forward.",
+      "startTime": "402.71",
+      "endTime": "406.67"
+    },
+    {
+      "text": "So that will always have fresh data now.",
+      "startTime": "406.68",
+      "endTime": "410.41"
+    },
+    {
+      "text": "Just as a quick recap, we jumped into Earth engine to evaluate earth science data that indicates climate risk for our farm fields.",
+      "startTime": "410.42",
+      "endTime": "418.06"
+    },
+    {
+      "text": "Now we'll have fresh drought data available in cloud storage.",
+      "startTime": "418.1",
+      "endTime": "422.33"
+    },
+    {
+      "text": "So just think of the power of integrating huge amounts of specialized data, giving us a complete picture of supply risk for our business.",
+      "startTime": "422.34",
+      "endTime": "431.08"
+    },
+    {
+      "text": "Oh and I think I can see the poll results coming in now, it looks like lots of people are using geospatial data for all different kinds of things and if your answer wasn't in the poll just go ahead and let us know in the chat.",
+      "startTime": "432.12",
+      "endTime": "445.91"
+    },
+    {
+      "text": "So next up brad will transform and push this data into big query for geospatial analysis with our existing data So brad over to you.",
+      "startTime": "446.74",
+      "endTime": "457.27"
+    },
+    {
+      "text": "Okay, that was pretty cool.",
+      "startTime": "458.6",
+      "endTime": "460.2"
+    },
+    {
+      "text": "Yeah.",
+      "startTime": "460.2",
+      "endTime": "460.37"
+    },
+    {
+      "text": "Thanks.",
+      "startTime": "460.4",
+      "endTime": "461.11"
+    },
+    {
+      "text": "All right.",
+      "startTime": "461.99",
+      "endTime": "462.97"
+    },
+    {
+      "text": "So to gain more insight into how drought is impacting production, my main focus has been building out the data transformation pipeline to push farm field drought indicators from cloud storage into big query.",
+      "startTime": "463.01",
+      "endTime": "474.61"
+    },
+    {
+      "text": "Speaking of batch processing as you know to assist with inventory management, price optimization and product assortment, we use spark to standardize our large scale data processing and we use google cloud data products as our long running clusters for your data pros out there.",
+      "startTime": "475.08",
+      "endTime": "491.61"
+    },
+    {
+      "text": "We'd love to know how you're using spark today.",
+      "startTime": "491.62",
+      "endTime": "493.73"
+    },
+    {
+      "text": "So let us know while I go ahead and pull up the cloud council.",
+      "startTime": "493.74",
+      "endTime": "496.16"
+    },
+    {
+      "text": "So here is the data part cluster we currently use to schedule price park jobs and here I'm connected to a jupiter notebook running on the same cluster with some pie spark code.",
+      "startTime": "498.81",
+      "endTime": "510.47"
+    },
+    {
+      "text": "This code is typical boilerplate code you'd write to do basic data transformations in this case we are processing the earth engine files from cloud storage, performing type checking and mapping to ensure proper ingestion into big query using the spark big query connector.",
+      "startTime": "510.83",
+      "endTime": "525.36"
+    },
+    {
+      "text": "Hey brad.",
+      "startTime": "526.63",
+      "endTime": "527.31"
+    },
+    {
+      "text": "So this is pretty cool.",
+      "startTime": "527.31",
+      "endTime": "528.66"
+    },
+    {
+      "text": "But I think having a batch workflow that's scheduled on a continuously running cluster seems like it can be kind of wasteful.",
+      "startTime": "528.66",
+      "endTime": "535.3"
+    },
+    {
+      "text": "So is there any way we can make this more efficient? That's a fair point leah, there is still some overhead management here and for hardened batch cases like this, it would be preferred to have these jobs run on their own discrete resources.",
+      "startTime": "535.31",
+      "endTime": "547.96"
+    },
+    {
+      "text": "But good news with the new surveillance option for data product, we can submit a pie spark job without spitting up any infrastructure.",
+      "startTime": "548.85",
+      "endTime": "555.48"
+    },
+    {
+      "text": "These auto magic capabilities.",
+      "startTime": "555.66",
+      "endTime": "558.19"
+    },
+    {
+      "text": "I can spend more deaf time writing code and less time on managing infrastructure.",
+      "startTime": "558.2",
+      "endTime": "562.32"
+    },
+    {
+      "text": "All right brad.",
+      "startTime": "563.04",
+      "endTime": "563.88"
+    },
+    {
+      "text": "First off, I'm pretty sure that you just set me up for that and second you definitely made up that word.",
+      "startTime": "563.89",
+      "endTime": "569.55"
+    },
+    {
+      "text": "Automatic.",
+      "startTime": "569.56",
+      "endTime": "570.42"
+    },
+    {
+      "text": "Yeah, can I get the emoji love for that anyway.",
+      "startTime": "571.53",
+      "endTime": "576.64"
+    },
+    {
+      "text": "I'll now go ahead and export this notebook to a python file using N B convert.",
+      "startTime": "576.7",
+      "endTime": "581.27"
+    },
+    {
+      "text": "Okay.",
+      "startTime": "588.12",
+      "endTime": "588.66"
+    },
+    {
+      "text": "And next let's go and use the cloud sDK to submit a server list, Price park job we can use the data block aPI and call batches to submit a surveillance job.",
+      "startTime": "588.66",
+      "endTime": "597.47"
+    },
+    {
+      "text": "So I'm showing you here a spark job but I can also submit spark jobs written in scala, java are or sequel with auto provision and auto scale.",
+      "startTime": "601.29",
+      "endTime": "612.17"
+    },
+    {
+      "text": "No infrastructure configuration is needed.",
+      "startTime": "612.18",
+      "endTime": "614.27"
+    },
+    {
+      "text": "This helps those less familiar with how to fine tune their smart jobs to utilize its powerful distributed data processing model with these capabilities.",
+      "startTime": "614.66",
+      "endTime": "622.62"
+    },
+    {
+      "text": "There's no need to manually create into clusters.",
+      "startTime": "622.66",
+      "endTime": "625.04"
+    },
+    {
+      "text": "So once I've submitted the job I can show it listed in the surveillance spark console and I can click on the job to view its logs.",
+      "startTime": "626.39",
+      "endTime": "632.92"
+    },
+    {
+      "text": "Now, surveillance spark takes about a minute or so to auto provision the resources as well as start writing out log output.",
+      "startTime": "632.93",
+      "endTime": "639.7"
+    },
+    {
+      "text": "So what I'll go ahead and do here is show you the log output from a completed job that I ran earlier.",
+      "startTime": "639.71",
+      "endTime": "644.39"
+    },
+    {
+      "text": "So if we click in here we can see Okay.",
+      "startTime": "646.53",
+      "endTime": "648.93"
+    },
+    {
+      "text": "So I added some print statements into this job and here it's showing me that there's some short term job data that's processed some long term job data and then some geographical data as well now in addition to this, I can also show you the spark history server, which is where the more details of the spark job itself will be output ID once the job has been completed.",
+      "startTime": "648.93",
+      "endTime": "670.58"
+    },
+    {
+      "text": "So we can go back in the bug and then additionally we can also gain access to metadata via data, product meta store.",
+      "startTime": "670.58",
+      "endTime": "676.29"
+    },
+    {
+      "text": "Now, in addition to all of this, we are also looking into a new solution for creating long running clusters or a place where our infrastructure team can manage data park clusters.",
+      "startTime": "677.2",
+      "endTime": "685.83"
+    },
+    {
+      "text": "Now, fortunately we feel that spark on G K e fits our use case and lets us utilize our existing G K E infrastructure.",
+      "startTime": "685.84",
+      "endTime": "692.65"
+    },
+    {
+      "text": "So clearly it's been a busy week for me using spark survey list to create pipelines to push drought data into big query.",
+      "startTime": "694.07",
+      "endTime": "700.47"
+    },
+    {
+      "text": "But the efficiency improvements will gain by not needing to manage cluster overhead will be worth it.",
+      "startTime": "700.52",
+      "endTime": "705.77"
+    },
+    {
+      "text": "Now you can let me know in the chat if you're as excited about sparks surveillance as I am.",
+      "startTime": "705.88",
+      "endTime": "710.05"
+    },
+    {
+      "text": "Okay, let's see how everyone's using spark today looks like notebooks are pretty popular.",
+      "startTime": "710.2",
+      "endTime": "717.76"
+    },
+    {
+      "text": "Oh, an automation through airflow.",
+      "startTime": "719.42",
+      "endTime": "721.97"
+    },
+    {
+      "text": "That's cool too.",
+      "startTime": "721.97",
+      "endTime": "722.78"
+    },
+    {
+      "text": "Okay, great.",
+      "startTime": "723.63",
+      "endTime": "724.47"
+    },
+    {
+      "text": "Thanks so much brad.",
+      "startTime": "724.48",
+      "endTime": "725.45"
+    },
+    {
+      "text": "So now that we have greater insight into supply risks, we need to scale our transaction systems to handle more orders and allow us to understand the potential business impact of these climate risks while hopefully lowering costs.",
+      "startTime": "725.46",
+      "endTime": "739.6"
+    },
+    {
+      "text": "So this brings me to Derek our DB A Derek, you've been focusing on this effort.",
+      "startTime": "739.61",
+      "endTime": "745.46"
+    },
+    {
+      "text": "So can you let us know where you're at today? Yeah, absolutely leah.",
+      "startTime": "745.46",
+      "endTime": "750.3"
+    },
+    {
+      "text": "We have a new grocery chain that has struggled to maintain their on prem databases as they've grown.",
+      "startTime": "750.58",
+      "endTime": "755.82"
+    },
+    {
+      "text": "There's an opportunity to solve their underlying scaling problems with cloud spanner.",
+      "startTime": "755.93",
+      "endTime": "760.26"
+    },
+    {
+      "text": "I spent the last few weeks validating spanners ability to scale and the ease of maintenance while keeping strong consistency for this point of sale workload.",
+      "startTime": "760.86",
+      "endTime": "768.67"
+    },
+    {
+      "text": "I migrated some of the new change stores to spanner already using granular instance sizing I only provisioned a portion of a spanner node to handle the required load as we move the remainder of stores.",
+      "startTime": "769.94",
+      "endTime": "781.08"
+    },
+    {
+      "text": "We can easily scale up without downtime or app changes.",
+      "startTime": "781.08",
+      "endTime": "784.13"
+    },
+    {
+      "text": "Um quick question Derek, We've been really focused on reducing the cost and complexity of building scalable applications so I'm wondering how does adding spanner impact that effort? Yeah, that's a great question.",
+      "startTime": "785.04",
+      "endTime": "797.89"
+    },
+    {
+      "text": "Nikita, One way we've been doing this in other environments is to standardize on Postgres.",
+      "startTime": "797.89",
+      "endTime": "802.62"
+    },
+    {
+      "text": "Postgres is a well established open source database with an active ecosystem that our development and ops teams are already familiar with.",
+      "startTime": "803.2",
+      "endTime": "810.01"
+    },
+    {
+      "text": "I tried to get the team to add an elephant emoji.",
+      "startTime": "810.88",
+      "endTime": "813.03"
+    },
+    {
+      "text": "So y'all could show some love for postgres but anyway, spanner just announced a post rescue all interface.",
+      "startTime": "813.03",
+      "endTime": "821.04"
+    },
+    {
+      "text": "This gives us the benefits of spanner without having to completely retrain our application teams.",
+      "startTime": "821.31",
+      "endTime": "825.89"
+    },
+    {
+      "text": "Having a standard api for our data will help us maintain velocity for new features even as our database needs evolve here.",
+      "startTime": "826.26",
+      "endTime": "834.44"
+    },
+    {
+      "text": "Let me show you so I've connected into our spanner instance using the P SQL command line tool from here.",
+      "startTime": "834.49",
+      "endTime": "843.21"
+    },
+    {
+      "text": "I can explore the schema just like I would any other database, any other postgres database.",
+      "startTime": "843.22",
+      "endTime": "848.67"
+    },
+    {
+      "text": "Um you can see that the both the postgres data type and the spanner data type is available to the information schema.",
+      "startTime": "848.68",
+      "endTime": "855.99"
+    },
+    {
+      "text": "So this will make it familiar to anyone who has already knows postgres.",
+      "startTime": "857.18",
+      "endTime": "864.35"
+    },
+    {
+      "text": "Awesome.",
+      "startTime": "864.36",
+      "endTime": "865.46"
+    },
+    {
+      "text": "Thanks Derek, this is really cool.",
+      "startTime": "865.46",
+      "endTime": "867.24"
+    },
+    {
+      "text": "I'm really looking forward to the scalability that this is going to bring our team.",
+      "startTime": "867.25",
+      "endTime": "870.78"
+    },
+    {
+      "text": "Absolutely.",
+      "startTime": "872.07",
+      "endTime": "873.13"
+    },
+    {
+      "text": "And as a quick summary I highlighted how to spanner allows us to get started small and scale as needed using granular instant sizing and how the new postgres SQL interface reduces friction for our teams already familiar with postgres.",
+      "startTime": "873.29",
+      "endTime": "886.59"
+    },
+    {
+      "text": "Nikita and leah, you can treat the existing data is golden and I'll keep onboarding more stores.",
+      "startTime": "887.3",
+      "endTime": "892.11"
+    },
+    {
+      "text": "Uh Nikita, I believe you need this data for some of the big query analysis you were working on.",
+      "startTime": "893.33",
+      "endTime": "898.49"
+    },
+    {
+      "text": "You've been busy figuring out how to evolve our ability to make sense of all this data.",
+      "startTime": "898.5",
+      "endTime": "903.29"
+    },
+    {
+      "text": "Can you show us how that works? Yes, absolutely.",
+      "startTime": "903.54",
+      "endTime": "906.21"
+    },
+    {
+      "text": "I was hoping that you'd ask so to ensure that we're managing stock to meet customer demand.",
+      "startTime": "906.21",
+      "endTime": "911.38"
+    },
+    {
+      "text": "My focus this week was on evolving our data science capabilities for exploratory analysis.",
+      "startTime": "911.39",
+      "endTime": "916.88"
+    },
+    {
+      "text": "I combined the transactional data that Derek's been working on with the drought data that leah and brad pushed into big query this way we can gain insight into which products are most at risk of not meeting customer demand.",
+      "startTime": "916.9",
+      "endTime": "929.55"
+    },
+    {
+      "text": "So my first step was to integrate all of our transactional data within big query, primarily using federation with cloud, sequel and spanner.",
+      "startTime": "930.24",
+      "endTime": "937.88"
+    },
+    {
+      "text": "This provides a unified environment for aggregation and analysis where we can join transactions back to producer details and the associated drought risk scores.",
+      "startTime": "937.98",
+      "endTime": "947.88"
+    },
+    {
+      "text": "Now as you all know, we recently migrated to vertex ai Workbench which has really really helped with our basic compute and resource management.",
+      "startTime": "948.82",
+      "endTime": "958.81"
+    },
+    {
+      "text": "Quick question.",
+      "startTime": "960.27",
+      "endTime": "961.33"
+    },
+    {
+      "text": "Nikita is vertex Ai Workbench a notebook for vertex Ai that is an excellent question.",
+      "startTime": "961.33",
+      "endTime": "966.87"
+    },
+    {
+      "text": "Derek vertex Ai Workbench contains recently updated manage notebooks which bring forth more integrated data engineering capabilities into our data science environments so we can ingest and analyze data and deploy and manage ml models all from one spot.",
+      "startTime": "966.87",
+      "endTime": "983.79"
+    },
+    {
+      "text": "Now let me show you a little bit about what this looks like after I provisioned a new managed notebook.",
+      "startTime": "984.36",
+      "endTime": "988.8"
+    },
+    {
+      "text": "My first task was to analyze the demand on the high volume skews and for that I used the big query connector to view and query the sales data with vertex Ai Workbench, I can inspect big query metadata, preview tables and automate basic sequel construction entirely from my notebook environment.",
+      "startTime": "988.81",
+      "endTime": "1009.08"
+    },
+    {
+      "text": "Okay, it's my turn on the emojis.",
+      "startTime": "1009.77",
+      "endTime": "1012.09"
+    },
+    {
+      "text": "I want to see the fire emoji from all the data scientists out there who are as excited as I am about being able to access big query from the notebook interface.",
+      "startTime": "1012.1",
+      "endTime": "1021.19"
+    },
+    {
+      "text": "Look, I'm not the only one.",
+      "startTime": "1023.95",
+      "endTime": "1025.97"
+    },
+    {
+      "text": "Hey, nick.",
+      "startTime": "1026.69",
+      "endTime": "1027.1"
+    },
+    {
+      "text": "Ito hold on, sorry to interrupt your emoji fest but I see you're working out of the Lakes project but are able to pin other projects you have access to like the ops project, is that new? Yes, that's correct, brad, vertex ai Workbench actually enables me to interact with all services via my own identity.",
+      "startTime": "1027.1",
+      "endTime": "1044.09"
+    },
+    {
+      "text": "The big query plug in also provides some template id code to help build out queries and project results to a Panda's data frame.",
+      "startTime": "1044.79",
+      "endTime": "1052.23"
+    },
+    {
+      "text": "So here we can see it looks like I just need to refresh um sorry about that team.",
+      "startTime": "1052.24",
+      "endTime": "1058.23"
+    },
+    {
+      "text": "I'm just gonna refresh my jupiter lab instance here, I guess I had it open for too long and I guess while Nikita's doing that, like who uses jupiter now, let's see the fire emojis lighting up.",
+      "startTime": "1058.23",
+      "endTime": "1068.48"
+    },
+    {
+      "text": "I see.",
+      "startTime": "1070.08",
+      "endTime": "1070.63"
+    },
+    {
+      "text": "So now I personally use it a lot in my day today.",
+      "startTime": "1070.63",
+      "endTime": "1076.46"
+    },
+    {
+      "text": "All right, thank you so perfect.",
+      "startTime": "1076.47",
+      "endTime": "1078.6"
+    },
+    {
+      "text": "Now you can see a simple view of all transactions by the day of week um and vertex Workbench actually also allows me to launch different kernels entirely in the same instance.",
+      "startTime": "1078.61",
+      "endTime": "1089.17"
+    },
+    {
+      "text": "So brad, I think you were working out of a Pittsburgh notebook earlier, is that correct? Yeah, so data park clusters are also supported as a back end, as a part of spark on google cloud, we can access all supported kernels on the cluster including price park.",
+      "startTime": "1089.18",
+      "endTime": "1102.44"
+    },
+    {
+      "text": "Well for my analysis, I just needed a python kernel.",
+      "startTime": "1103.63",
+      "endTime": "1106.64"
+    },
+    {
+      "text": "So let me show you what's going on in this notebook and what I've been up to this week, you can see here that I've done a deep dive into the data, I've plotted the transaction volume, I've created a heat map of purchase counts across various departments and I've also plotted the short term drought index across various crop types like corn, dry beans, pears and rice.",
+      "startTime": "1106.64",
+      "endTime": "1128.67"
+    },
+    {
+      "text": "But my last task and the most important task was to map skews to suppliers and calculate a risk score based on the aggregate field data.",
+      "startTime": "1129.13",
+      "endTime": "1137.32"
+    },
+    {
+      "text": "So to do this, I started with our mapping table which you can see a sample of right here.",
+      "startTime": "1137.36",
+      "endTime": "1142.12"
+    },
+    {
+      "text": "This helped me to determine which farm fields actually source ingredients for a particular skew and then I calculated a weighted risk score that takes into account each product's demand and the associated farms overall drought risk and you can see each of these measurements in this data frame right here.",
+      "startTime": "1142.38",
+      "endTime": "1158.67"
+    },
+    {
+      "text": "Ultimately this score will help us to prioritize managing items where we're most at risk of not meeting customer demand.",
+      "startTime": "1159.03",
+      "endTime": "1165.57"
+    },
+    {
+      "text": "So as a quick summary, I used vertex ai Workbench manage notebooks to connect back to data accessible from big query and create a weighted risk score for each one of our products, combining both climate and demand data leah, I went ahead and put all of this back into big query just to keep it centralized awesome.",
+      "startTime": "1166.15",
+      "endTime": "1184.64"
+    },
+    {
+      "text": "Thanks so much Nikita that risk score is gonna be huge in helping our team understand supply risk.",
+      "startTime": "1184.65",
+      "endTime": "1190.26"
+    },
+    {
+      "text": "So to make sure the broader team has a trusted view of all this information.",
+      "startTime": "1190.93",
+      "endTime": "1195.47"
+    },
+    {
+      "text": "I started incorporating everything into a looker dashboard.",
+      "startTime": "1195.48",
+      "endTime": "1199.41"
+    },
+    {
+      "text": "Now with Looker we define our metrics like average risk using look ml lookers data model and Looker uses this to compile sequel queries and send them back to big query on our behalf so that our nontechnical users can explore the results of these data efforts.",
+      "startTime": "1199.42",
+      "endTime": "1217.06"
+    },
+    {
+      "text": "So let me show you this dashboard that I've been working on and first off you can see this custom map layer that I use to visualize drought risk across farm regions in the west and were able to take advantage of big queries, geospatial functions and drill from this aggregate view all the way to producer or even grocery product level.",
+      "startTime": "1217.55",
+      "endTime": "1238.56"
+    },
+    {
+      "text": "Let me show you so I'll drill to field I.",
+      "startTime": "1238.57",
+      "endTime": "1242.02"
+    },
+    {
+      "text": "D.",
+      "startTime": "1242.02",
+      "endTime": "1242.72"
+    },
+    {
+      "text": "And then I can jump right into Lookers explore to bring in some more fields like maybe I want to specifically look at products that are at risk in this region where we're quickly expanding.",
+      "startTime": "1243.25",
+      "endTime": "1255.43"
+    },
+    {
+      "text": "Making all this data accessible to the broader team is really important.",
+      "startTime": "1259.62",
+      "endTime": "1263.21"
+    },
+    {
+      "text": "So can we make sure that the marketing team is aware of this so they know how to hold off on coupons or advertisements for these products.",
+      "startTime": "1263.21",
+      "endTime": "1270.1"
+    },
+    {
+      "text": "Yeah actually we can set up a schedule from lookers so that the regional marketing teams are always notified if new products seem to go at risk.",
+      "startTime": "1270.2",
+      "endTime": "1278.89"
+    },
+    {
+      "text": "So putting this all together, we used Earth engine to process new earth science data signals.",
+      "startTime": "1279.5",
+      "endTime": "1285.33"
+    },
+    {
+      "text": "We use spark to efficiently transform geospatial data and push drought indicators into big query spanner to scale our transaction systems, ensuring we have the infrastructure to handle future growth and vertex Ai Workbench Plus Looker backed by the power of big query to evolve our data science capabilities and surface important trends back to key decision makers.",
+      "startTime": "1285.34",
+      "endTime": "1310.53"
+    },
+    {
+      "text": "So with integrations across these services, anyone is able to explore and take action on insights that combine climate data and transactions.",
+      "startTime": "1310.54",
+      "endTime": "1320.42"
+    },
+    {
+      "text": "Now we can understand where products may go out of stock due to increasing drought conditions and identify areas to build resilience against changes in our climate.",
+      "startTime": "1321.07",
+      "endTime": "1331.12"
+    },
+    {
+      "text": "So with this geospatial information we're given a whole new set of data so that we can not only be considerate of our customers but also find ways to be more considerate of our planet and with that it looks like we're right about at time.",
+      "startTime": "1331.88",
+      "endTime": "1346.59"
+    },
+    {
+      "text": "So thank you so much for joining us today as we've shown how google cloud can offer a world class experience for creating a scalable unified data platform and a special thanks to my colleagues Nikita for showing us vertex ai Workbench.",
+      "startTime": "1346.6",
+      "endTime": "1363.2"
+    },
+    {
+      "text": "Derek for introducing us to spanner and its postgres interoperability and brad for walking us through spark on google cloud.",
+      "startTime": "1363.21",
+      "endTime": "1371.36"
+    },
+    {
+      "text": "And thank you leah for showing us Looker and Earth Engine.",
+      "startTime": "1371.59",
+      "endTime": "1375.15"
+    },
+    {
+      "text": "Last but certainly not least.",
+      "startTime": "1375.16",
+      "endTime": "1377.26"
+    },
+    {
+      "text": "Thank you all out there so much for your engagement.",
+      "startTime": "1377.27",
+      "endTime": "1379.94"
+    },
+    {
+      "text": "We love those emojis and seeing all of your comments in the chat.",
+      "startTime": "1379.95",
+      "endTime": "1383.45"
+    },
+    {
+      "text": "So stay tuned for our live Q and A.",
+      "startTime": "1383.46",
+      "endTime": "1385.55"
+    },
+    {
+      "text": "Which is going to cover everything from our spotlight through this demo.",
+      "startTime": "1385.55",
+      "endTime": "1389.19"
+    },
+    {
+      "text": "Thank you.",
+      "startTime": "1389.2",
+      "endTime": "1390.48"
+    },
+    {
+      "text": "Thanks everyone..",
+      "startTime": "1390.48",
+      "endTime": "1392.02"
+    }
+  ],
+  "phrases": [
+    {
+      "text": "Hi everybody .",
+      "startTime": "3.69",
+      "endTime": "4.72"
+    },
+    {
+      "text": "I'm leah and I'm Nikita and welcome to",
+      "startTime": "4.73",
+      "endTime": "7.12"
+    },
+    {
+      "text": "the data cloud live demo .",
+      "startTime": "7.12",
+      "endTime": "9.25"
+    },
+    {
+      "text": "If you're just joining us from this morning's",
+      "startTime": "9.29",
+      "endTime": "11.09"
+    },
+    {
+      "text": "keynote and spotlight you heard some of the",
+      "startTime": "11.09",
+      "endTime": "14.08"
+    },
+    {
+      "text": "latest innovations we launched Earth engine spark on",
+      "startTime": "14.08",
+      "endTime": "17.62"
+    },
+    {
+      "text": "google cloud postgres sequel interface for spanner and",
+      "startTime": "17.62",
+      "endTime": "21.0"
+    },
+    {
+      "text": "vertex Ai Workbench .",
+      "startTime": "21.01",
+      "endTime": "23.0"
+    },
+    {
+      "text": "All to help organizations solve their most complex",
+      "startTime": "23.01",
+      "endTime": "25.58"
+    },
+    {
+      "text": "data driven challenges in this live demo .",
+      "startTime": "25.58",
+      "endTime": "29.65"
+    },
+    {
+      "text": "We're going to take complex fragmented data systems",
+      "startTime": "29.65",
+      "endTime": "32.28"
+    },
+    {
+      "text": "and simplify them bringing together data on a",
+      "startTime": "32.28",
+      "endTime": "35.87"
+    },
+    {
+      "text": "massive scale to explore a real world scenario",
+      "startTime": "35.87",
+      "endTime": "38.67"
+    },
+    {
+      "text": "for climate and supply chain analytics .",
+      "startTime": "38.67",
+      "endTime": "41.6"
+    },
+    {
+      "text": "In order to do this , we're going",
+      "startTime": "41.61",
+      "endTime": "43.26"
+    },
+    {
+      "text": "to need the whole data team say hi",
+      "startTime": "43.26",
+      "endTime": "45.55"
+    },
+    {
+      "text": "everyone .",
+      "startTime": "45.55",
+      "endTime": "46.54"
+    },
+    {
+      "text": "Hello , I'm Brett hi I'm derek now",
+      "startTime": "47.49",
+      "endTime": "51.02"
+    },
+    {
+      "text": "a quick reminder .",
+      "startTime": "51.95",
+      "endTime": "53.31"
+    },
+    {
+      "text": "This demo is truly live and you can",
+      "startTime": "53.32",
+      "endTime": "55.16"
+    },
+    {
+      "text": "engage with us directly .",
+      "startTime": "55.16",
+      "endTime": "56.58"
+    },
+    {
+      "text": "So ask questions .",
+      "startTime": "56.6",
+      "endTime": "57.92"
+    },
+    {
+      "text": "Say hi in the chat window and hit",
+      "startTime": "57.93",
+      "endTime": "59.48"
+    },
+    {
+      "text": "those emojis .",
+      "startTime": "59.48",
+      "endTime": "60.45"
+    },
+    {
+      "text": "I think I see something coming in now",
+      "startTime": "61.04",
+      "endTime": "62.76"
+    },
+    {
+      "text": ".",
+      "startTime": "62.76",
+      "endTime": "63.17"
+    },
+    {
+      "text": "I see lots of hearts and fire a",
+      "startTime": "63.18",
+      "endTime": "65.25"
+    },
+    {
+      "text": "lot of people saying hello in the chat",
+      "startTime": "65.26",
+      "endTime": "67.1"
+    },
+    {
+      "text": ".",
+      "startTime": "67.1",
+      "endTime": "67.65"
+    },
+    {
+      "text": "Thanks everyone for joining us today .",
+      "startTime": "67.66",
+      "endTime": "69.61"
+    },
+    {
+      "text": "So if you can't see the emojis or",
+      "startTime": "70.38",
+      "endTime": "72.4"
+    },
+    {
+      "text": "the chat , just go back to the",
+      "startTime": "72.41",
+      "endTime": "74.06"
+    },
+    {
+      "text": "next event website and click on the blue",
+      "startTime": "74.06",
+      "endTime": "75.97"
+    },
+    {
+      "text": ", join the interactive experience button .",
+      "startTime": "75.97",
+      "endTime": "79.2"
+    },
+    {
+      "text": "Okay let's have a little fun with this",
+      "startTime": "79.21",
+      "endTime": "81.51"
+    },
+    {
+      "text": "today .",
+      "startTime": "81.51",
+      "endTime": "84.65"
+    },
+    {
+      "text": "You're actually joining us for our weekly stand",
+      "startTime": "84.66",
+      "endTime": "86.83"
+    },
+    {
+      "text": "up at symbol superstore a fictional US based",
+      "startTime": "86.83",
+      "endTime": "91.22"
+    },
+    {
+      "text": "grocery chain focused on sourcing from local producers",
+      "startTime": "91.22",
+      "endTime": "94.1"
+    },
+    {
+      "text": ".",
+      "startTime": "94.1",
+      "endTime": "95.05"
+    },
+    {
+      "text": "Like many different industries we need to bring",
+      "startTime": "95.09",
+      "endTime": "97.63"
+    },
+    {
+      "text": "together disparate data sources to build resilience specifically",
+      "startTime": "97.63",
+      "endTime": "101.15"
+    },
+    {
+      "text": "for us drought in the western U .",
+      "startTime": "101.31",
+      "endTime": "104.24"
+    },
+    {
+      "text": "S .",
+      "startTime": "104.24",
+      "endTime": "104.52"
+    },
+    {
+      "text": "Has impacted our producers and our supply chain",
+      "startTime": "104.52",
+      "endTime": "107.13"
+    },
+    {
+      "text": "has been disrupted with decreased shipments week over",
+      "startTime": "107.13",
+      "endTime": "110.2"
+    },
+    {
+      "text": "week .",
+      "startTime": "110.21",
+      "endTime": "111.12"
+    },
+    {
+      "text": "We need to better understand how to manage",
+      "startTime": "111.54",
+      "endTime": "113.34"
+    },
+    {
+      "text": "inventory and to prevent stock outs and ensure",
+      "startTime": "113.34",
+      "endTime": "116.86"
+    },
+    {
+      "text": "we can scale in both how we analyze",
+      "startTime": "116.86",
+      "endTime": "118.78"
+    },
+    {
+      "text": "information and how we run our transactions .",
+      "startTime": "118.78",
+      "endTime": "122.12"
+    },
+    {
+      "text": "Alright Team .",
+      "startTime": "122.67",
+      "endTime": "123.53"
+    },
+    {
+      "text": "So to address the supply and scale challenges",
+      "startTime": "123.54",
+      "endTime": "125.72"
+    },
+    {
+      "text": "that Nikita just mentioned .",
+      "startTime": "125.72",
+      "endTime": "127.67"
+    },
+    {
+      "text": "We have four different workloads .",
+      "startTime": "127.68",
+      "endTime": "129.85"
+    },
+    {
+      "text": "First I'm going to evaluate the best climate",
+      "startTime": "129.86",
+      "endTime": "133.04"
+    },
+    {
+      "text": "information to identify at risk producers then brad",
+      "startTime": "133.04",
+      "endTime": "137.33"
+    },
+    {
+      "text": "will mature our data pipelines to transform that",
+      "startTime": "137.34",
+      "endTime": "140.76"
+    },
+    {
+      "text": "data .",
+      "startTime": "140.76",
+      "endTime": "141.76"
+    },
+    {
+      "text": "Next derek will dig into scaling our transaction",
+      "startTime": "141.77",
+      "endTime": "144.78"
+    },
+    {
+      "text": "processing and finally Nikita will show how we're",
+      "startTime": "144.78",
+      "endTime": "148.96"
+    },
+    {
+      "text": "gaining new insights by evolving our data science",
+      "startTime": "148.96",
+      "endTime": "151.7"
+    },
+    {
+      "text": "capabilities .",
+      "startTime": "151.7",
+      "endTime": "153.14"
+    },
+    {
+      "text": "Let's get into it and let's keep hearing",
+      "startTime": "153.17",
+      "endTime": "155.35"
+    },
+    {
+      "text": "from all of you out .",
+      "startTime": "155.35",
+      "endTime": "156.81"
+    },
+    {
+      "text": "There are data pros leah you're up first",
+      "startTime": "156.82",
+      "endTime": "159.8"
+    },
+    {
+      "text": ".",
+      "startTime": "159.81",
+      "endTime": "160.43"
+    },
+    {
+      "text": "Great thanks Nikita .",
+      "startTime": "160.44",
+      "endTime": "162.08"
+    },
+    {
+      "text": "So in order to gain insight into our",
+      "startTime": "162.09",
+      "endTime": "164.65"
+    },
+    {
+      "text": "supply chain first I need to evaluate the",
+      "startTime": "164.65",
+      "endTime": "167.75"
+    },
+    {
+      "text": "risks .",
+      "startTime": "167.76",
+      "endTime": "168.41"
+    },
+    {
+      "text": "So I'm focusing on figuring out how drought",
+      "startTime": "168.42",
+      "endTime": "170.86"
+    },
+    {
+      "text": "impacts the very source of our grocery products",
+      "startTime": "170.86",
+      "endTime": "173.84"
+    },
+    {
+      "text": "and to do this I turn to google's",
+      "startTime": "173.84",
+      "endTime": "176.51"
+    },
+    {
+      "text": "platform for earth science data and analytics Earth",
+      "startTime": "176.51",
+      "endTime": "179.49"
+    },
+    {
+      "text": "Engine which has a huge catalog of satellite",
+      "startTime": "179.5",
+      "endTime": "182.24"
+    },
+    {
+      "text": "images for things like climate whether croplands and",
+      "startTime": "182.24",
+      "endTime": "186.02"
+    },
+    {
+      "text": "much more .",
+      "startTime": "186.02",
+      "endTime": "187.22"
+    },
+    {
+      "text": "There's currently over like 50 petabytes of data",
+      "startTime": "187.23",
+      "endTime": "190.24"
+    },
+    {
+      "text": "in the catalog plus more and more images",
+      "startTime": "190.24",
+      "endTime": "192.98"
+    },
+    {
+      "text": "are added each day .",
+      "startTime": "192.98",
+      "endTime": "194.68"
+    },
+    {
+      "text": "So let me just go ahead and bring",
+      "startTime": "195.35",
+      "endTime": "197.17"
+    },
+    {
+      "text": "up this cool little application that I built",
+      "startTime": "197.17",
+      "endTime": "199.15"
+    },
+    {
+      "text": "using the Earth engine code editor so I",
+      "startTime": "199.15",
+      "endTime": "201.89"
+    },
+    {
+      "text": "can walk you through the three datasets .",
+      "startTime": "201.89",
+      "endTime": "203.93"
+    },
+    {
+      "text": "We'll be using today first is gonna be",
+      "startTime": "203.93",
+      "endTime": "207.07"
+    },
+    {
+      "text": "crop data from the U .",
+      "startTime": "207.07",
+      "endTime": "208.6"
+    },
+    {
+      "text": "S .",
+      "startTime": "208.6",
+      "endTime": "208.78"
+    },
+    {
+      "text": "D .",
+      "startTime": "208.78",
+      "endTime": "208.98"
+    },
+    {
+      "text": "A .",
+      "startTime": "208.98",
+      "endTime": "209.24"
+    },
+    {
+      "text": "N .",
+      "startTime": "209.25",
+      "endTime": "209.45"
+    },
+    {
+      "text": "A .",
+      "startTime": "209.45",
+      "endTime": "209.59"
+    },
+    {
+      "text": "S .",
+      "startTime": "209.59",
+      "endTime": "209.85"
+    },
+    {
+      "text": "S .",
+      "startTime": "209.85",
+      "endTime": "210.07"
+    },
+    {
+      "text": "Program which I can grab right from the",
+      "startTime": "210.07",
+      "endTime": "212.11"
+    },
+    {
+      "text": "public data catalog by searching .",
+      "startTime": "212.11",
+      "endTime": "214.05"
+    },
+    {
+      "text": "So this data set is going to contain",
+      "startTime": "214.83",
+      "endTime": "217.37"
+    },
+    {
+      "text": "one image of the US for each year",
+      "startTime": "217.38",
+      "endTime": "220.46"
+    },
+    {
+      "text": ".",
+      "startTime": "220.46",
+      "endTime": "220.91"
+    },
+    {
+      "text": "Going back all the way to 1997 And",
+      "startTime": "220.92",
+      "endTime": "223.2"
+    },
+    {
+      "text": "each 10 m pixel in this image has",
+      "startTime": "223.92",
+      "endTime": "226.68"
+    },
+    {
+      "text": "actually been assigned a crop type .",
+      "startTime": "226.68",
+      "endTime": "228.72"
+    },
+    {
+      "text": "Let me just close out of this here",
+      "startTime": "229.95",
+      "endTime": "231.46"
+    },
+    {
+      "text": ".",
+      "startTime": "231.46",
+      "endTime": "231.79"
+    },
+    {
+      "text": "Bring you back to my app .",
+      "startTime": "231.79",
+      "endTime": "233.11"
+    },
+    {
+      "text": "So the second data set contains the outline",
+      "startTime": "233.12",
+      "endTime": "235.88"
+    },
+    {
+      "text": "of agricultural fields and we're gonna use Earth",
+      "startTime": "235.89",
+      "endTime": "239.26"
+    },
+    {
+      "text": "Engine to assign each one of these fields",
+      "startTime": "239.27",
+      "endTime": "241.35"
+    },
+    {
+      "text": "the crop type that is most prevalent among",
+      "startTime": "241.35",
+      "endTime": "243.82"
+    },
+    {
+      "text": "the cells that cover it .",
+      "startTime": "243.83",
+      "endTime": "245.31"
+    },
+    {
+      "text": "So in this view that I'm showing right",
+      "startTime": "245.9",
+      "endTime": "247.71"
+    },
+    {
+      "text": "here the pink fields are alfalfa and the",
+      "startTime": "247.71",
+      "endTime": "251.22"
+    },
+    {
+      "text": "dark green fields are almonds leah these visuals",
+      "startTime": "251.22",
+      "endTime": "254.34"
+    },
+    {
+      "text": "are super super helpful but could we export",
+      "startTime": "254.34",
+      "endTime": "256.61"
+    },
+    {
+      "text": "this data for analysis in other environments ?",
+      "startTime": "256.61",
+      "endTime": "259.87"
+    },
+    {
+      "text": "Yeah I'm actually gonna push this into cloud",
+      "endTime": "262.19"
+    },
+    {
+      "text": "storage and big query injustice sec .",
+      "startTime": "262.19",
+      "endTime": "264.67"
+    },
+    {
+      "text": "But first I want to add in some",
+      "startTime": "264.68",
+      "endTime": "266.44"
+    },
+    {
+      "text": "additional signals on drought .",
+      "startTime": "266.44",
+      "endTime": "268.79"
+    },
+    {
+      "text": "So the third data set that I'm using",
+      "startTime": "269.49",
+      "endTime": "271.43"
+    },
+    {
+      "text": "is a collection of both short and long",
+      "startTime": "271.43",
+      "endTime": "274.07"
+    },
+    {
+      "text": "term drought indicators meaning that we can see",
+      "startTime": "274.07",
+      "endTime": "276.91"
+    },
+    {
+      "text": "what drought looks like for each field over",
+      "startTime": "276.91",
+      "endTime": "279.14"
+    },
+    {
+      "text": "time .",
+      "startTime": "279.15",
+      "endTime": "280.26"
+    },
+    {
+      "text": "Now using data sets like these does require",
+      "startTime": "280.27",
+      "endTime": "282.69"
+    },
+    {
+      "text": "some deep subject matter expertise , expertise .",
+      "startTime": "282.69",
+      "endTime": "286.34"
+    },
+    {
+      "text": "So special thanks to our real world partners",
+      "startTime": "286.35",
+      "endTime": "289.01"
+    },
+    {
+      "text": "at climate engine who build solutions on top",
+      "startTime": "289.01",
+      "endTime": "292.0"
+    },
+    {
+      "text": "of earth engines A .",
+      "startTime": "292.0",
+      "endTime": "293.31"
+    },
+    {
+      "text": "P .",
+      "startTime": "293.31",
+      "endTime": "293.52"
+    },
+    {
+      "text": "I helping organizations ground their analytics projects with",
+      "startTime": "293.52",
+      "endTime": "296.96"
+    },
+    {
+      "text": "scientifically accepted methodologies .",
+      "startTime": "296.97",
+      "endTime": "299.74"
+    },
+    {
+      "text": "Okay , so you just saw how we",
+      "startTime": "300.94",
+      "endTime": "302.84"
+    },
+    {
+      "text": "use geospatial data and I want to know",
+      "startTime": "302.84",
+      "endTime": "305.28"
+    },
+    {
+      "text": "how you use it in your analysis .",
+      "startTime": "305.28",
+      "endTime": "307.52"
+    },
+    {
+      "text": "So go ahead and answer that poll so",
+      "startTime": "307.53",
+      "endTime": "309.49"
+    },
+    {
+      "text": "we can see Alright everyone .",
+      "startTime": "309.49",
+      "endTime": "312.51"
+    },
+    {
+      "text": "So with these layers in place we can",
+      "startTime": "312.51",
+      "endTime": "314.66"
+    },
+    {
+      "text": "start exploring drought risk .",
+      "startTime": "314.66",
+      "endTime": "316.7"
+    },
+    {
+      "text": "Let me just go ahead and zoom to",
+      "startTime": "317.15",
+      "endTime": "319.23"
+    },
+    {
+      "text": "this field and here I'm gonna show an",
+      "startTime": "319.23",
+      "endTime": "323.26"
+    },
+    {
+      "text": "almond orchard northeast of Modesto California and what",
+      "startTime": "323.26",
+      "endTime": "327.35"
+    },
+    {
+      "text": "we're looking at is the long term drought",
+      "startTime": "327.35",
+      "endTime": "329.29"
+    },
+    {
+      "text": "indicator .",
+      "startTime": "329.29",
+      "endTime": "330.28"
+    },
+    {
+      "text": "So this orange tint that you're seeing means",
+      "startTime": "330.29",
+      "endTime": "333.18"
+    },
+    {
+      "text": "that this field has experienced pretty high levels",
+      "startTime": "333.19",
+      "endTime": "335.95"
+    },
+    {
+      "text": "of drought over the last five years .",
+      "startTime": "335.95",
+      "endTime": "338.29"
+    },
+    {
+      "text": "Now if I go ahead and just zoom",
+      "startTime": "338.3",
+      "endTime": "340.54"
+    },
+    {
+      "text": "out a bit we can actually see that",
+      "startTime": "340.54",
+      "endTime": "343.4"
+    },
+    {
+      "text": "the entire central valley in California is pretty",
+      "startTime": "343.4",
+      "endTime": "346.61"
+    },
+    {
+      "text": "drought stressed .",
+      "startTime": "346.61",
+      "endTime": "347.75"
+    },
+    {
+      "text": "So my last step was to calculate drought",
+      "startTime": "348.74",
+      "endTime": "351.09"
+    },
+    {
+      "text": "risk for each of the fields I showed",
+      "startTime": "351.09",
+      "endTime": "353.01"
+    },
+    {
+      "text": "before and this will tell us which farms",
+      "startTime": "353.01",
+      "endTime": "355.52"
+    },
+    {
+      "text": "and produce types are potentially at risk for",
+      "startTime": "355.52",
+      "endTime": "358.73"
+    },
+    {
+      "text": "not meeting customer demand , which is just",
+      "startTime": "358.73",
+      "endTime": "361.1"
+    },
+    {
+      "text": "one consideration to inform symbols resilience strategy better",
+      "startTime": "361.1",
+      "endTime": "365.02"
+    },
+    {
+      "text": "yet we can incorporate this geography data with",
+      "startTime": "365.93",
+      "endTime": "368.91"
+    },
+    {
+      "text": "other spatial stuff like store and customer locations",
+      "startTime": "368.92",
+      "endTime": "371.71"
+    },
+    {
+      "text": "that are already inside a big query and",
+      "startTime": "371.71",
+      "endTime": "375.1"
+    },
+    {
+      "text": "anyone who knows me knows that I love",
+      "startTime": "375.11",
+      "endTime": "377.63"
+    },
+    {
+      "text": "big query .",
+      "startTime": "377.64",
+      "endTime": "378.83"
+    },
+    {
+      "text": "If you agree , let me see in",
+      "startTime": "378.84",
+      "endTime": "380.55"
+    },
+    {
+      "text": "the emojis .",
+      "startTime": "380.56",
+      "endTime": "381.47"
+    },
+    {
+      "text": "Alright , so the code editor has been",
+      "startTime": "382.42",
+      "endTime": "384.43"
+    },
+    {
+      "text": "great for interacting with Earth engine but making",
+      "startTime": "384.43",
+      "endTime": "387.27"
+    },
+    {
+      "text": "these calculations at scale requires a different approach",
+      "startTime": "387.28",
+      "endTime": "390.58"
+    },
+    {
+      "text": ".",
+      "startTime": "390.59",
+      "endTime": "391.35"
+    },
+    {
+      "text": "So I went ahead and created earth engine",
+      "startTime": "391.36",
+      "endTime": "393.91"
+    },
+    {
+      "text": "tasks for batch processing to run these calculations",
+      "startTime": "393.92",
+      "endTime": "397.13"
+    },
+    {
+      "text": "over all the data in five day increments",
+      "startTime": "397.13",
+      "endTime": "399.85"
+    },
+    {
+      "text": "for the past 10 years .",
+      "startTime": "399.85",
+      "endTime": "402.04"
+    },
+    {
+      "text": "I also set up a cloud function to",
+      "startTime": "402.71",
+      "endTime": "404.61"
+    },
+    {
+      "text": "run every five days going forward .",
+      "startTime": "404.61",
+      "endTime": "406.67"
+    },
+    {
+      "text": "So that will always have fresh data now",
+      "startTime": "406.68",
+      "endTime": "408.72"
+    },
+    {
+      "text": ".",
+      "startTime": "409.82",
+      "endTime": "410.41"
+    },
+    {
+      "text": "Just as a quick recap , we jumped",
+      "startTime": "410.42",
+      "endTime": "412.34"
+    },
+    {
+      "text": "into Earth engine to evaluate earth science data",
+      "startTime": "412.34",
+      "endTime": "414.93"
+    },
+    {
+      "text": "that indicates climate risk for our farm fields",
+      "startTime": "414.93",
+      "endTime": "417.42"
+    },
+    {
+      "text": ".",
+      "startTime": "417.42",
+      "endTime": "418.06"
+    },
+    {
+      "text": "Now we'll have fresh drought data available in",
+      "startTime": "418.1",
+      "endTime": "421.08"
+    },
+    {
+      "text": "cloud storage .",
+      "startTime": "421.08",
+      "endTime": "422.33"
+    },
+    {
+      "text": "So just think of the power of integrating",
+      "startTime": "422.34",
+      "endTime": "424.63"
+    },
+    {
+      "text": "huge amounts of specialized data , giving us",
+      "startTime": "424.63",
+      "endTime": "427.8"
+    },
+    {
+      "text": "a complete picture of supply risk for our",
+      "startTime": "427.8",
+      "endTime": "430.07"
+    },
+    {
+      "text": "business .",
+      "startTime": "430.08",
+      "endTime": "431.08"
+    },
+    {
+      "text": "Oh and I think I can see the",
+      "startTime": "432.12",
+      "endTime": "434.11"
+    },
+    {
+      "text": "poll results coming in now , it looks",
+      "startTime": "434.11",
+      "endTime": "437.17"
+    },
+    {
+      "text": "like lots of people are using geospatial data",
+      "startTime": "437.17",
+      "endTime": "440.11"
+    },
+    {
+      "text": "for all different kinds of things and if",
+      "startTime": "440.11",
+      "endTime": "442.67"
+    },
+    {
+      "text": "your answer wasn't in the poll just go",
+      "startTime": "442.67",
+      "endTime": "444.19"
+    },
+    {
+      "text": "ahead and let us know in the chat",
+      "startTime": "444.19",
+      "endTime": "445.43"
+    },
+    {
+      "text": ".",
+      "startTime": "445.43",
+      "endTime": "445.91"
+    },
+    {
+      "text": "So next up brad will transform and push",
+      "startTime": "446.74",
+      "endTime": "449.81"
+    },
+    {
+      "text": "this data into big query for geospatial analysis",
+      "startTime": "449.81",
+      "endTime": "452.62"
+    },
+    {
+      "text": "with our existing data So brad over to",
+      "startTime": "452.62",
+      "endTime": "456.64"
+    },
+    {
+      "text": "you .",
+      "startTime": "456.64",
+      "endTime": "457.27"
+    },
+    {
+      "text": "Okay , that was pretty cool .",
+      "startTime": "458.6",
+      "endTime": "460.2"
+    },
+    {
+      "text": "Yeah .",
+      "startTime": "460.2",
+      "endTime": "460.37"
+    },
+    {
+      "text": "Thanks .",
+      "startTime": "460.4",
+      "endTime": "461.11"
+    },
+    {
+      "text": "All right .",
+      "startTime": "461.99",
+      "endTime": "462.97"
+    },
+    {
+      "text": "So to gain more insight into how drought",
+      "startTime": "463.01",
+      "endTime": "464.71"
+    },
+    {
+      "text": "is impacting production , my main focus has",
+      "startTime": "464.71",
+      "endTime": "467.55"
+    },
+    {
+      "text": "been building out the data transformation pipeline to",
+      "startTime": "467.55",
+      "endTime": "470.15"
+    },
+    {
+      "text": "push farm field drought indicators from cloud storage",
+      "startTime": "470.3",
+      "endTime": "472.95"
+    },
+    {
+      "text": "into big query .",
+      "startTime": "472.95",
+      "endTime": "474.61"
+    },
+    {
+      "text": "Speaking of batch processing as you know to",
+      "startTime": "475.08",
+      "endTime": "477.33"
+    },
+    {
+      "text": "assist with inventory management , price optimization and",
+      "startTime": "477.34",
+      "endTime": "480.5"
+    },
+    {
+      "text": "product assortment , we use spark to standardize",
+      "startTime": "480.51",
+      "endTime": "482.83"
+    },
+    {
+      "text": "our large scale data processing and we use",
+      "startTime": "482.83",
+      "endTime": "486.03"
+    },
+    {
+      "text": "google cloud data products as our long running",
+      "startTime": "486.03",
+      "endTime": "488.48"
+    },
+    {
+      "text": "clusters for your data pros out there .",
+      "startTime": "488.48",
+      "endTime": "491.61"
+    },
+    {
+      "text": "We'd love to know how you're using spark",
+      "startTime": "491.62",
+      "endTime": "492.93"
+    },
+    {
+      "text": "today .",
+      "startTime": "492.93",
+      "endTime": "493.73"
+    },
+    {
+      "text": "So let us know while I go ahead",
+      "startTime": "493.74",
+      "endTime": "494.81"
+    },
+    {
+      "text": "and pull up the cloud council .",
+      "startTime": "494.81",
+      "endTime": "496.16"
+    },
+    {
+      "text": "So here is the data part cluster we",
+      "startTime": "498.81",
+      "endTime": "500.92"
+    },
+    {
+      "text": "currently use to schedule price park jobs and",
+      "startTime": "500.92",
+      "endTime": "503.7"
+    },
+    {
+      "text": "here I'm connected to a jupiter notebook running",
+      "startTime": "505.86",
+      "endTime": "507.96"
+    },
+    {
+      "text": "on the same cluster with some pie spark",
+      "startTime": "507.97",
+      "endTime": "509.87"
+    },
+    {
+      "text": "code .",
+      "startTime": "509.87",
+      "endTime": "510.47"
+    },
+    {
+      "text": "This code is typical boilerplate code you'd write",
+      "startTime": "510.83",
+      "endTime": "512.91"
+    },
+    {
+      "text": "to do basic data transformations in this case",
+      "startTime": "512.91",
+      "endTime": "515.23"
+    },
+    {
+      "text": "we are processing the earth engine files from",
+      "startTime": "515.23",
+      "endTime": "517.43"
+    },
+    {
+      "text": "cloud storage , performing type checking and mapping",
+      "startTime": "517.44",
+      "endTime": "520.25"
+    },
+    {
+      "text": "to ensure proper ingestion into big query using",
+      "startTime": "520.25",
+      "endTime": "523.11"
+    },
+    {
+      "text": "the spark big query connector .",
+      "startTime": "523.13",
+      "endTime": "525.36"
+    },
+    {
+      "text": "Hey brad .",
+      "startTime": "526.63",
+      "endTime": "527.31"
+    },
+    {
+      "text": "So this is pretty cool .",
+      "startTime": "527.31",
+      "endTime": "528.66"
+    },
+    {
+      "text": "But I think having a batch workflow that's",
+      "startTime": "528.66",
+      "endTime": "530.9"
+    },
+    {
+      "text": "scheduled on a continuously running cluster seems like",
+      "startTime": "530.9",
+      "endTime": "534.01"
+    },
+    {
+      "text": "it can be kind of wasteful .",
+      "startTime": "534.01",
+      "endTime": "535.3"
+    },
+    {
+      "text": "So is there any way we can make",
+      "startTime": "535.31",
+      "endTime": "536.74"
+    },
+    {
+      "text": "this more efficient ? That's a fair point",
+      "startTime": "536.74",
+      "endTime": "539.02"
+    },
+    {
+      "text": "leah , there is still some overhead management",
+      "startTime": "539.02",
+      "endTime": "541.14"
+    },
+    {
+      "text": "here and for hardened batch cases like this",
+      "startTime": "541.14",
+      "endTime": "544.24"
+    },
+    {
+      "text": ", it would be preferred to have these",
+      "startTime": "544.25",
+      "endTime": "545.7"
+    },
+    {
+      "text": "jobs run on their own discrete resources .",
+      "startTime": "545.7",
+      "endTime": "547.96"
+    },
+    {
+      "text": "But good news with the new surveillance option",
+      "startTime": "548.85",
+      "endTime": "550.93"
+    },
+    {
+      "text": "for data product , we can submit a",
+      "startTime": "550.93",
+      "endTime": "552.64"
+    },
+    {
+      "text": "pie spark job without spitting up any infrastructure",
+      "startTime": "552.64",
+      "endTime": "554.61"
+    },
+    {
+      "text": ".",
+      "startTime": "554.61",
+      "endTime": "555.48"
+    },
+    {
+      "text": "These auto magic capabilities .",
+      "startTime": "555.66",
+      "endTime": "558.19"
+    },
+    {
+      "text": "I can spend more deaf time writing code",
+      "startTime": "558.2",
+      "endTime": "559.96"
+    },
+    {
+      "text": "and less time on managing infrastructure .",
+      "startTime": "559.96",
+      "endTime": "562.32"
+    },
+    {
+      "text": "All right brad .",
+      "startTime": "563.04",
+      "endTime": "563.88"
+    },
+    {
+      "text": "First off , I'm pretty sure that you",
+      "startTime": "563.89",
+      "endTime": "565.52"
+    },
+    {
+      "text": "just set me up for that and second",
+      "startTime": "565.52",
+      "endTime": "567.25"
+    },
+    {
+      "text": "you definitely made up that word .",
+      "startTime": "567.25",
+      "endTime": "569.55"
+    },
+    {
+      "text": "Automatic .",
+      "startTime": "569.56",
+      "endTime": "570.42"
+    },
+    {
+      "text": "Yeah , can I get the emoji love",
+      "startTime": "571.53",
+      "endTime": "573.14"
+    },
+    {
+      "text": "for that anyway .",
+      "startTime": "573.14",
+      "endTime": "576.64"
+    },
+    {
+      "text": "I'll now go ahead and export this notebook",
+      "startTime": "576.7",
+      "endTime": "578.09"
+    },
+    {
+      "text": "to a python file using N B convert",
+      "startTime": "578.09",
+      "endTime": "580.67"
+    },
+    {
+      "text": ".",
+      "startTime": "580.68",
+      "endTime": "581.27"
+    },
+    {
+      "text": "Okay .",
+      "startTime": "588.12",
+      "endTime": "588.66"
+    },
+    {
+      "text": "And next let's go and use the cloud",
+      "startTime": "588.66",
+      "endTime": "590.45"
+    },
+    {
+      "text": "sDK to submit a server list , Price",
+      "startTime": "590.45"
+    },
+    {
+      "text": "park job we can use the data block",
+      "startTime": "592.32",
+      "endTime": "594.13"
+    },
+    {
+      "text": "aPI and call batches to submit a surveillance",
+      "startTime": "594.13",
+      "endTime": "596.72"
+    },
+    {
+      "text": "job .",
+      "startTime": "596.72",
+      "endTime": "597.47"
+    },
+    {
+      "text": "So I'm showing you here a spark job",
+      "startTime": "601.29",
+      "endTime": "603.41"
+    },
+    {
+      "text": "but I can also submit spark jobs written",
+      "startTime": "603.41",
+      "endTime": "605.28"
+    },
+    {
+      "text": "in scala , java are or sequel with",
+      "startTime": "605.28",
+      "endTime": "608.25"
+    },
+    {
+      "text": "auto provision and auto scale .",
+      "startTime": "610.01",
+      "endTime": "612.17"
+    },
+    {
+      "text": "No infrastructure configuration is needed .",
+      "startTime": "612.18",
+      "endTime": "614.27"
+    },
+    {
+      "text": "This helps those less familiar with how to",
+      "startTime": "614.66",
+      "endTime": "616.72"
+    },
+    {
+      "text": "fine tune their smart jobs to utilize its",
+      "startTime": "616.72",
+      "endTime": "618.68"
+    },
+    {
+      "text": "powerful distributed data processing model with these capabilities",
+      "startTime": "618.68",
+      "endTime": "621.76"
+    },
+    {
+      "text": ".",
+      "startTime": "621.76",
+      "endTime": "622.62"
+    },
+    {
+      "text": "There's no need to manually create into clusters",
+      "startTime": "622.66",
+      "endTime": "624.46"
+    },
+    {
+      "text": ".",
+      "startTime": "624.46",
+      "endTime": "625.04"
+    },
+    {
+      "text": "So once I've submitted the job I can",
+      "startTime": "626.39",
+      "endTime": "627.91"
+    },
+    {
+      "text": "show it listed in the surveillance spark console",
+      "startTime": "627.91",
+      "endTime": "629.84"
+    },
+    {
+      "text": "and I can click on the job to",
+      "startTime": "629.84",
+      "endTime": "631.8"
+    },
+    {
+      "text": "view its logs .",
+      "startTime": "631.81",
+      "endTime": "632.92"
+    },
+    {
+      "text": "Now , surveillance spark takes about a minute",
+      "startTime": "632.93",
+      "endTime": "635.13"
+    },
+    {
+      "text": "or so to auto provision the resources as",
+      "startTime": "635.13",
+      "endTime": "637.67"
+    },
+    {
+      "text": "well as start writing out log output .",
+      "startTime": "637.67",
+      "endTime": "639.7"
+    },
+    {
+      "text": "So what I'll go ahead and do here",
+      "startTime": "639.71",
+      "endTime": "640.81"
+    },
+    {
+      "text": "is show you the log output from a",
+      "startTime": "640.81",
+      "endTime": "642.51"
+    },
+    {
+      "text": "completed job that I ran earlier .",
+      "startTime": "642.51",
+      "endTime": "644.39"
+    },
+    {
+      "text": "So if we click in here we can",
+      "startTime": "646.53",
+      "endTime": "648.17"
+    },
+    {
+      "text": "see Okay .",
+      "startTime": "648.17",
+      "endTime": "648.93"
+    },
+    {
+      "text": "So I added some print statements into this",
+      "startTime": "648.93",
+      "endTime": "650.35"
+    },
+    {
+      "text": "job and here it's showing me that there's",
+      "startTime": "650.35",
+      "endTime": "652.78"
+    },
+    {
+      "text": "some short term job data that's processed some",
+      "startTime": "652.79",
+      "endTime": "655.05"
+    },
+    {
+      "text": "long term job data and then some geographical",
+      "startTime": "655.05",
+      "endTime": "656.74"
+    },
+    {
+      "text": "data as well now in addition to this",
+      "startTime": "656.74",
+      "endTime": "660.4"
+    },
+    {
+      "text": ", I can also show you the spark",
+      "startTime": "660.4",
+      "endTime": "662.79"
+    },
+    {
+      "text": "history server , which is where the more",
+      "startTime": "662.79",
+      "endTime": "665.66"
+    },
+    {
+      "text": "details of the spark job itself will be",
+      "startTime": "665.67",
+      "endTime": "667.71"
+    },
+    {
+      "text": "output ID once the job has been completed",
+      "startTime": "667.71",
+      "endTime": "670.1"
+    },
+    {
+      "text": ".",
+      "startTime": "670.1",
+      "endTime": "670.58"
+    },
+    {
+      "text": "So we can go back in the bug",
+      "startTime": "670.58",
+      "endTime": "671.48"
+    },
+    {
+      "text": "and then additionally we can also gain access",
+      "startTime": "671.48",
+      "endTime": "673.64"
+    },
+    {
+      "text": "to metadata via data , product meta store",
+      "startTime": "673.64",
+      "endTime": "675.87"
+    },
+    {
+      "text": ".",
+      "startTime": "675.87",
+      "endTime": "676.29"
+    },
+    {
+      "text": "Now , in addition to all of this",
+      "startTime": "677.2",
+      "endTime": "678.47"
+    },
+    {
+      "text": ", we are also looking into a new",
+      "startTime": "678.47",
+      "endTime": "680.12"
+    },
+    {
+      "text": "solution for creating long running clusters or a",
+      "startTime": "680.12",
+      "endTime": "682.78"
+    },
+    {
+      "text": "place where our infrastructure team can manage data",
+      "startTime": "682.78",
+      "endTime": "684.75"
+    },
+    {
+      "text": "park clusters .",
+      "startTime": "684.75",
+      "endTime": "685.83"
+    },
+    {
+      "text": "Now , fortunately we feel that spark on",
+      "startTime": "685.84",
+      "endTime": "687.83"
+    },
+    {
+      "text": "G K e fits our use case and",
+      "startTime": "687.83",
+      "endTime": "689.64"
+    },
+    {
+      "text": "lets us utilize our existing G K E",
+      "startTime": "689.64",
+      "endTime": "691.53"
+    },
+    {
+      "text": "infrastructure .",
+      "startTime": "691.54",
+      "endTime": "692.65"
+    },
+    {
+      "text": "So clearly it's been a busy week for",
+      "startTime": "694.07",
+      "endTime": "695.95"
+    },
+    {
+      "text": "me using spark survey list to create pipelines",
+      "startTime": "695.95",
+      "endTime": "698.13"
+    },
+    {
+      "text": "to push drought data into big query .",
+      "startTime": "698.13",
+      "endTime": "700.47"
+    },
+    {
+      "text": "But the efficiency improvements will gain by not",
+      "startTime": "700.52",
+      "endTime": "702.92"
+    },
+    {
+      "text": "needing to manage cluster overhead will be worth",
+      "startTime": "702.92",
+      "endTime": "705.07"
+    },
+    {
+      "text": "it .",
+      "startTime": "705.07",
+      "endTime": "705.77"
+    },
+    {
+      "text": "Now you can let me know in the",
+      "startTime": "705.88",
+      "endTime": "707.19"
+    },
+    {
+      "text": "chat if you're as excited about sparks surveillance",
+      "startTime": "707.19",
+      "endTime": "708.87"
+    },
+    {
+      "text": "as I am .",
+      "startTime": "708.87",
+      "endTime": "710.05"
+    },
+    {
+      "text": "Okay , let's see how everyone's using spark",
+      "startTime": "710.2",
+      "endTime": "712.45"
+    },
+    {
+      "text": "today looks like notebooks are pretty popular .",
+      "startTime": "712.45",
+      "endTime": "717.76"
+    },
+    {
+      "text": "Oh , an automation through airflow .",
+      "startTime": "719.42",
+      "endTime": "721.97"
+    },
+    {
+      "text": "That's cool too .",
+      "startTime": "721.97",
+      "endTime": "722.78"
+    },
+    {
+      "text": "Okay , great .",
+      "startTime": "723.63",
+      "endTime": "724.47"
+    },
+    {
+      "text": "Thanks so much brad .",
+      "startTime": "724.48",
+      "endTime": "725.45"
+    },
+    {
+      "text": "So now that we have greater insight into",
+      "startTime": "725.46",
+      "endTime": "727.78"
+    },
+    {
+      "text": "supply risks , we need to scale our",
+      "startTime": "727.79",
+      "endTime": "730.25"
+    },
+    {
+      "text": "transaction systems to handle more orders and allow",
+      "startTime": "730.25",
+      "endTime": "733.49"
+    },
+    {
+      "text": "us to understand the potential business impact of",
+      "startTime": "733.5",
+      "endTime": "736.34"
+    },
+    {
+      "text": "these climate risks while hopefully lowering costs .",
+      "startTime": "736.35",
+      "endTime": "739.6"
+    },
+    {
+      "text": "So this brings me to Derek our DB",
+      "startTime": "739.61",
+      "endTime": "741.98"
+    },
+    {
+      "text": "A Derek , you've been focusing on this",
+      "startTime": "741.98",
+      "endTime": "744.8"
+    },
+    {
+      "text": "effort .",
+      "startTime": "744.8",
+      "endTime": "745.46"
+    },
+    {
+      "text": "So can you let us know where you're",
+      "startTime": "745.46",
+      "endTime": "746.67"
+    },
+    {
+      "text": "at today ? Yeah , absolutely leah .",
+      "startTime": "746.67",
+      "endTime": "750.3"
+    },
+    {
+      "text": "We have a new grocery chain that has",
+      "startTime": "750.58",
+      "endTime": "752.23"
+    },
+    {
+      "text": "struggled to maintain their on prem databases as",
+      "startTime": "752.23",
+      "endTime": "754.81"
+    },
+    {
+      "text": "they've grown .",
+      "startTime": "754.81",
+      "endTime": "755.82"
+    },
+    {
+      "text": "There's an opportunity to solve their underlying scaling",
+      "startTime": "755.93",
+      "endTime": "758.18"
+    },
+    {
+      "text": "problems with cloud spanner .",
+      "startTime": "758.18",
+      "endTime": "760.26"
+    },
+    {
+      "text": "I spent the last few weeks validating spanners",
+      "startTime": "760.86",
+      "endTime": "762.66"
+    },
+    {
+      "text": "ability to scale and the ease of maintenance",
+      "startTime": "762.66",
+      "endTime": "764.99"
+    },
+    {
+      "text": "while keeping strong consistency for this point of",
+      "startTime": "764.99",
+      "endTime": "767.81"
+    },
+    {
+      "text": "sale workload .",
+      "startTime": "767.81",
+      "endTime": "768.67"
+    },
+    {
+      "text": "I migrated some of the new change stores",
+      "startTime": "769.94",
+      "endTime": "771.34"
+    },
+    {
+      "text": "to spanner already using granular instance sizing I",
+      "startTime": "771.34",
+      "endTime": "774.77"
+    },
+    {
+      "text": "only provisioned a portion of a spanner node",
+      "startTime": "774.78",
+      "endTime": "776.83"
+    },
+    {
+      "text": "to handle the required load as we move",
+      "startTime": "776.83",
+      "endTime": "779.76"
+    },
+    {
+      "text": "the remainder of stores .",
+      "startTime": "779.76",
+      "endTime": "781.08"
+    },
+    {
+      "text": "We can easily scale up without downtime or",
+      "startTime": "781.08",
+      "endTime": "783.22"
+    },
+    {
+      "text": "app changes .",
+      "startTime": "783.23",
+      "endTime": "784.13"
+    },
+    {
+      "text": "Um quick question Derek , We've been really",
+      "startTime": "785.04",
+      "endTime": "787.03"
+    },
+    {
+      "text": "focused on reducing the cost and complexity of",
+      "startTime": "787.03",
+      "endTime": "789.66"
+    },
+    {
+      "text": "building scalable applications so I'm wondering how does",
+      "startTime": "789.66",
+      "endTime": "793.23"
+    },
+    {
+      "text": "adding spanner impact that effort ? Yeah ,",
+      "startTime": "793.23",
+      "endTime": "797.09"
+    },
+    {
+      "text": "that's a great question .",
+      "endTime": "797.89"
+    },
+    {
+      "text": "Nikita , One way we've been doing this",
+      "startTime": "797.89",
+      "endTime": "799.89"
+    },
+    {
+      "text": "in other environments is to standardize on Postgres",
+      "startTime": "799.89",
+      "endTime": "801.97"
+    },
+    {
+      "text": ".",
+      "startTime": "801.97",
+      "endTime": "802.62"
+    },
+    {
+      "text": "Postgres is a well established open source database",
+      "startTime": "803.2",
+      "endTime": "805.28"
+    },
+    {
+      "text": "with an active ecosystem that our development and",
+      "startTime": "805.28",
+      "endTime": "808.23"
+    },
+    {
+      "text": "ops teams are already familiar with .",
+      "startTime": "808.23",
+      "endTime": "810.01"
+    },
+    {
+      "text": "I tried to get the team to add",
+      "startTime": "810.88",
+      "endTime": "811.9"
+    },
+    {
+      "text": "an elephant emoji .",
+      "startTime": "811.9",
+      "endTime": "813.03"
+    },
+    {
+      "text": "So y'all could show some love for postgres",
+      "startTime": "813.03",
+      "endTime": "814.61"
+    },
+    {
+      "text": "but anyway , spanner just announced a post",
+      "startTime": "814.61",
+      "endTime": "819.59"
+    },
+    {
+      "text": "rescue all interface .",
+      "startTime": "819.59",
+      "endTime": "821.04"
+    },
+    {
+      "text": "This gives us the benefits of spanner without",
+      "startTime": "821.31",
+      "endTime": "823.15"
+    },
+    {
+      "text": "having to completely retrain our application teams .",
+      "startTime": "823.16",
+      "endTime": "825.89"
+    },
+    {
+      "text": "Having a standard api for our data will",
+      "startTime": "826.26",
+      "endTime": "828.91"
+    },
+    {
+      "text": "help us maintain velocity for new features even",
+      "startTime": "829.0",
+      "endTime": "831.44"
+    },
+    {
+      "text": "as our database needs evolve here .",
+      "startTime": "831.61",
+      "endTime": "834.44"
+    },
+    {
+      "text": "Let me show you so I've connected into",
+      "startTime": "834.49",
+      "endTime": "837.81"
+    },
+    {
+      "text": "our spanner instance using the P SQL command",
+      "startTime": "837.81",
+      "endTime": "841.02"
+    },
+    {
+      "text": "line tool from here .",
+      "startTime": "841.02",
+      "endTime": "843.21"
+    },
+    {
+      "text": "I can explore the schema just like I",
+      "startTime": "843.22",
+      "endTime": "845.04"
+    },
+    {
+      "text": "would any other database , any other postgres",
+      "startTime": "845.04",
+      "endTime": "847.66"
+    },
+    {
+      "text": "database .",
+      "startTime": "847.66",
+      "endTime": "848.67"
+    },
+    {
+      "text": "Um you can see that the both the",
+      "startTime": "848.68",
+      "endTime": "851.27"
+    },
+    {
+      "text": "postgres data type and the spanner data type",
+      "startTime": "851.28",
+      "endTime": "853.84"
+    },
+    {
+      "text": "is available to the information schema .",
+      "startTime": "853.84",
+      "endTime": "855.99"
+    },
+    {
+      "text": "So this will make it familiar to anyone",
+      "startTime": "857.18",
+      "endTime": "861.52"
+    },
+    {
+      "text": "who has already knows postgres .",
+      "startTime": "861.53",
+      "endTime": "864.35"
+    },
+    {
+      "text": "Awesome .",
+      "startTime": "864.36",
+      "endTime": "865.46"
+    },
+    {
+      "text": "Thanks Derek , this is really cool .",
+      "startTime": "865.46",
+      "endTime": "867.24"
+    },
+    {
+      "text": "I'm really looking forward to the scalability that",
+      "startTime": "867.25",
+      "endTime": "869.39"
+    },
+    {
+      "text": "this is going to bring our team .",
+      "startTime": "869.39",
+      "endTime": "870.78"
+    },
+    {
+      "text": "Absolutely .",
+      "startTime": "872.07",
+      "endTime": "873.13"
+    },
+    {
+      "text": "And as a quick summary I highlighted how",
+      "startTime": "873.29",
+      "endTime": "875.36"
+    },
+    {
+      "text": "to spanner allows us to get started small",
+      "startTime": "875.36",
+      "endTime": "877.45"
+    },
+    {
+      "text": "and scale as needed using granular instant sizing",
+      "startTime": "877.45",
+      "endTime": "880.5"
+    },
+    {
+      "text": "and how the new postgres SQL interface reduces",
+      "startTime": "880.5",
+      "endTime": "883.65"
+    },
+    {
+      "text": "friction for our teams already familiar with postgres",
+      "startTime": "883.65",
+      "endTime": "886.01"
+    },
+    {
+      "text": ".",
+      "startTime": "886.01",
+      "endTime": "886.59"
+    },
+    {
+      "text": "Nikita and leah , you can treat the",
+      "startTime": "887.3",
+      "endTime": "888.93"
+    },
+    {
+      "text": "existing data is golden and I'll keep onboarding",
+      "startTime": "888.93",
+      "endTime": "890.94"
+    },
+    {
+      "text": "more stores .",
+      "startTime": "890.95",
+      "endTime": "892.11"
+    },
+    {
+      "text": "Uh Nikita , I believe you need this",
+      "startTime": "893.33",
+      "endTime": "895.85"
+    },
+    {
+      "text": "data for some of the big query analysis",
+      "startTime": "895.85",
+      "endTime": "897.21"
+    },
+    {
+      "text": "you were working on .",
+      "startTime": "897.21",
+      "endTime": "898.49"
+    },
+    {
+      "text": "You've been busy figuring out how to evolve",
+      "startTime": "898.5",
+      "endTime": "900.6"
+    },
+    {
+      "text": "our ability to make sense of all this",
+      "startTime": "900.6",
+      "endTime": "902.69"
+    },
+    {
+      "text": "data .",
+      "startTime": "902.69",
+      "endTime": "903.29"
+    },
+    {
+      "text": "Can you show us how that works ?",
+      "startTime": "903.54",
+      "endTime": "904.88"
+    },
+    {
+      "text": "Yes , absolutely .",
+      "endTime": "906.21"
+    },
+    {
+      "text": "I was hoping that you'd ask so to",
+      "startTime": "906.21",
+      "endTime": "908.29"
+    },
+    {
+      "text": "ensure that we're managing stock to meet customer",
+      "startTime": "908.29",
+      "endTime": "910.33"
+    },
+    {
+      "text": "demand .",
+      "startTime": "910.33",
+      "endTime": "911.38"
+    },
+    {
+      "text": "My focus this week was on evolving our",
+      "startTime": "911.39",
+      "endTime": "913.57"
+    },
+    {
+      "text": "data science capabilities for exploratory analysis .",
+      "startTime": "913.57",
+      "endTime": "916.88"
+    },
+    {
+      "text": "I combined the transactional data that Derek's been",
+      "startTime": "916.9",
+      "endTime": "919.41"
+    },
+    {
+      "text": "working on with the drought data that leah",
+      "startTime": "919.41",
+      "endTime": "921.37"
+    },
+    {
+      "text": "and brad pushed into big query this way",
+      "startTime": "921.37",
+      "endTime": "924.18"
+    },
+    {
+      "text": "we can gain insight into which products are",
+      "startTime": "924.18",
+      "endTime": "926.78"
+    },
+    {
+      "text": "most at risk of not meeting customer demand",
+      "startTime": "926.79",
+      "endTime": "928.97"
+    },
+    {
+      "text": ".",
+      "startTime": "928.97",
+      "endTime": "929.55"
+    },
+    {
+      "text": "So my first step was to integrate all",
+      "startTime": "930.24",
+      "endTime": "931.87"
+    },
+    {
+      "text": "of our transactional data within big query ,",
+      "startTime": "931.87",
+      "endTime": "934.32"
+    },
+    {
+      "text": "primarily using federation with cloud , sequel and",
+      "endTime": "936.83"
+    },
+    {
+      "text": "spanner .",
+      "startTime": "936.83",
+      "endTime": "937.88"
+    },
+    {
+      "text": "This provides a unified environment for aggregation and",
+      "startTime": "937.98",
+      "endTime": "941.4"
+    },
+    {
+      "text": "analysis where we can join transactions back to",
+      "startTime": "941.4",
+      "endTime": "944.5"
+    },
+    {
+      "text": "producer details and the associated drought risk scores",
+      "startTime": "944.5",
+      "endTime": "947.08"
+    },
+    {
+      "text": ".",
+      "startTime": "947.08",
+      "endTime": "947.88"
+    },
+    {
+      "text": "Now as you all know , we recently",
+      "startTime": "948.82",
+      "endTime": "951.06"
+    },
+    {
+      "text": "migrated to vertex ai Workbench which has really",
+      "startTime": "951.06",
+      "endTime": "955.02"
+    },
+    {
+      "text": "really helped with our basic compute and resource",
+      "startTime": "955.03",
+      "endTime": "957.67"
+    },
+    {
+      "text": "management .",
+      "startTime": "957.67",
+      "endTime": "958.81"
+    },
+    {
+      "text": "Quick question .",
+      "startTime": "960.27",
+      "endTime": "961.33"
+    },
+    {
+      "text": "Nikita is vertex Ai Workbench a notebook for",
+      "startTime": "961.33",
+      "endTime": "964.4"
+    },
+    {
+      "text": "vertex Ai that is an excellent question .",
+      "startTime": "964.4",
+      "endTime": "966.87"
+    },
+    {
+      "text": "Derek vertex Ai Workbench contains recently updated manage",
+      "startTime": "966.87",
+      "endTime": "970.56"
+    },
+    {
+      "text": "notebooks which bring forth more integrated data engineering",
+      "startTime": "970.57",
+      "endTime": "973.92"
+    },
+    {
+      "text": "capabilities into our data science environments so we",
+      "startTime": "973.92",
+      "endTime": "978.2"
+    },
+    {
+      "text": "can ingest and analyze data and deploy and",
+      "startTime": "978.21",
+      "endTime": "980.87"
+    },
+    {
+      "text": "manage ml models all from one spot .",
+      "startTime": "980.87",
+      "endTime": "983.79"
+    },
+    {
+      "text": "Now let me show you a little bit",
+      "startTime": "984.36",
+      "endTime": "985.28"
+    },
+    {
+      "text": "about what this looks like after I provisioned",
+      "startTime": "985.28",
+      "endTime": "987.07"
+    },
+    {
+      "text": "a new managed notebook .",
+      "startTime": "987.07",
+      "endTime": "988.8"
+    },
+    {
+      "text": "My first task was to analyze the demand",
+      "startTime": "988.81",
+      "endTime": "990.68"
+    },
+    {
+      "text": "on the high volume skews and for that",
+      "startTime": "990.68",
+      "endTime": "993.01"
+    },
+    {
+      "text": "I used the big query connector to view",
+      "startTime": "993.01",
+      "endTime": "995.58"
+    },
+    {
+      "text": "and query the sales data with vertex Ai",
+      "startTime": "995.58",
+      "endTime": "1000.22"
+    },
+    {
+      "text": "Workbench , I can inspect big query metadata",
+      "startTime": "1000.22",
+      "endTime": "1002.6"
+    },
+    {
+      "text": ", preview tables and automate basic sequel construction",
+      "startTime": "1002.6",
+      "endTime": "1006.15"
+    },
+    {
+      "text": "entirely from my notebook environment .",
+      "startTime": "1006.15",
+      "endTime": "1009.08"
+    },
+    {
+      "text": "Okay , it's my turn on the emojis",
+      "startTime": "1009.77",
+      "endTime": "1011.36"
+    },
+    {
+      "text": ".",
+      "startTime": "1011.36",
+      "endTime": "1012.09"
+    },
+    {
+      "text": "I want to see the fire emoji from",
+      "startTime": "1012.1",
+      "endTime": "1014.07"
+    },
+    {
+      "text": "all the data scientists out there who are",
+      "startTime": "1014.07",
+      "endTime": "1015.99"
+    },
+    {
+      "text": "as excited as I am about being able",
+      "startTime": "1015.99",
+      "endTime": "1018.1"
+    },
+    {
+      "text": "to access big query from the notebook interface",
+      "startTime": "1018.1",
+      "endTime": "1020.42"
+    },
+    {
+      "text": ".",
+      "startTime": "1020.42",
+      "endTime": "1021.19"
+    },
+    {
+      "text": "Look , I'm not the only one .",
+      "startTime": "1023.95",
+      "endTime": "1025.97"
+    },
+    {
+      "text": "Hey , nick .",
+      "startTime": "1026.69",
+      "endTime": "1027.1"
+    },
+    {
+      "text": "Ito hold on , sorry to interrupt your",
+      "startTime": "1027.1",
+      "endTime": "1029.06"
+    },
+    {
+      "text": "emoji fest but I see you're working out",
+      "startTime": "1029.06",
+      "endTime": "1031.05"
+    },
+    {
+      "text": "of the Lakes project but are able to",
+      "startTime": "1031.05",
+      "endTime": "1032.7"
+    },
+    {
+      "text": "pin other projects you have access to like",
+      "startTime": "1032.7",
+      "endTime": "1034.71"
+    },
+    {
+      "text": "the ops project , is that new ?",
+      "startTime": "1034.72",
+      "endTime": "1036.49"
+    },
+    {
+      "text": "Yes , that's correct , brad , vertex"
+    },
+    {
+      "text": "ai Workbench actually enables me to interact with",
+      "startTime": "1038.56",
+      "endTime": "1041.52"
+    },
+    {
+      "text": "all services via my own identity .",
+      "startTime": "1041.52",
+      "endTime": "1044.09"
+    },
+    {
+      "text": "The big query plug in also provides some",
+      "startTime": "1044.79",
+      "endTime": "1046.8"
+    },
+    {
+      "text": "template id code to help build out queries",
+      "startTime": "1046.8",
+      "endTime": "1049.3"
+    },
+    {
+      "text": "and project results to a Panda's data frame",
+      "startTime": "1049.3",
+      "endTime": "1051.64"
+    },
+    {
+      "text": ".",
+      "startTime": "1051.64",
+      "endTime": "1052.23"
+    },
+    {
+      "text": "So here we can see it looks like",
+      "startTime": "1052.24",
+      "endTime": "1054.32"
+    },
+    {
+      "text": "I just need to refresh um sorry about",
+      "startTime": "1054.32",
+      "endTime": "1057.11"
+    },
+    {
+      "text": "that team .",
+      "startTime": "1057.11",
+      "endTime": "1058.23"
+    },
+    {
+      "text": "I'm just gonna refresh my jupiter lab instance",
+      "startTime": "1058.23",
+      "endTime": "1060.02"
+    },
+    {
+      "text": "here , I guess I had it open",
+      "startTime": "1060.02",
+      "endTime": "1061.8"
+    },
+    {
+      "text": "for too long and I guess while Nikita's",
+      "startTime": "1061.8",
+      "endTime": "1063.76"
+    },
+    {
+      "text": "doing that , like who uses jupiter now",
+      "startTime": "1063.76",
+      "endTime": "1066.14"
+    },
+    {
+      "text": ", let's see the fire emojis lighting up",
+      "startTime": "1066.14",
+      "endTime": "1068.16"
+    },
+    {
+      "text": ".",
+      "startTime": "1068.16",
+      "endTime": "1068.48"
+    },
+    {
+      "text": "I see .",
+      "startTime": "1070.08",
+      "endTime": "1070.63"
+    },
+    {
+      "text": "So now I personally use it a lot",
+      "startTime": "1070.63",
+      "endTime": "1075.14"
+    },
+    {
+      "text": "in my day today .",
+      "startTime": "1075.14",
+      "endTime": "1076.46"
+    },
+    {
+      "text": "All right , thank you so perfect .",
+      "startTime": "1076.47",
+      "endTime": "1078.6"
+    },
+    {
+      "text": "Now you can see a simple view of",
+      "startTime": "1078.61",
+      "endTime": "1080.18"
+    },
+    {
+      "text": "all transactions by the day of week um",
+      "startTime": "1080.18",
+      "endTime": "1082.68"
+    },
+    {
+      "text": "and vertex Workbench actually also allows me to",
+      "startTime": "1083.07",
+      "endTime": "1085.67"
+    },
+    {
+      "text": "launch different kernels entirely in the same instance",
+      "startTime": "1085.67",
+      "endTime": "1088.61"
+    },
+    {
+      "text": ".",
+      "startTime": "1088.61",
+      "endTime": "1089.17"
+    },
+    {
+      "text": "So brad , I think you were working",
+      "startTime": "1089.18",
+      "endTime": "1090.61"
+    },
+    {
+      "text": "out of a Pittsburgh notebook earlier , is",
+      "startTime": "1090.61"
+    },
+    {
+      "text": "that correct ? Yeah , so data park",
+      "startTime": "1092.29",
+      "endTime": "1094.96"
+    },
+    {
+      "text": "clusters are also supported as a back end",
+      "startTime": "1094.96",
+      "endTime": "1096.93"
+    },
+    {
+      "text": ", as a part of spark on google",
+      "startTime": "1096.93",
+      "endTime": "1098.12"
+    },
+    {
+      "text": "cloud , we can access all supported kernels",
+      "startTime": "1098.12",
+      "endTime": "1100.51"
+    },
+    {
+      "text": "on the cluster including price park .",
+      "startTime": "1100.51",
+      "endTime": "1102.44"
+    },
+    {
+      "text": "Well for my analysis , I just needed",
+      "startTime": "1103.63",
+      "endTime": "1105.53"
+    },
+    {
+      "text": "a python kernel .",
+      "startTime": "1105.53",
+      "endTime": "1106.64"
+    },
+    {
+      "text": "So let me show you what's going on",
+      "startTime": "1106.64",
+      "endTime": "1108.1"
+    },
+    {
+      "text": "in this notebook and what I've been up",
+      "startTime": "1108.1",
+      "endTime": "1110.08"
+    },
+    {
+      "text": "to this week , you can see here",
+      "startTime": "1110.08",
+      "endTime": "1111.89"
+    },
+    {
+      "text": "that I've done a deep dive into the",
+      "startTime": "1111.89",
+      "endTime": "1113.49"
+    },
+    {
+      "text": "data , I've plotted the transaction volume ,",
+      "startTime": "1113.49",
+      "endTime": "1116.37"
+    },
+    {
+      "text": "I've created a heat map of purchase counts",
+      "endTime": "1118.53"
+    },
+    {
+      "text": "across various departments and I've also plotted the",
+      "startTime": "1118.53",
+      "endTime": "1122.28"
+    },
+    {
+      "text": "short term drought index across various crop types",
+      "startTime": "1122.28",
+      "endTime": "1124.76"
+    },
+    {
+      "text": "like corn , dry beans , pears and",
+      "startTime": "1124.76",
+      "endTime": "1127.82"
+    },
+    {
+      "text": "rice .",
+      "startTime": "1127.82",
+      "endTime": "1128.67"
+    },
+    {
+      "text": "But my last task and the most important",
+      "startTime": "1129.13",
+      "endTime": "1130.97"
+    },
+    {
+      "text": "task was to map skews to suppliers and",
+      "startTime": "1130.97",
+      "endTime": "1133.86"
+    },
+    {
+      "text": "calculate a risk score based on the aggregate",
+      "startTime": "1133.86",
+      "endTime": "1135.94"
+    },
+    {
+      "text": "field data .",
+      "startTime": "1135.94",
+      "endTime": "1137.32"
+    },
+    {
+      "text": "So to do this , I started with",
+      "startTime": "1137.36",
+      "endTime": "1139.02"
+    },
+    {
+      "text": "our mapping table which you can see a",
+      "startTime": "1139.02",
+      "endTime": "1140.69"
+    },
+    {
+      "text": "sample of right here .",
+      "startTime": "1140.69",
+      "endTime": "1142.12"
+    },
+    {
+      "text": "This helped me to determine which farm fields",
+      "startTime": "1142.38",
+      "endTime": "1144.21"
+    },
+    {
+      "text": "actually source ingredients for a particular skew and",
+      "startTime": "1144.21",
+      "endTime": "1147.2"
+    },
+    {
+      "text": "then I calculated a weighted risk score that",
+      "startTime": "1147.53",
+      "endTime": "1149.76"
+    },
+    {
+      "text": "takes into account each product's demand and the",
+      "startTime": "1149.76",
+      "endTime": "1152.57"
+    },
+    {
+      "text": "associated farms overall drought risk and you can",
+      "startTime": "1152.57",
+      "endTime": "1155.58"
+    },
+    {
+      "text": "see each of these measurements in this data",
+      "startTime": "1155.58",
+      "endTime": "1157.48"
+    },
+    {
+      "text": "frame right here .",
+      "startTime": "1157.48",
+      "endTime": "1158.67"
+    },
+    {
+      "text": "Ultimately this score will help us to prioritize",
+      "startTime": "1159.03",
+      "endTime": "1161.02"
+    },
+    {
+      "text": "managing items where we're most at risk of",
+      "startTime": "1161.02",
+      "endTime": "1163.97"
+    },
+    {
+      "text": "not meeting customer demand .",
+      "startTime": "1163.97",
+      "endTime": "1165.57"
+    },
+    {
+      "text": "So as a quick summary , I used",
+      "startTime": "1166.15",
+      "endTime": "1167.81"
+    },
+    {
+      "text": "vertex ai Workbench manage notebooks to connect back",
+      "startTime": "1167.81",
+      "endTime": "1171.01"
+    },
+    {
+      "text": "to data accessible from big query and create",
+      "startTime": "1171.02",
+      "endTime": "1173.34"
+    },
+    {
+      "text": "a weighted risk score for each one of",
+      "startTime": "1173.34",
+      "endTime": "1175.13"
+    },
+    {
+      "text": "our products , combining both climate and demand",
+      "startTime": "1175.13",
+      "endTime": "1177.68"
+    },
+    {
+      "text": "data leah , I went ahead and put",
+      "startTime": "1177.68",
+      "endTime": "1180.23"
+    },
+    {
+      "text": "all of this back into big query just",
+      "startTime": "1180.23",
+      "endTime": "1182.12"
+    },
+    {
+      "text": "to keep it centralized awesome .",
+      "startTime": "1182.13",
+      "endTime": "1184.64"
+    },
+    {
+      "text": "Thanks so much Nikita that risk score is",
+      "startTime": "1184.65",
+      "endTime": "1186.68"
+    },
+    {
+      "text": "gonna be huge in helping our team understand",
+      "startTime": "1186.68",
+      "endTime": "1188.67"
+    },
+    {
+      "text": "supply risk .",
+      "startTime": "1188.68",
+      "endTime": "1190.26"
+    },
+    {
+      "text": "So to make sure the broader team has",
+      "startTime": "1190.93",
+      "endTime": "1193.01"
+    },
+    {
+      "text": "a trusted view of all this information .",
+      "startTime": "1193.01",
+      "endTime": "1195.47"
+    },
+    {
+      "text": "I started incorporating everything into a looker dashboard",
+      "startTime": "1195.48",
+      "endTime": "1198.43"
+    },
+    {
+      "text": ".",
+      "startTime": "1198.43",
+      "endTime": "1199.41"
+    },
+    {
+      "text": "Now with Looker we define our metrics like",
+      "startTime": "1199.42",
+      "endTime": "1201.94"
+    },
+    {
+      "text": "average risk using look ml lookers data model",
+      "startTime": "1201.95",
+      "endTime": "1205.4"
+    },
+    {
+      "text": "and Looker uses this to compile sequel queries",
+      "startTime": "1205.4",
+      "endTime": "1208.7"
+    },
+    {
+      "text": "and send them back to big query on",
+      "startTime": "1208.7",
+      "endTime": "1211.01"
+    },
+    {
+      "text": "our behalf so that our nontechnical users can",
+      "startTime": "1211.02",
+      "endTime": "1214.22"
+    },
+    {
+      "text": "explore the results of these data efforts .",
+      "startTime": "1214.23",
+      "endTime": "1217.06"
+    },
+    {
+      "text": "So let me show you this dashboard that",
+      "startTime": "1217.55",
+      "endTime": "1219.74"
+    },
+    {
+      "text": "I've been working on and first off you",
+      "startTime": "1219.74",
+      "endTime": "1222.15"
+    },
+    {
+      "text": "can see this custom map layer that I",
+      "startTime": "1222.15",
+      "endTime": "1224.76"
+    },
+    {
+      "text": "use to visualize drought risk across farm regions",
+      "startTime": "1224.76",
+      "endTime": "1227.4"
+    },
+    {
+      "text": "in the west and were able to take",
+      "startTime": "1227.4",
+      "endTime": "1229.8"
+    },
+    {
+      "text": "advantage of big queries , geospatial functions and",
+      "startTime": "1229.8",
+      "endTime": "1232.73"
+    },
+    {
+      "text": "drill from this aggregate view all the way",
+      "startTime": "1232.73",
+      "endTime": "1235.24"
+    },
+    {
+      "text": "to producer or even grocery product level .",
+      "startTime": "1235.24",
+      "endTime": "1238.56"
+    },
+    {
+      "text": "Let me show you so I'll drill to",
+      "startTime": "1238.57",
+      "endTime": "1241.12"
+    },
+    {
+      "text": "field I .",
+      "startTime": "1241.13",
+      "endTime": "1242.02"
+    },
+    {
+      "text": "D .",
+      "startTime": "1242.02",
+      "endTime": "1242.72"
+    },
+    {
+      "text": "And then I can jump right into Lookers",
+      "startTime": "1243.25",
+      "endTime": "1244.75"
+    },
+    {
+      "text": "explore to bring in some more fields like",
+      "startTime": "1244.75",
+      "endTime": "1247.61"
+    },
+    {
+      "text": "maybe I want to specifically look at products",
+      "startTime": "1247.61",
+      "endTime": "1250.95"
+    },
+    {
+      "text": "that are at risk in this region where",
+      "startTime": "1250.96",
+      "endTime": "1253.81"
+    },
+    {
+      "text": "we're quickly expanding .",
+      "startTime": "1253.81",
+      "endTime": "1255.43"
+    },
+    {
+      "text": "Making all this data accessible to the broader",
+      "startTime": "1259.62",
+      "endTime": "1261.5"
+    },
+    {
+      "text": "team is really important .",
+      "startTime": "1261.5",
+      "endTime": "1263.21"
+    },
+    {
+      "text": "So can we make sure that the marketing",
+      "startTime": "1263.21",
+      "endTime": "1264.65"
+    },
+    {
+      "text": "team is aware of this so they know",
+      "startTime": "1264.65",
+      "endTime": "1266.66"
+    },
+    {
+      "text": "how to hold off on coupons or advertisements",
+      "startTime": "1266.67",
+      "endTime": "1268.48"
+    },
+    {
+      "text": "for these products .",
+      "startTime": "1268.48",
+      "endTime": "1270.1"
+    },
+    {
+      "text": "Yeah actually we can set up a schedule",
+      "startTime": "1270.2",
+      "endTime": "1272.05"
+    },
+    {
+      "text": "from lookers so that the regional marketing teams",
+      "startTime": "1272.05",
+      "endTime": "1274.78"
+    },
+    {
+      "text": "are always notified if new products seem to",
+      "startTime": "1274.78",
+      "endTime": "1277.72"
+    },
+    {
+      "text": "go at risk .",
+      "startTime": "1277.72",
+      "endTime": "1278.89"
+    },
+    {
+      "text": "So putting this all together , we used",
+      "startTime": "1279.5",
+      "endTime": "1281.81"
+    },
+    {
+      "text": "Earth engine to process new earth science data",
+      "startTime": "1281.81",
+      "endTime": "1284.29"
+    },
+    {
+      "text": "signals .",
+      "startTime": "1284.29",
+      "endTime": "1285.33"
+    },
+    {
+      "text": "We use spark to efficiently transform geospatial data",
+      "startTime": "1285.34",
+      "endTime": "1288.64"
+    },
+    {
+      "text": "and push drought indicators into big query spanner",
+      "startTime": "1288.64",
+      "endTime": "1291.98"
+    },
+    {
+      "text": "to scale our transaction systems , ensuring we",
+      "startTime": "1292.25",
+      "endTime": "1295.78"
+    },
+    {
+      "text": "have the infrastructure to handle future growth and",
+      "startTime": "1295.78",
+      "endTime": "1299.0"
+    },
+    {
+      "text": "vertex Ai Workbench Plus Looker backed by the",
+      "startTime": "1299.16",
+      "endTime": "1302.82"
+    },
+    {
+      "text": "power of big query to evolve our data",
+      "startTime": "1302.82",
+      "endTime": "1305.14"
+    },
+    {
+      "text": "science capabilities and surface important trends back to",
+      "startTime": "1305.14",
+      "endTime": "1308.91"
+    },
+    {
+      "text": "key decision makers .",
+      "startTime": "1308.91",
+      "endTime": "1310.53"
+    },
+    {
+      "text": "So with integrations across these services , anyone",
+      "startTime": "1310.54"
+    },
+    {
+      "text": "is able to explore and take action on",
+      "startTime": "1313.79",
+      "endTime": "1316.68"
+    },
+    {
+      "text": "insights that combine climate data and transactions .",
+      "startTime": "1316.69",
+      "endTime": "1320.42"
+    },
+    {
+      "text": "Now we can understand where products may go",
+      "startTime": "1321.07",
+      "endTime": "1323.28"
+    },
+    {
+      "text": "out of stock due to increasing drought conditions",
+      "startTime": "1323.28",
+      "endTime": "1325.46"
+    },
+    {
+      "text": "and identify areas to build resilience against changes",
+      "startTime": "1325.46",
+      "endTime": "1329.82"
+    },
+    {
+      "text": "in our climate .",
+      "startTime": "1329.82",
+      "endTime": "1331.12"
+    },
+    {
+      "text": "So with this geospatial information we're given a",
+      "startTime": "1331.88",
+      "endTime": "1334.44"
+    },
+    {
+      "text": "whole new set of data so that we",
+      "startTime": "1334.44",
+      "endTime": "1336.72"
+    },
+    {
+      "text": "can not only be considerate of our customers",
+      "startTime": "1336.72",
+      "endTime": "1338.55"
+    },
+    {
+      "text": "but also find ways to be more considerate",
+      "startTime": "1338.55",
+      "endTime": "1341.37"
+    },
+    {
+      "text": "of our planet and with that it looks",
+      "startTime": "1341.37",
+      "endTime": "1344.83"
+    },
+    {
+      "text": "like we're right about at time .",
+      "startTime": "1344.83",
+      "endTime": "1346.59"
+    },
+    {
+      "text": "So thank you so much for joining us",
+      "startTime": "1346.6",
+      "endTime": "1348.65"
+    },
+    {
+      "text": "today as we've shown how google cloud can",
+      "startTime": "1348.65",
+      "endTime": "1351.13"
+    },
+    {
+      "text": "offer a world class experience for creating a",
+      "startTime": "1351.13",
+      "endTime": "1354.29"
+    },
+    {
+      "text": "scalable unified data platform and a special thanks",
+      "startTime": "1354.3",
+      "endTime": "1358.48"
+    },
+    {
+      "text": "to my colleagues Nikita for showing us vertex",
+      "startTime": "1358.48",
+      "endTime": "1361.4"
+    },
+    {
+      "text": "ai Workbench .",
+      "startTime": "1361.4",
+      "endTime": "1363.2"
+    },
+    {
+      "text": "Derek for introducing us to spanner and its",
+      "startTime": "1363.21",
+      "endTime": "1365.91"
+    },
+    {
+      "text": "postgres interoperability and brad for walking us through",
+      "startTime": "1365.91",
+      "endTime": "1369.66"
+    },
+    {
+      "text": "spark on google cloud .",
+      "startTime": "1369.66",
+      "endTime": "1371.36"
+    },
+    {
+      "text": "And thank you leah for showing us Looker",
+      "startTime": "1371.59",
+      "endTime": "1373.47"
+    },
+    {
+      "text": "and Earth Engine .",
+      "startTime": "1373.47",
+      "endTime": "1375.15"
+    },
+    {
+      "text": "Last but certainly not least .",
+      "startTime": "1375.16",
+      "endTime": "1377.26"
+    },
+    {
+      "text": "Thank you all out there so much for",
+      "startTime": "1377.27",
+      "endTime": "1378.95"
+    },
+    {
+      "text": "your engagement .",
+      "startTime": "1378.95",
+      "endTime": "1379.94"
+    },
+    {
+      "text": "We love those emojis and seeing all of",
+      "startTime": "1379.95",
+      "endTime": "1382.18"
+    },
+    {
+      "text": "your comments in the chat .",
+      "startTime": "1382.18",
+      "endTime": "1383.45"
+    },
+    {
+      "text": "So stay tuned for our live Q and",
+      "startTime": "1383.46",
+      "endTime": "1385.2"
+    },
+    {
+      "text": "A .",
+      "startTime": "1385.2",
+      "endTime": "1385.55"
+    },
+    {
+      "text": "Which is going to cover everything from our",
+      "startTime": "1385.55",
+      "endTime": "1387.45"
+    },
+    {
+      "text": "spotlight through this demo .",
+      "startTime": "1387.45",
+      "endTime": "1389.19"
+    },
+    {
+      "text": "Thank you .",
+      "startTime": "1389.2",
+      "endTime": "1390.48"
+    },
+    {
+      "text": "Thanks everyone .",
+      "startTime": "1390.48",
+      "endTime": "1392.02"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+var keyfields=["attendee_id","first_name","last_name","attendee_type","city","country","profileImage_url","registered","zip"]

@@ -1,0 +1,28 @@
+{
+    "req": [
+        {
+            "2022-01-20": {
+                "combined-print-and-e-book-fiction": 6,
+                "hardcover-fiction": 2
+            },
+            "2022-05-25": {
+                "advice-how-to-and-miscellaneous": 3,
+                "childrens-middle-grade-hardcover": 3,
+                "picture-books": 4
+            },
+            "2017-01-10": {
+                "paperback-graphic-books": 5,
+                "animals": 5
+            },
+            "2022-08-01": {
+                "series-books": 4,
+                "business-books": 2,
+                "graphic-books-and-manga": 3,
+                "mass-market-monthly": 2
+            }
+        }
+    ]
+}
+
+
+{"rank":1,"rank_last_week":1,"weeks_on_list":30,"asterisk":0,"dagger":0,"primary_isbn10":"1501110365","primary_isbn13":"9781501110368","publisher":"Atria","description":"A battered wife raised in a violent home attempts to halt the cycle of abuse.","price":"0.00","title":"IT ENDS WITH US","author":"Colleen Hoover","contributor":"by Colleen Hoover","contributor_note":"","book_image":"https://storage.googleapis.com/du-prd/books/images/9781501110375.jpg","book_image_width":319,"book_image_height":495,"amazon_product_url":"http://www.amazon.com/Ends-Us-Novel-Colleen-Hoover-ebook/dp/B0176M3U10?tag=NYTBSREV-20","age_group":"","book_review_link":"","first_chapter_link":"","sunday_review_link":"","article_chapter_link":"","isbns":[{"isbn10":"1501110365","isbn13":"9781501110368"},{"isbn10":"1501110373","isbn13":"9781501110375"},{"isbn10":"1982143657","isbn13":"9781982143657"},{"isbn10":"1508212694","isbn13":"9781508212690"},{"isbn10":"1797107453","isbn13":"9781797107455"},{"isbn10":"1804228206","isbn13":"9781804228203"}],"buy_links":[{"name":"Amazon","url":"http://www.amazon.com/Ends-Us-Novel-Colleen-Hoover-ebook/dp/B0176M3U10?tag=NYTBSREV-20"},{"name":"Apple Books","url":"https://goto.applebooks.apple/9781501110368?at=10lIEQ"},{"name":"Barnes and Noble","url":"https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781501110368"},{"name":"Books-A-Million","url":"https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FIT%252BENDS%252BWITH%252BUS%252FColleen%252BHoover%252F9781501110368&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DIT%252BENDS%252BWITH%252BUS%252BColleen%252BHoover"},{"name":"Bookshop","url":"https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781501110368&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DIT%2BENDS%2BWITH%2BUS"},{"name":"IndieBound","url":"https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781501110368%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DIT%2BENDS%2BWITH%2BUS%2BColleen%2BHoover%26aff%3DNYT"}],"book_uri":"nyt://book/e2a3545e-e9cb-5828-9d97-50a798a0e4f6"}
