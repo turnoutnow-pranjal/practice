@@ -1,0 +1,810 @@
+[
+    {
+        "sent": "« Bonjour et bienvenue à choisir le bon.",
+        "startTime": 15.19,
+        "endTime": 21.56
+    },
+    {
+        "sent": "pour les applications modernes dans le cadre de notre."
+    },
+    {
+        "sent": "Série Summit en ligne.",
+        "startTime": 25.31,
+        "endTime": 30.19
+    },
+    {
+        "sent": "Je m'appelle William Wong et je suis un architecte de solutions de base de données.",
+        "startTime": 31.76,
+        "endTime": 32.18
+    },
+    {
+        "sent": ".",
+        "startTime": 32.18,
+        "endTime": 45.42
+    },
+    {
+        "sent": "Et aujourd'hui, je serai rejoint par Michael Riccardi."
+    },
+    {
+        "sent": "Aujourd'hui.",
+        "startTime": 56.77,
+        "endTime": 67.25
+    },
+    {
+        "sent": "Nous sommes très heureux d'être ici pour montrer à.",
+        "startTime": 67.26,
+        "endTime": 70.22
+    },
+    {
+        "sent": "comment des bases de données spécialement conçues peuvent être utilisées pour.",
+        "startTime": 70.85,
+        "endTime": 77.59
+    },
+    {
+        "sent": "L'échelle, les performances et la disponibilité de vos applications.",
+        "startTime": 77.6,
+        "endTime": 79.89
+    },
+    {
+        "sent": "notre agenda comportera une introduction du.",
+        "startTime": 79.9,
+        "endTime": 84.5
+    },
+    {
+        "sent": "à partir d'applications modernes.",
+        "startTime": 84.51,
+        "endTime": 92.6
+    },
+    {
+        "sent": "J'examinerai ensuite les défis liés à.",
+        "startTime": 93.24,
+        "endTime": 100.7
+    },
+    {
+        "sent": "L'utilisation de microservices et de bases de données spécialisées.",
+        "startTime": 93.24,
+        "endTime": 100.7
+    },
+    {
+        "sent": "Avant d'examiner."
+    },
+    {
+        "sent": "Michael.",
+        "startTime": 114.36,
+        "endTime": 117.46
+    },
+    {
+        "sent": "Nous allons ensuite plonger un peu plus en profondeur où.",
+        "startTime": 118.46,
+        "endTime": 126.08
+    },
+    {
+        "sent": "moderniser une application d'une base de données relationnelle monolithique.",
+        "startTime": 126.74,
+        "endTime": 130.98
+    },
+    {
+        "sent": "à celle utilisant des bases de données spécialement conçues et.",
+        "startTime": 130.98,
+        "endTime": 131.08
+    },
+    {
+        "sent": "vous les différences en termes de performances et d'échelle.",
+        "startTime": 131.08,
+        "endTime": 131.37
+    },
+    {
+        "sent": "Commençons donc et examinons le.",
+        "startTime": 132.27,
+        "endTime": 138.93
+    },
+    {
+        "sent": "de nos applications modernes.",
+        "startTime": 138.94,
+        "endTime": 142.9
+    },
+    {
+        "sent": "Et nous examinons d'abord les applications que."
+    },
+    {
+        "sent": "Nous commençons à voir quelques modèles courants.",
+        "startTime": 171.69,
+        "endTime": 175.13
+    },
+    {
+        "sent": "Ces modèles peuvent être des millions d'utilisateurs accédant à.",
+        "startTime": 175.91,
+        "endTime": 185.12
+    },
+    {
+        "sent": "applications dans différentes zones géographiques.",
+        "startTime": 186.89,
+        "endTime": 204.22
+    },
+    {
+        "sent": "Et ces mêmes utilisateurs s'attendent à des expériences instantanées.",
+        "startTime": 204.23,
+        "endTime": 207.17
+    },
+    {
+        "sent": "qui pourraient se résumer à des temps de réponse constants en millisecondes, voire."
+    },
+    {
+        "sent": "Nos applications devront être hyperdimensionnées pour atteindre."
+    },
+    {
+        "sent": "le traitement de l'urine, puis diminuer.",
+        "startTime": 242.77,
+        "endTime": 253.51
+    },
+    {
+        "sent": "Nous ne sommes pas utilisés, donc nous pouvons.",
+        "startTime": 255.29,
+        "endTime": 264.03
+    },
+    {
+        "sent": "coûte.",
+        "startTime": 264.04,
+        "endTime": 272.06
+    },
+    {
+        "sent": "Il est prévu de capturer plus de données."
+    },
+    {
+        "sent": "30 ans.",
+        "startTime": 293.62,
+        "endTime": 305.71
+    },
+    {
+        "sent": "Et cela nécessitera des outils spécialisés pour traiter."
+    },
+    {
+        "sent": "Sinon, zéro octet de données structurées et.",
+        "startTime": 342.8,
+        "endTime": 353.05
+    },
+    {
+        "sent": "données.",
+        "startTime": 353.06,
+        "endTime": 364.16
+    },
+    {
+        "sent": "Si nous prenons le temps de réfléchir à."
+    },
+    {
+        "sent": ".",
+        "startTime": 403.97,
+        "endTime": 408.23
+    },
+    {
+        "sent": "Cela signifie qu'ils sont très distribués, vaguement.",
+        "startTime": 409.29,
+        "endTime": 415.28
+    },
+    {
+        "sent": "et accessibles via un P.",
+        "startTime": 416.96,
+        "endTime": 440.76
+    },
+    {
+        "sent": "DANS.",
+        "startTime": 440.77,
+        "endTime": 442.86
+    },
+    {
+        "sent": "S.",
+        "startTime": 443.59,
+        "endTime": 447.98
+    },
+    {
+        "sent": "Alors, que signifie ce changement d'architecture.",
+        "startTime": 447.99,
+        "endTime": 457.12
+    },
+    {
+        "sent": "Notre base de données sous-jacente Comme nos applications sont maintenant.",
+        "startTime": 457.12,
+        "endTime": 460.58
+    },
+    {
+        "sent": "en services.",
+        "startTime": 460.66,
+        "endTime": 469.84
+    },
+    {
+        "sent": "Cela permet à chacun de ces services d'avoir.",
+        "startTime": 470.38,
+        "endTime": 483.07
+    },
+    {
+        "sent": "propre base de données indépendante.",
+        "startTime": 485.16,
+        "endTime": 486.36
+    },
+    {
+        "sent": "Et cela nous apportera de nombreux avantages.",
+        "startTime": 486.36,
+        "endTime": 488.64
+    },
+    {
+        "sent": "Par exemple, cela nous donnera la capacité.",
+        "startTime": 489.29,
+        "endTime": 502.73
+    },
+    {
+        "sent": "à hyperdimensionner nos applications pour chaque service et.",
+        "startTime": 503.34,
+        "endTime": 512.16
+    },
+    {
+        "sent": "À l'échelle du canal de manière indépendante.",
+        "startTime": 514.06,
+        "endTime": 524.38
+    },
+    {
+        "sent": "Prenons le Black Friday comme cas d'utilisation.",
+        "startTime": 524.95,
+        "endTime": 533.81
+    },
+    {
+        "sent": "Il se peut que nous ayons besoin d'étendre notre catalogue et.",
+        "startTime": 533.81,
+        "endTime": 544.29
+    },
+    {
+        "sent": "service à des centaines de milliers de demandes simultanées.",
+        "startTime": 545.94,
+        "endTime": 551.28
+    },
+    {
+        "sent": "Dans un court laps de temps, mais nos inscriptions d'utilisateurs.",
+        "startTime": 551.94,
+        "endTime": 575.12
+    },
+    {
+        "sent": "ne croissent pas au même degré.",
+        "startTime": 577.54,
+        "endTime": 589.21
+    },
+    {
+        "sent": "Un autre avantage est l'agilité supplémentaire.",
+        "startTime": 589.22,
+        "endTime": 597.52
+    },
+    {
+        "sent": "Puisque nous pouvons désormais innover plus rapidement sur différents.",
+        "startTime": 598.1,
+        "endTime": 604.7
+    },
+    {
+        "sent": ".",
+        "startTime": 605.03,
+        "endTime": 623.94
+    },
+    {
+        "sent": "Nous pouvons rapidement tester et restaurer de nouveaux.",
+        "startTime": 623.95,
+        "endTime": 626
+    },
+    {
+        "sent": "et de nouvelles fonctionnalités à un niveau modulaire sans traiter.",
+        "startTime": 626.69,
+        "endTime": 633.48
+    },
+    {
+        "sent": "Toutes les dépendances couplées complexes qui sont liées.",
+        "startTime": 633.49,
+        "endTime": 635.72
+    },
+    {
+        "sent": "monolithes.",
+        "startTime": 635.72,
+        "endTime": 655.85
+    },
+    {
+        "sent": "L'un des défis commerciaux courants consiste à rendre nos applications.",
+        "startTime": 655.86,
+        "endTime": 662.39
+    },
+    {
+        "sent": "disponibles et en découplant nos bases de données, cela.",
+        "startTime": 663.2,
+        "endTime": 676.91
+    },
+    {
+        "sent": "augmente leur disponibilité globale puisque nous n'avons plus.",
+        "startTime": 676.91,
+        "endTime": 680.39
+    },
+    {
+        "sent": "une base de données monolithique qui sert de.",
+        "startTime": 680.46,
+        "endTime": 691.34
+    },
+    {
+        "sent": "de conflit unique pour nos événements tels que le code.",
+        "startTime": 692.87,
+        "endTime": 702.23
+    },
+    {
+        "sent": "ou les mises à niveau et les correctifs.",
+        "startTime": 702.24,
+        "endTime": 709.41
+    },
+    {
+        "sent": "Maintenant que nous comprenons les avantages de.",
+        "startTime": 711.27,
+        "endTime": 712.08
+    },
+    {
+        "sent": "Nos données.",
+        "startTime": 712.81,
+        "endTime": 740.11
+    },
+    {
+        "sent": "Pourquoi considérerions-nous des bases de données spécialement conçues.",
+        "startTime": 740.11,
+        "endTime": 741.28
+    },
+    {
+        "sent": "Nos microservices ? Nos développeurs veulent le bon.",
+        "startTime": 742.4,
+        "endTime": 748.1
+    },
+    {
+        "sent": "pour répondre aux besoins de nos applications modernes.",
+        "startTime": 749.92,
+        "endTime": 753.79
+    },
+    {
+        "sent": "Nous avons décrit précédemment.",
+        "startTime": 753.91,
+        "endTime": 760.04
+    },
+    {
+        "sent": "Et franchement, cette approche universelle.",
+        "startTime": 760.9,
+        "endTime": 770.97
+    },
+    {
+        "sent": "En utilisant une base de données relationnelle pour tout, juste.",
+        "startTime": 772.58,
+        "endTime": 780.77
+    },
+    {
+        "sent": "Plus long fonctionne.",
+        "startTime": 782.57,
+        "endTime": 785.59
+    },
+    {
+        "sent": "Par exemple, nous pouvons avoir besoin d'une base de données.",
+        "startTime": 785.6,
+        "endTime": 788.29
+    },
+    {
+        "sent": "Fournissez des temps de réponse de latence de l'ordre de la microseconde afin que nous.",
+        "startTime": 790.26,
+        "endTime": 797.07
+    },
+    {
+        "sent": "affichions rapidement nos sites Web ou que nous puissions fournir des délais."
+    },
+    {
+        "sent": "Et l'architecture relationnelle n'est pas la meilleure.",
+        "startTime": 815.77,
+        "endTime": 819.92
+    },
+    {
+        "sent": "pour ces cas d'utilisation particuliers.",
+        "startTime": 821.94,
+        "endTime": 825.96
+    },
+    {
+        "sent": "En fait, le fait de ne pas utiliser le bon.",
+        "startTime": 826.85,
+        "endTime": 829.38
+    },
+    {
+        "sent": "entraînera généralement des problèmes de performance, un manque de.",
+        "startTime": 829.39,
+        "endTime": 831.31
+    },
+    {
+        "sent": "d'évolutivité, un manque de flexibilité pour les développeurs et un.",
+        "startTime": 832.05,
+        "endTime": 836.72
+    },
+    {
+        "sent": "de nos coûts globaux.",
+        "startTime": 838.09,
+        "endTime": 847.36
+    },
+    {
+        "sent": "Donc, traditionnellement, quand je parle à mon."
+    },
+    {
+        "sent": "Des frais généraux opérationnels potentiels.",
+        "startTime": 863.53,
+        "endTime": 867.89
+    },
+    {
+        "sent": "Cela comprenait des investissements dans du matériel initial et.",
+        "startTime": 869.59,
+        "endTime": 874.52
+    },
+    {
+        "sent": "ou une expertise pour les rendre évolutifs, hautement.",
+        "startTime": 874.52,
+        "endTime": 875.47
+    },
+    {
+        "sent": "et performants.",
+        "startTime": 875.48,
+        "endTime": 878.47
+    },
+    {
+        "sent": "Et c'est là qu'AWS entre en jeu.",
+        "startTime": 879.98,
+        "endTime": 889.31
+    },
+    {
+        "sent": "Nous proposerons le portefeuille le plus large et le plus complet de."
+    },
+    {
+        "sent": "modèles de données en tirant parti des bases de données personnalisées et.",
+        "startTime": 912.54,
+        "endTime": 922.79
+    },
+    {
+        "sent": "gérées que nous avons créées à partir de zéro.",
+        "startTime": 923.64,
+        "endTime": 930.38
+    },
+    {
+        "sent": "les clients peuvent désormais gagner du temps et de l'argent,.",
+        "startTime": 930.59,
+        "endTime": 937.01
+    },
+    {
+        "sent": "des performances à grande échelle et innover plus rapidement.",
+        "startTime": 937.81,
+        "endTime": 942.87
+    },
+    {
+        "sent": "Nous avons créé des bases de données spécialement conçues pour correspondre à chaque."
+    },
+    {
+        "sent": "Un registre de séries chronologiques à colonnes larges et notre graphique.",
+        "startTime": 969.66,
+        "endTime": 976.14
+    },
+    {
+        "sent": ".",
+        "startTime": 976.23,
+        "endTime": 983.68
+    },
+    {
+        "sent": "Maintenant que nous comprenons la nécessité de."
+    },
+    {
+        "sent": "en sélectionnant les bonnes bases de données pour votre usage particulier.",
+        "startTime": 995.5,
+        "endTime": 1003.95
+    },
+    {
+        "sent": "? Ce que j'aimerais dire aux gens, c'est.",
+        "startTime": 1003.96,
+        "endTime": 1008.1
+    },
+    {
+        "sent": "en regardant une liste de 100."
+    },
+    {
+        "sent": "Pourquoi ne pas commencer par penser à.",
+        "startTime": 1015.9,
+        "endTime": 1027.48
+    },
+    {
+        "sent": "Catégories de bases de données courantes ? Alors maintenant, nous avons rapidement.",
+        "startTime": 1028.57,
+        "endTime": 1040.56
+    },
+    {
+        "sent": "à travers les catégories.",
+        "startTime": 1041.45,
+        "endTime": 1047.09
+    },
+    {
+        "sent": "Non seulement vous trouverez ce."
+    },
+    {
+        "sent": "D'autres bases de données, des bases de données comme notre document Amazon.",
+        "startTime": 1063.94,
+        "endTime": 1068.98
+    },
+    {
+        "sent": "qui est optimisé pour stocker les données au format.",
+        "startTime": 1068.99,
+        "endTime": 1090.64
+    },
+    {
+        "sent": ".",
+        "startTime": 1091.61,
+        "endTime": 1096.74
+    },
+    {
+        "sent": "Et comme il s'agit d'une base de données sans suite,.",
+        "startTime": 1097.93,
+        "endTime": 1102.53
+    },
+    {
+        "sent": "nous donnera la flexibilité nécessaire pour modifier l'application.",
+        "startTime": 1102.53,
+        "endTime": 1104.61
+    },
+    {
+        "sent": "mais cela nous permettra également d'interroger.",
+        "startTime": 1105.74,
+        "endTime": 1123.21
+    },
+    {
+        "sent": "en fonction de n'importe quel attribut.",
+        "startTime": 1123.81,
+        "endTime": 1134.78
+    },
+    {
+        "sent": "Et c'est très pratique pour notre contenu.",
+        "startTime": 1135.67,
+        "endTime": 1140.94
+    },
+    {
+        "sent": "ou pour les applications mobiles ou pour une base de données de graphes telle que.",
+        "startTime": 1142.52,
+        "endTime": 1161.44
+    },
+    {
+        "sent": "Neptune, qui nous permet ensuite de travailler.",
+        "startTime": 1161.44,
+        "endTime": 1163.76
+    },
+    {
+        "sent": "Des ensembles de données hautement connectés.",
+        "startTime": 1164.57,
+        "endTime": 1173.05
+    },
+    {
+        "sent": "Nous pouvons essayer de modéliser cela dans.",
+        "startTime": 1175.17,
+        "endTime": 1176.78
+    },
+    {
+        "sent": "Base de données relationnelle avec des articulations compliquées et des requêtes imbriquées.",
+        "startTime": 1177.37,
+        "endTime": 1183.19
+    },
+    {
+        "sent": "Notre latence augmentera au fur et à mesure que le nombre.",
+        "startTime": 1184.03,
+        "endTime": 1190.69
+    },
+    {
+        "sent": "Nos relations augmentent dans les bases de données graphiques.",
+        "startTime": 1192.44,
+        "endTime": 1194.23
+    },
+    {
+        "sent": "Cependant, cela nous permet de parcourir des millions.",
+        "startTime": 1194.78,
+        "endTime": 1198.96
+    },
+    {
+        "sent": "relations en quelques secondes, ce qui est idéal pour.",
+        "startTime": 1199.8,
+        "endTime": 1209.3
+    },
+    {
+        "sent": "La détection, les réseaux sociaux et nos moteurs de recommandation.",
+        "startTime": 1209.31,
+        "endTime": 1214.29
+    },
+    {
+        "sent": "Enfin, comme une base de données de séries chronologiques comme.",
+        "startTime": 1216.4,
+        "endTime": 1229.37
+    },
+    {
+        "sent": "Amazon Time Stream qui est optimisée pour ingérer.",
+        "startTime": 1229.38,
+        "endTime": 1239.2
+    },
+    {
+        "sent": "de données de séquence temporelle par jour également.",
+        "startTime": 1240.43,
+        "endTime": 1245.01
+    },
+    {
+        "sent": "nous donnant des fonctions basées sur le temps telles que la corrélation.",
+        "startTime": 1246.81,
+        "endTime": 1257.01
+    },
+    {
+        "sent": "interpolation afin que nous puissions obtenir de meilleures informations.",
+        "startTime": 1257.01,
+        "endTime": 1257.15
+    },
+    {
+        "sent": "ces données.",
+        "startTime": 1257.15,
+        "endTime": 1257.49
+    },
+    {
+        "sent": "Et c'est idéal pour nos applications de suivi d'événements IOT DevOps.",
+        "startTime": 1257.75,
+        "endTime": 1270.6
+    },
+    {
+        "sent": ".",
+        "startTime": 1271.38,
+        "endTime": 1274.8
+    },
+    {
+        "sent": "Prenons maintenant le temps de plonger.",
+        "startTime": 1275.76,
+        "endTime": 1282.36
+    },
+    {
+        "sent": "Plus loin dans certaines catégories très courantes que j'ai."
+    },
+    {
+        "sent": "Commençons par un modèle relationnel."
+    },
+    {
+        "sent": "Les données sont divisées en tables et les.",
+        "startTime": 1304.45,
+        "endTime": 1308.02
+    },
+    {
+        "sent": "imposés par le système sont primaires et référentiels.",
+        "startTime": 1310.01,
+        "endTime": 1312.93
+    },
+    {
+        "sent": "Et les bons cas d'utilisation pour celles-ci seront.",
+        "startTime": 1312.94,
+        "endTime": 1319.25
+    },
+    {
+        "sent": "où nous ne pouvons pas prédéfinir tous nos modèles d'accès.",
+        "startTime": 1319.38,
+        "endTime": 1327.35
+    },
+    {
+        "sent": "avant ou si nous avions des applications qui nécessitent.",
+        "startTime": 1329.43,
+        "endTime": 1337.66
+    },
+    {
+        "sent": "Une intégrité référentielle et une forte cohérence.",
+        "startTime": 1339.22,
+        "endTime": 1345.4
+    },
+    {
+        "sent": "Comme pour nos systèmes de paiement en ligne.",
+        "startTime": 1347.61,
+        "endTime": 1352.05
+    },
+    {
+        "sent": "Une base de données cloud native que nous pourrions choisir pour.",
+        "startTime": 1352.87,
+        "endTime": 1367.97
+    },
+    {
+        "sent": "Les modèles relationnels sont Amazon Arora.",
+        "startTime": 1368.88,
+        "endTime": 1370.32
+    },
+    {
+        "sent": "Arora est compatible à la fois avec ma suite et.",
+        "startTime": 1370.33,
+        "endTime": 1391.36
+    },
+    {
+        "sent": "et peut nous aider à améliorer nos performances de.",
+        "startTime": 1392.12,
+        "endTime": 1397.76
+    },
+    {
+        "sent": "jusqu'à cinq fois plus de débit que le.",
+        "startTime": 1397.77,
+        "endTime": 1407.68
+    },
+    {
+        "sent": "standard.",
+        "startTime": 1407.69,
+        "endTime": 1412.96
+    },
+    {
+        "sent": "Ma suite et trois fois plus que ça.",
+        "startTime": 1414.58,
+        "endTime": 1419.4
+    },
+    {
+        "sent": "Postgres standard.",
+        "startTime": 1420.31,
+        "endTime": 1424.11
+    },
+    {
+        "sent": "Cela nous aidera à dimensionner automatiquement les ressources de calcul.",
+        "startTime": 1424.26,
+        "endTime": 1430.55
+    },
+    {
+        "sent": "Et nous avons dessiné Billy Store notre."
+    },
+    {
+        "sent": "Et comme il s'agit d'un service géré, il fournira.",
+        "startTime": 1444.5,
+        "endTime": 1450.26
+    },
+    {
+        "sent": "L'automatisation de tâches telles que le déploiement et le provisionnement.",
+        "startTime": 1451.04,
+        "endTime": 1462.64
+    },
+    {
+        "sent": "L'application de correctifs et de mises à niveau, les sauvegardes et nous fournira."
+    },
+    {
+        "sent": "Une autre excellente catégorie.",
+        "startTime": 1480.06,
+        "endTime": 1485.62
+    },
+    {
+        "sent": "Pour consulter nos bases de données de valeurs clés.",
+        "startTime": 1486.62,
+        "endTime": 1495.88
+    },
+    {
+        "sent": "Les données de valeur clé sont celles qui utilisent cette méthode.",
+        "startTime": 1497.9,
+        "endTime": 1503.12
+    },
+    {
+        "sent": "La valeur clé pour stocker et récupérer les données.",
+        "startTime": 1503.13,
+        "endTime": 1507.01
+    },
+    {
+        "sent": "Sa force réside dans sa conception à.",
+        "startTime": 1507.7,
+        "endTime": 1515.5
+    },
+    {
+        "sent": "ou à partager des données, puis à les stocker physiquement.",
+        "startTime": 1516.36,
+        "endTime": 1521.85
+    },
+    {
+        "sent": "sur cette clé de partition.",
+        "startTime": 1523.1,
+        "endTime": 1526.14
+    },
+    {
+        "sent": "Cette conception lui permet de s'adapter horizontalement à."
+    },
+    {
+        "sent": ", quelle que soit l'échelle.",
+        "startTime": 1534.4,
+        "endTime": 1537.5
+    },
+    {
+        "sent": "Passons donc en revue un cas d'utilisation pour.",
+        "startTime": 1537.51,
+        "endTime": null
+    },
+    {
+        "sent": "«.",
+        "startTime": 1537.51,
+        "endTime": null
+    }
+]

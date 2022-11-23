@@ -1,6 +1,6 @@
 const fs=require('fs')
 
-fs.readFile("./t.json",async(err,data)=>{
+fs.readFile("./transcribe-pranjal.json",async(err,data)=>{
     if(!err){
         try {
             const content=JSON.parse(data)
@@ -40,8 +40,8 @@ const handleData=async(d)=>{
     for(let i=0;i<sents.length;i++){
         var obj={}
         obj[`text`]=sents[i]+'.';
-        obj[`startTime`]=sentSt[i];
-        obj[`endTime`]=sentEn[i]
+        obj[`startTime`]=parseFloat(sentSt[i]);
+        obj[`endTime`]=parseFloat(sentEn[i])
         sentencesArr.push(obj)
     }
 
@@ -77,8 +77,8 @@ const handleData=async(d)=>{
     for(let i=0;i<phrasess.length;i++){
         let obj={}
         obj[`text`]=phrasess[i]
-        obj[`startTime`]=phrasesSt[i]
-        obj[`endTime`]=phrasesEnd[i]
+        obj[`startTime`]=parseFloat(phrasesSt[i])
+        obj[`endTime`]=parseFloat(phrasesEnd[i])
         phrasesArr.push(obj)
     }
     var obj={
@@ -88,8 +88,9 @@ const handleData=async(d)=>{
     writeRes(obj)
 }
 
+
 const writeRes=(obj)=>{
-    fs.writeFile(__dirname+'/res.json',JSON.stringify(obj,undefined,2),(err)=>{
+    fs.writeFile(__dirname+'/res1.json',JSON.stringify(obj,undefined,2),(err)=>{
         if(err){
             console.log(err);
         }

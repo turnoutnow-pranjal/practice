@@ -1,6 +1,6 @@
 const fs=require('fs')
 
-fs.readFile("./t.json",async(err,data)=>{
+fs.readFile("./op.json",async(err,data)=>{
     if(!err){
         try {
             const content=JSON.parse(data)

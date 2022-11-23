@@ -1,0 +1,3721 @@
+{
+  "sentences": [
+    {
+      "text": "Hello and welcome to choose the right database for modern applications as part of our added West Summit online series.",
+      "startTime": 15.19,
+      "endTime": 21.56
+    },
+    {
+      "text": "My name is William Wong and I'm a specialist database solutions architect.",
+      "startTime": 21.57,
+      "endTime": 25.3
+    },
+    {
+      "text": "And today I'll be joined by Michael Riccardi, who's our specialist development solutions architect.",
+      "startTime": 25.31,
+      "endTime": 30.19
+    },
+    {
+      "text": "Today.",
+      "startTime": 31.76,
+      "endTime": 32.18
+    },
+    {
+      "text": "We're really excited to be here to show you how purpose built databases could be used to improve the scale performance and availability of your applications for our agenda will have an introduction of the requirements from a modern day applications.",
+      "startTime": 32.18,
+      "endTime": 45.42
+    },
+    {
+      "text": "Will then look at the challenges that are solved using microservices and purpose built databases Before looking at how we can go about picking up the right databases for your particular workloads.",
+      "startTime": 45.43,
+      "endTime": 55.91
+    },
+    {
+      "text": "Michael.",
+      "startTime": 56.34,
+      "endTime": 56.77
+    },
+    {
+      "text": "We will then dive a bit deeper where he'll modernize an app from a monolithic relational database stack to that of using purpose built databases and show you the differences in both performance and scale.",
+      "startTime": 56.77,
+      "endTime": 67.25
+    },
+    {
+      "text": "So let's get started and look at the requirements from our modern apps.",
+      "startTime": 67.26,
+      "endTime": 70.22
+    },
+    {
+      "text": "And we first look at the apps that we each use every day like our ride sharing, media, streaming, banking, gaming and social media.",
+      "startTime": 70.85,
+      "endTime": 77.59
+    },
+    {
+      "text": "We begin to see some common patterns.",
+      "startTime": 77.6,
+      "endTime": 79.89
+    },
+    {
+      "text": "These patterns could be millions of users accessing our apps across different geographies.",
+      "startTime": 79.9,
+      "endTime": 84.5
+    },
+    {
+      "text": "And these same users are expecting instant experiences which could boil down to consistent millisecond or even sub millisecond response times.",
+      "startTime": 84.51,
+      "endTime": 92.6
+    },
+    {
+      "text": "Our apps will need to hyper scale to meet demands for events such as our flash sales or urine processing and then scale back down.",
+      "startTime": 93.24,
+      "endTime": 100.7
+    },
+    {
+      "text": "We're not in use so that we can minimize costs.",
+      "startTime": 100.7,
+      "endTime": 103.15
+    },
+    {
+      "text": "It is anticipated that will capture more data in the next three years than that of the last 30 years.",
+      "startTime": 104.21,
+      "endTime": 110.5
+    },
+    {
+      "text": "And this will need specialized tools to process the petabytes.",
+      "startTime": 110.62,
+      "endTime": 114.35
+    },
+    {
+      "text": "If not zero bytes worth of structured and unstructured data.",
+      "startTime": 114.36,
+      "endTime": 117.46
+    },
+    {
+      "text": "If we take some time now and think about the architectural patterns of most of these cloud base apps, you'll find that they are all microservices.",
+      "startTime": 118.46,
+      "endTime": 126.08
+    },
+    {
+      "text": "That means they are highly distributed, loosely coupled and accessed via a P.",
+      "startTime": 126.74,
+      "endTime": 130.98
+    },
+    {
+      "text": "I.",
+      "startTime": 130.98,
+      "endTime": 131.08
+    },
+    {
+      "text": "S.",
+      "startTime": 131.08,
+      "endTime": 131.37
+    },
+    {
+      "text": "So what does that change in architecture mean to our underlying database As our apps are now decoupled into services.",
+      "startTime": 132.27,
+      "endTime": 138.93
+    },
+    {
+      "text": "It allows each of these services to have its own independent database.",
+      "startTime": 138.94,
+      "endTime": 142.9
+    },
+    {
+      "text": "And that'll bring us a lot of advantages, for example, will give us the ability to hyper scale our applications as each service and database canal scale independently.",
+      "startTime": 142.91,
+      "endTime": 154.35
+    },
+    {
+      "text": "Let's take black friday as a use case.",
+      "startTime": 155.11,
+      "endTime": 157.17
+    },
+    {
+      "text": "We might need to scale our catalog and payment service to hundreds of thousands of concurrent requests over a short time frame but our user registrations may not grow to that same degree.",
+      "startTime": 157.18,
+      "endTime": 167.7
+    },
+    {
+      "text": "Another benefit is the added agility.",
+      "startTime": 169.34,
+      "endTime": 171.39
+    },
+    {
+      "text": "Since we can now innovate faster across different components.",
+      "startTime": 171.69,
+      "endTime": 175.13
+    },
+    {
+      "text": "We can quickly test and roll back new builds and features on a modular level without dealing with all the complex coupled dependencies which are related to monoliths.",
+      "startTime": 175.91,
+      "endTime": 185.12
+    },
+    {
+      "text": "A common business challenge is making our apps more available and by decoupling our databases, it will increase its overall availability since we no longer have a monolithic database which serves as that single point of contention for our events such as code deployments or upgrades and patches.",
+      "startTime": 186.89,
+      "endTime": 204.22
+    },
+    {
+      "text": "So now that we understand the advantages of decoupling our data.",
+      "startTime": 204.23,
+      "endTime": 207.17
+    },
+    {
+      "text": "T why would we consider purpose built databases for our microservices? Our developers want the right database to meet the needs of our modern applications as we described earlier.",
+      "startTime": 207.17,
+      "endTime": 218.51
+    },
+    {
+      "text": "And frankly that one size fits all approach of using a relational database for everything, just no longer works.",
+      "startTime": 218.52,
+      "endTime": 225.66
+    },
+    {
+      "text": "For example, we might need a database to provide microsecond latency response times so that we can quickly render our websites or to deliver consistent response times to cater for a surgeon user demands.",
+      "startTime": 225.8,
+      "endTime": 237.79
+    },
+    {
+      "text": "And the relational architecture is not the best fit for these particular use cases.",
+      "startTime": 237.8,
+      "endTime": 242.23
+    },
+    {
+      "text": "In fact, by not using the right database will typically lead to performance issues, lack of scalability, lack of developer flexibility and an increase to our overall costs.",
+      "startTime": 242.77,
+      "endTime": 253.51
+    },
+    {
+      "text": "So traditionally, when I talk to my customers a barrier for adopting these purpose built databases with a potential operational overheads.",
+      "startTime": 255.29,
+      "endTime": 264.03
+    },
+    {
+      "text": "And this included investments in upfront hardware and software or expertise to make them scalable, highly available and performant.",
+      "startTime": 264.04,
+      "endTime": 272.06
+    },
+    {
+      "text": "And this is where aws comes in.",
+      "startTime": 272.66,
+      "endTime": 274.56
+    },
+    {
+      "text": "We'll offer the broadest and deepest portfolio of 15 plus purpose built databases that can support the different data models by leveraging, purpose built and fully managed databases that we built from the ground up customers can now save time and costs, improve performance at scale and innovate faster.",
+      "startTime": 274.57,
+      "endTime": 293.05
+    },
+    {
+      "text": "We have purpose built databases to match every use case like relational key value document in memory, wide column time series ledger and our graph databases.",
+      "startTime": 293.62,
+      "endTime": 305.71
+    },
+    {
+      "text": "So now that we understand the need for purpose built databases, how then would you go about selecting the right databases for your particular use cases? What I'd like to tell people is instead of looking at a list of 100 different databases, why don't we start off by thinking about common database categories? So now we quickly look across the categories.",
+      "startTime": 307.63,
+      "endTime": 328.5
+    },
+    {
+      "text": "Not only would you find that familiar relational database there on the left, but you'll also see other databases, databases like our amazon document DB which is optimized for storing the data in Jason format.",
+      "startTime": 328.51,
+      "endTime": 342.2
+    },
+    {
+      "text": "And since it's a no sequel database, it will give us that flexibility around changing application schemers but it will also allow us to query documents based on any attribute.",
+      "startTime": 342.8,
+      "endTime": 353.05
+    },
+    {
+      "text": "And this is really handy for our content management or mobile apps or a graph database like amazon Neptune, which then allows us to work with highly connected data sets.",
+      "startTime": 353.06,
+      "endTime": 364.16
+    },
+    {
+      "text": "We can try to model this out in a relational database with complicated joints and nested queries but our latency is will grow as a number of our relationships increase in graph databases.",
+      "startTime": 364.78,
+      "endTime": 377.15
+    },
+    {
+      "text": "However, it allows us to traverse millions of relationships in seconds, which is great for fraud detection, social media and our recommendation engines.",
+      "startTime": 377.15,
+      "endTime": 386.34
+    },
+    {
+      "text": "Well lastly like a time series database like our amazon time stream which is optimized to ingest trillions of time sequence data a day as well as giving us time based functions such as correlation and interpolation so that we can gain better insights from that data.",
+      "startTime": 387.53,
+      "endTime": 403.91
+    },
+    {
+      "text": "And this is great for our IOT devops or event tracking apps.",
+      "startTime": 403.97,
+      "endTime": 408.23
+    },
+    {
+      "text": "Let's take some time now to dive a little further into some very common categories that I've seen amongst my customers.",
+      "startTime": 409.29,
+      "endTime": 415.28
+    },
+    {
+      "text": "Let's start off with a really familiar relational data model, relational data is highly structured and the data is broken up into tables and the relationships enforced by the system are primary and referential keys and good use cases for them will be workloads where we can't predefined all our access patterns up front or if we had apps that requires high referential integrity and strong consistency.",
+      "startTime": 416.96,
+      "endTime": 440.76
+    },
+    {
+      "text": "Like for our online payment systems.",
+      "startTime": 440.77,
+      "endTime": 442.86
+    },
+    {
+      "text": "A cloud native database we could choose for our relational models is amazon Arora.",
+      "startTime": 443.59,
+      "endTime": 447.98
+    },
+    {
+      "text": "Arora is compatible with both my sequel and Postgres and can help us enhance our performance by providing up to five times more throughput than that of standard.",
+      "startTime": 447.99,
+      "endTime": 457.12
+    },
+    {
+      "text": "My sequel and three times more than that of standard Postgres.",
+      "startTime": 457.12,
+      "endTime": 460.58
+    },
+    {
+      "text": "It will help us automatically scale both compute and storage resources and we drew billy store our data six ways across three availability zones.",
+      "startTime": 460.66,
+      "endTime": 469.84
+    },
+    {
+      "text": "And since it's a managed service will provide for automation for tasks such as deployment and provisioning regular patching and upgrades, backups and give us security features like encryption in transit and at rest.",
+      "startTime": 470.38,
+      "endTime": 483.07
+    },
+    {
+      "text": "Another great category.",
+      "startTime": 485.16,
+      "endTime": 486.36
+    },
+    {
+      "text": "To look at our our key value databases.",
+      "startTime": 486.36,
+      "endTime": 488.64
+    },
+    {
+      "text": "Key value data is one that uses that simple key value method to store and retrieve data and its strength lies behind its design to highly partition or shard data and then physically store it based on that partition key.",
+      "startTime": 489.29,
+      "endTime": 502.73
+    },
+    {
+      "text": "That design allows it to horizontally scale to virtually any size while still giving us consistent response times, irrespective of scale.",
+      "startTime": 503.34,
+      "endTime": 512.16
+    },
+    {
+      "text": "So let's go through a use case for an online game that needs to store a user's session data and has a defined access pattern through gamer tag for retrieving that data set.",
+      "startTime": 514.06,
+      "endTime": 524.38
+    },
+    {
+      "text": "Since it's an online game, we want to ensure a consistent experience back to the gamer irrespective of if there were 10 or even 100,000 users.",
+      "startTime": 524.95,
+      "endTime": 533.81
+    },
+    {
+      "text": "If the game takes off in this particular use case, we'll use a key value database to achieve consistent response times, irrespective of the growth of the application.",
+      "startTime": 533.81,
+      "endTime": 544.29
+    },
+    {
+      "text": "A purpose built database we could choose for our key value databases is amazon dynamodb.",
+      "startTime": 545.94,
+      "endTime": 551.28
+    },
+    {
+      "text": "It is fully managed and serverless, meaning that it will take care of all the provisioning software, patching security and to help us automatically scale dynamodb enables us to build apps that can provide for single digit millisecond response times at scale and for our mission critical apps we could use global replication to replicate our data sets across multiple regions.",
+      "startTime": 551.94,
+      "endTime": 575.12
+    },
+    {
+      "text": "A really popular category amongst my customers are in memory databases In memory databases will store our data in memory rather than on this, which then gives us sub millisecond response times.",
+      "startTime": 577.54,
+      "endTime": 589.21
+    },
+    {
+      "text": "And that is great for use cases to store a user session data on maintaining a leaderboard for online games or training machine learning models.",
+      "startTime": 589.22,
+      "endTime": 597.52
+    },
+    {
+      "text": "But the most common use case that I've seen amongst my customers is placed here as a cash in front of our relational databases.",
+      "startTime": 598.1,
+      "endTime": 604.7
+    },
+    {
+      "text": "This will give us much better response times to our end users and alleviates read scaling pressures on the underlying relational database which can lead to locking resource contention and stability issues, which Makayla will show you in his subsequent demonstration for in memory databases.",
+      "startTime": 605.03,
+      "endTime": 623.94
+    },
+    {
+      "text": "We have the choice of amazon elastic cache.",
+      "startTime": 623.95,
+      "endTime": 626
+    },
+    {
+      "text": "It is fully managed service that allows us to provide for sub millisecond response times and non disruptive scaling.",
+      "startTime": 626.69,
+      "endTime": 633.48
+    },
+    {
+      "text": "It is both compatible with mem cache.",
+      "startTime": 633.49,
+      "endTime": 635.72
+    },
+    {
+      "text": "DM Reedus and people were using it for mem cache will typically use it to build simple scaling cation layers for their latency sensitive apps whereas our Reddit users, they'll use it for more versatile use cases like for their gaming real time analytics and machine learning with regis.",
+      "startTime": 635.72,
+      "endTime": 655.85
+    },
+    {
+      "text": "We also have the choice of amazon Memory Day bay which is a fully managed cluster with durability.",
+      "startTime": 655.86,
+      "endTime": 662.39
+    },
+    {
+      "text": "Memory debate provides us with ultrafast performance with full compatibility with open source regis which then allows us to use all of this is rich data structures such as sorted sets for online leaderboards by leveraging.",
+      "startTime": 663.2,
+      "endTime": 676.91
+    },
+    {
+      "text": "A distributed transaction log across availability zones.",
+      "startTime": 676.91,
+      "endTime": 680.39
+    },
+    {
+      "text": "Memory DB provides us with fast database recovery and restarts without the risk of data loss, meaning that we can now use this as our primary database for persistent data sets.",
+      "startTime": 680.46,
+      "endTime": 691.34
+    },
+    {
+      "text": "So now that we understand the need and benefits of a decoupled database architecture and have gone through some use cases that particular purpose built databases solves.",
+      "startTime": 692.87,
+      "endTime": 702.23
+    },
+    {
+      "text": "I'd like to introduce you to Michaeli who put all this into action in the form of a demonstration over to Michael.",
+      "startTime": 702.24,
+      "endTime": 709.41
+    },
+    {
+      "text": "Thank you William.",
+      "startTime": 711.27,
+      "endTime": 712.08
+    },
+    {
+      "text": "In this demo we will look at awesome pets, awesome pets is a fictitious company and in this made up scenario, awesome pets is an online pet store, awesome pets has all of the characteristics of an e commerce store where you can browse the catalog, add items to the basket and check out currently awesome pets tech stack consists of a legacy monolithic back end and a monolithic.",
+      "startTime": 712.81,
+      "endTime": 740.11
+    },
+    {
+      "text": "My sequel database.",
+      "startTime": 740.11,
+      "endTime": 741.28
+    },
+    {
+      "text": "This monolithic application powers all the different features and functionality of awesome pets.",
+      "startTime": 742.4,
+      "endTime": 748.1
+    },
+    {
+      "text": "Awesome pets is facing a number of challenges with their legacy monoliths.",
+      "startTime": 749.92,
+      "endTime": 753.79
+    },
+    {
+      "text": "First, they have found that some queries are painfully slow, especially in cases of high load.",
+      "startTime": 753.91,
+      "endTime": 760.04
+    },
+    {
+      "text": "Then, as a result of each query getting slower and slower during peak traffic, user requests are failing and users are unable to complete transactions.",
+      "startTime": 760.9,
+      "endTime": 770.97
+    },
+    {
+      "text": "Lastly, the database runs out of resources and the Lord which can cause the database to crash and the entire application to be unavailable.",
+      "startTime": 772.58,
+      "endTime": 780.77
+    },
+    {
+      "text": "If you are also trying to scale monolithic applications.",
+      "startTime": 782.57,
+      "endTime": 785.59
+    },
+    {
+      "text": "These challenges may sound very familiar to you.",
+      "startTime": 785.6,
+      "endTime": 788.29
+    },
+    {
+      "text": "So now I will show you how the legacy awesome pets application performs by running a simple test.",
+      "startTime": 790.26,
+      "endTime": 797.07
+    },
+    {
+      "text": "Then I will show you how awesome pets can be decoupled with microservices and purpose built databases.",
+      "startTime": 798.06,
+      "endTime": 804
+    },
+    {
+      "text": "How to pick the right database for the right job and show you the differences in performance between the legacy monolithic application and microservices application.",
+      "startTime": 804.58,
+      "endTime": 814.14
+    },
+    {
+      "text": "Lastly, I will briefly touch on some of the design patterns used in the new architecture.",
+      "startTime": 815.77,
+      "endTime": 819.92
+    },
+    {
+      "text": "Let me start by showing you a sample user journey on awesome pets.",
+      "startTime": 821.94,
+      "endTime": 825.96
+    },
+    {
+      "text": "As you can see here when I visit awesome pets.",
+      "startTime": 826.85,
+      "endTime": 829.38
+    },
+    {
+      "text": "I am presented with the pets catalog.",
+      "startTime": 829.39,
+      "endTime": 831.31
+    },
+    {
+      "text": "The catalog shows the pet types available in the commentary and account for each type.",
+      "startTime": 832.05,
+      "endTime": 836.72
+    },
+    {
+      "text": "I can add pets to the cart by clicking the add to cart button and once I added all of the pets, I can take a look at the card and proceed to the checkout.",
+      "startTime": 838.09,
+      "endTime": 847.36
+    },
+    {
+      "text": "In the checkout page.",
+      "startTime": 849.15,
+      "endTime": 850.28
+    },
+    {
+      "text": "I can enter all the details required to complete the transaction and confirm the payment and once the confirmation message is displayed, user journey is complete.",
+      "startTime": 850.29,
+      "endTime": 861.72
+    },
+    {
+      "text": "So let's now run the load test to see how the monolithic application performs on the load.",
+      "startTime": 863.53,
+      "endTime": 867.89
+    },
+    {
+      "text": "There are many tools available to run performance tests such as j meter or artillery.",
+      "startTime": 869.59,
+      "endTime": 874.52
+    },
+    {
+      "text": "To name a few.",
+      "startTime": 874.52,
+      "endTime": 875.47
+    },
+    {
+      "text": "But for this demo, I'm going to use blaze meter.",
+      "startTime": 875.48,
+      "endTime": 878.47
+    },
+    {
+      "text": "This test simulates a real user journey on awesome pets where each user will get a catalog at an item to the cart and submit another.",
+      "startTime": 879.98,
+      "endTime": 889.31
+    },
+    {
+      "text": "This test is configured with a total of 50 concurrent users navigating through the journey for a duration of 10 minutes And the number of users will ramp up gradually over the duration of one minute.",
+      "startTime": 892.87,
+      "endTime": 905.71
+    },
+    {
+      "text": "Lastly, this test will run in the aws Oregon region.",
+      "startTime": 907.16,
+      "endTime": 911.18
+    },
+    {
+      "text": "I will now start the load test and as the test takes about 10 minutes to complete, I will speed up the video and we will take a look at the results once the test is complete.",
+      "startTime": 912.54,
+      "endTime": 922.79
+    },
+    {
+      "text": "So the test is now complete and we can take a look at the results in these screens, we have two graphs.",
+      "startTime": 923.64,
+      "endTime": 930.38
+    },
+    {
+      "text": "The one on the left shows how many requests over the duration of the test succeeded and how many requests failed.",
+      "startTime": 930.59,
+      "endTime": 937.01
+    },
+    {
+      "text": "And the graph on the right displays the average response time over the duration of the test.",
+      "startTime": 937.81,
+      "endTime": 942.87
+    },
+    {
+      "text": "If we focus on the graph on the right hand side, we can see that as the number of users ramps up, the average response time of the application keeps increasing, reaching a peak response time of about seven seconds.",
+      "startTime": 944.43,
+      "endTime": 956.4
+    },
+    {
+      "text": "And at some point, the response times dropped drastically to only a few hundreds of milliseconds And after a few minutes, the response time goes back up to seven seconds.",
+      "startTime": 957.4,
+      "endTime": 967.52
+    },
+    {
+      "text": "If we look at the graph on the left, it's clear why there is a drop in response time at around 1750.",
+      "startTime": 969.66,
+      "endTime": 976.14
+    },
+    {
+      "text": "We can see that at this time almost all of the requests fail and there are no successful requests.",
+      "startTime": 976.23,
+      "endTime": 983.68
+    },
+    {
+      "text": "This tells us that the website was down during that time and the user request was failing very quickly.",
+      "startTime": 984.59,
+      "endTime": 990.26
+    },
+    {
+      "text": "So let's go a bit deeper to see what's causing these issues here.",
+      "startTime": 991.24,
+      "endTime": 995.5
+    },
+    {
+      "text": "I am using AWS X ray which is a tracing service to dive deeper into the failed request from the X ray service map.",
+      "startTime": 995.5,
+      "endTime": 1003.95
+    },
+    {
+      "text": "I can see my monolithic application and the requests going to the database.",
+      "startTime": 1003.96,
+      "endTime": 1008.1
+    },
+    {
+      "text": "The red color here represents the amount of requests that have failed in the database.",
+      "startTime": 1009.02,
+      "endTime": 1014.06
+    },
+    {
+      "text": "So I'm now going to use X ray insights, AWS x ray insights identifies where in the applications issues are occurring, the records of each issue and the associated impact.",
+      "startTime": 1015.9,
+      "endTime": 1027.48
+    },
+    {
+      "text": "And when I open an insight I can see immediately what is the root cause of the issue and the impact it's having In this case it's telling me that 23% of the request failed in the database.",
+      "startTime": 1028.57,
+      "endTime": 1040.56
+    },
+    {
+      "text": "Then I can click on analyze insight to drill down to each individual failed request.",
+      "startTime": 1041.45,
+      "endTime": 1047.09
+    },
+    {
+      "text": "Once I opened a failed request, I can see all of the components that executed for this request as well as how long each one of them took.",
+      "startTime": 1047.75,
+      "endTime": 1057.14
+    },
+    {
+      "text": "In this specific case the database returned an error after 17 seconds due to a deadlock.",
+      "startTime": 1058.23,
+      "endTime": 1063.93
+    },
+    {
+      "text": "Lastly, let's take a look at the data based metrics to understand in more details what happened.",
+      "startTime": 1063.94,
+      "endTime": 1068.98
+    },
+    {
+      "text": "If we focus on the CPU utilization, we can see that the database CPU utilization spikes up to 100% very quickly and after a few minutes of sustained 100% CPU utilization, the database iP utilization goes back to 0% And then it comes back up to 100%.",
+      "startTime": 1068.99,
+      "endTime": 1090.64
+    },
+    {
+      "text": "This is because the database crashes and restarts due to high CPU utilization.",
+      "startTime": 1091.61,
+      "endTime": 1096.74
+    },
+    {
+      "text": "You can also validate this by looking at other metrics such as right I.",
+      "startTime": 1097.93,
+      "endTime": 1102.53
+    },
+    {
+      "text": "Ops and database connections.",
+      "startTime": 1102.53,
+      "endTime": 1104.61
+    },
+    {
+      "text": "As we've seen this legacy application does not perform well, requests can take up to 10 seconds during the traffic peaks and the database crashes causing outages awesome pets could look at implementing many of the common optimization for monolithic applications.",
+      "startTime": 1105.74,
+      "endTime": 1123.21
+    },
+    {
+      "text": "However, they expect to grow 10 times over the next year and they know that even with common optimizations for monolithic applications, they will not be able to support their planned growth.",
+      "startTime": 1123.81,
+      "endTime": 1134.78
+    },
+    {
+      "text": "This is why awesome pets decided to move to microservices with purpose built databases.",
+      "startTime": 1135.67,
+      "endTime": 1140.94
+    },
+    {
+      "text": "So let's try to understand how they decompose this application, how they decided which database to use for each use case in this new architecture, awesome pets is split into four microservices, the inventory order cart and catalog the inventory.",
+      "startTime": 1142.52,
+      "endTime": 1161.44
+    },
+    {
+      "text": "Micro service uses dynamodb.",
+      "startTime": 1161.44,
+      "endTime": 1163.76
+    },
+    {
+      "text": "The inventory data can be stored in a simple key value format and there is a well defined pattern such as adding or removing pets to the inventory.",
+      "startTime": 1164.57,
+      "endTime": 1173.05
+    },
+    {
+      "text": "Then we have the older processing.",
+      "startTime": 1175.17,
+      "endTime": 1176.78
+    },
+    {
+      "text": "This use case requires data consistency and stores data in a de normalized relational format.",
+      "startTime": 1177.37,
+      "endTime": 1183.19
+    },
+    {
+      "text": "Some of the previous logic can also be reused and this is why it's a great fit for a my sequel compatible amazon aurora.",
+      "startTime": 1184.03,
+      "endTime": 1190.69
+    },
+    {
+      "text": "Then we have the cast microservices.",
+      "startTime": 1192.44,
+      "endTime": 1194.23
+    },
+    {
+      "text": "The cast functionality is the second most used functionality on awesome pets.",
+      "startTime": 1194.78,
+      "endTime": 1198.96
+    },
+    {
+      "text": "It has high volume of reads and writes and the response times needed should be in seven milliseconds as you may remember from Williams session.",
+      "startTime": 1199.8,
+      "endTime": 1209.3
+    },
+    {
+      "text": "This is a great use case for an in memory database such as brady's on elastic cache.",
+      "startTime": 1209.31,
+      "endTime": 1214.29
+    },
+    {
+      "text": "And lastly we have the catalog, the catalog at the moment, queries all of the available inventory and performs account based on the pet type because awesome pets utilizes a relational database.",
+      "startTime": 1216.4,
+      "endTime": 1229.37
+    },
+    {
+      "text": "They are currently not able to provide rich search functionality and therefore one of the technologies that they can use for the catalog is the amazon Open Search service.",
+      "startTime": 1229.38,
+      "endTime": 1239.2
+    },
+    {
+      "text": "Open search can easily ingest search and aggregate billions of documents.",
+      "startTime": 1240.43,
+      "endTime": 1245.01
+    },
+    {
+      "text": "So now that we've seen how the target architecture looks like, let's run another performance test to see how the new architecture performs as you can see I can add the parameters to the U.",
+      "startTime": 1246.81,
+      "endTime": 1257.01
+    },
+    {
+      "text": "R.",
+      "startTime": 1257.01,
+      "endTime": 1257.15
+    },
+    {
+      "text": "L.",
+      "startTime": 1257.15,
+      "endTime": 1257.49
+    },
+    {
+      "text": "To start using the microservices back end and in these microservices back end, I have around the same number of pets if not more compared to the monolithic application and the functionality is exactly the same.",
+      "startTime": 1257.75,
+      "endTime": 1270.6
+    },
+    {
+      "text": "So I can go ahead and open the test for my microservices back end.",
+      "startTime": 1271.38,
+      "endTime": 1274.8
+    },
+    {
+      "text": "As you can see, the performance test is the same as the same configuration as the previous test and the user journey is the same.",
+      "startTime": 1275.76,
+      "endTime": 1282.36
+    },
+    {
+      "text": "We're getting the catalog, adding a card and submit an order.",
+      "startTime": 1282.36,
+      "endTime": 1286.69
+    },
+    {
+      "text": "And also the configuration is the same with 50 total users for up to 10 minutes duration and with among one minute ramp up.",
+      "startTime": 1288.15,
+      "endTime": 1296.06
+    },
+    {
+      "text": "So let's go ahead and run this new test and take a look at the results.",
+      "startTime": 1298.4,
+      "endTime": 1301.98
+    },
+    {
+      "text": "Once the test is complete.",
+      "startTime": 1301.98,
+      "endTime": 1303.31
+    },
+    {
+      "text": "Like before I will speed up this part of the video until the test completes.",
+      "startTime": 1304.45,
+      "endTime": 1308.02
+    },
+    {
+      "text": "Let's take a look at these results at a glance.",
+      "startTime": 1310.01,
+      "endTime": 1312.93
+    },
+    {
+      "text": "We can already see that the performance is a lot more consistent that there were no errors during the performance test.",
+      "startTime": 1312.94,
+      "endTime": 1319.25
+    },
+    {
+      "text": "And overall the average response time is around 160 milliseconds, which is 45 times faster than our monolithic application.",
+      "startTime": 1319.38,
+      "endTime": 1327.35
+    },
+    {
+      "text": "So let's take a look at the X ray and here we can see all of the interactions between the microservices.",
+      "startTime": 1329.43,
+      "endTime": 1337.66
+    },
+    {
+      "text": "For example, we can see how the submit all the functionality actually spans multiple microservices.",
+      "startTime": 1339.22,
+      "endTime": 1345.4
+    },
+    {
+      "text": "And here we can see the api calls for getting the catalog and adding items to the cart.",
+      "startTime": 1347.61,
+      "endTime": 1352.05
+    },
+    {
+      "text": "I can now look at specific traces to dive deeper on a single submit order request here, we can see the breakdown of where the time was spent for the duration of the submit or the transaction.",
+      "startTime": 1352.87,
+      "endTime": 1367.97
+    },
+    {
+      "text": "We can see that under load.",
+      "startTime": 1368.88,
+      "endTime": 1370.32
+    },
+    {
+      "text": "This operation only took about 300 milliseconds, which is 25 times faster that the submit to the functionality in the monolithic application under the same conditions in the demo, we saw how the microservices architecture is able to scale well to cope with the traffic and provide consistent response times.",
+      "startTime": 1370.33,
+      "endTime": 1391.36
+    },
+    {
+      "text": "Another characteristic of this new architecture is they can achieve much greater availability.",
+      "startTime": 1392.12,
+      "endTime": 1397.76
+    },
+    {
+      "text": "If one of the databases fails, only one of the microservices is affected and the application can partially still function by moving to microservices.",
+      "startTime": 1397.77,
+      "endTime": 1407.68
+    },
+    {
+      "text": "Not only we can scale and perform better, but we also gain greater availability.",
+      "startTime": 1407.69,
+      "endTime": 1412.96
+    },
+    {
+      "text": "Lastly, I'd like to briefly mention to design patterns that were used in this composition.",
+      "startTime": 1414.58,
+      "endTime": 1419.4
+    },
+    {
+      "text": "The first is event notification in this new architecture.",
+      "startTime": 1420.31,
+      "endTime": 1424.11
+    },
+    {
+      "text": "The catalog micro service needs to be updated whenever there is an item added or removed from the inventory.",
+      "startTime": 1424.26,
+      "endTime": 1430.55
+    },
+    {
+      "text": "To implement this pattern, we leverage dynamodb streams, which is a feature of dynamodb that allows you to stream every change on the table.",
+      "startTime": 1431.46,
+      "endTime": 1440.76
+    },
+    {
+      "text": "The second pattern is the saga pattern.",
+      "startTime": 1441.82,
+      "endTime": 1443.94
+    },
+    {
+      "text": "This pattern allows us to execute business transactions across multiple microservices.",
+      "startTime": 1444.5,
+      "endTime": 1450.26
+    },
+    {
+      "text": "In this example, the cycle pattern was implemented using AWS step functions and the transaction spans the inventory, the order and the cat microservices.",
+      "startTime": 1451.04,
+      "endTime": 1462.64
+    },
+    {
+      "text": "If you'd like to find out more about microservices patterns.",
+      "startTime": 1464.23,
+      "endTime": 1467.26
+    },
+    {
+      "text": "I'd recommend watching the session named build Brazilian microservices using fault tolerant patterns in this session, we looked at what are today's modern application requirements.",
+      "startTime": 1467.72,
+      "endTime": 1479.36
+    },
+    {
+      "text": "We then explored why customers moved from a one size fits all approach to purpose built databases.",
+      "startTime": 1480.06,
+      "endTime": 1485.62
+    },
+    {
+      "text": "We looked at how you can choose the right database for the right job and we saw how it can help you achieve greater scale, better performance and greater availability.",
+      "startTime": 1486.62,
+      "endTime": 1495.88
+    },
+    {
+      "text": "We covered a number of different topics in this session, but the learning does not have to stop here.",
+      "startTime": 1497.9,
+      "endTime": 1503.12
+    },
+    {
+      "text": "We encourage you to check out our training and certification content.",
+      "startTime": 1503.13,
+      "endTime": 1507.01
+    },
+    {
+      "text": "We offer over 500 free digital courses that can help you and your team build new cloud skills and learn about the latest services.",
+      "startTime": 1507.7,
+      "endTime": 1515.5
+    },
+    {
+      "text": "And as you build your skills, consider preparing for one of our 11 aws certifications.",
+      "startTime": 1516.36,
+      "endTime": 1521.85
+    },
+    {
+      "text": "You can scan the QR codes in this slide to find out more.",
+      "startTime": 1523.1,
+      "endTime": 1526.14
+    },
+    {
+      "text": "Thank you for attending this talk.",
+      "startTime": 1527.89,
+      "endTime": 1529.57
+    },
+    {
+      "text": "We would love to hear your feedback to help us improve the AWS summit experience.",
+      "startTime": 1529.58,
+      "endTime": 1534.39
+    },
+    {
+      "text": "So please remember to complete the session survey.",
+      "startTime": 1534.4,
+      "endTime": 1537.5
+    },
+    {
+      "text": "Thank you.",
+      "startTime": 1537.51,
+      "endTime": null
+    }
+  ],
+  "phrases": [
+    {
+      "text": "Hello and welcome to choose the right",
+      "startTime": 15.19,
+      "endTime": 16.98
+    },
+    {
+      "text": "for modern applications as part of our added",
+      "startTime": 16.98,
+      "endTime": 19.96
+    },
+    {
+      "text": "Summit online series",
+      "startTime": 19.96,
+      "endTime": 21.56
+    },
+    {
+      "text": "My name is William Wong and I'm a",
+      "startTime": 21.57,
+      "endTime": 23.25
+    },
+    {
+      "text": "database solutions architect",
+      "startTime": 23.25,
+      "endTime": 25.3
+    },
+    {
+      "text": "And today I'll be joined by Michael Riccardi",
+      "startTime": 25.31,
+      "endTime": 27.7
+    },
+    {
+      "text": "who's our specialist development solutions architect",
+      "startTime": null,
+      "endTime": 30.19
+    },
+    {
+      "text": "Today",
+      "startTime": 31.76,
+      "endTime": 32.18
+    },
+    {
+      "text": "We're really excited to be here to show",
+      "startTime": 32.18,
+      "endTime": 33.88
+    },
+    {
+      "text": "how purpose built databases could be used to",
+      "startTime": 33.88,
+      "endTime": 36.29
+    },
+    {
+      "text": "the scale performance and availability of your applications",
+      "startTime": 36.29,
+      "endTime": 40.03
+    },
+    {
+      "text": "our agenda will have an introduction of the",
+      "startTime": 40.04,
+      "endTime": 43.34
+    },
+    {
+      "text": "from a modern day applications",
+      "startTime": 43.34,
+      "endTime": 45.42
+    },
+    {
+      "text": "Will then look at the challenges that are",
+      "startTime": 45.43,
+      "endTime": 47.57
+    },
+    {
+      "text": "using microservices and purpose built databases Before looking",
+      "startTime": 47.57,
+      "endTime": 51.83
+    },
+    {
+      "text": "how we can go about picking up the",
+      "startTime": 51.83,
+      "endTime": 53.21
+    },
+    {
+      "text": "databases for your particular workloads",
+      "startTime": 53.21,
+      "endTime": 55.91
+    },
+    {
+      "text": "Michael",
+      "startTime": 56.34,
+      "endTime": 56.77
+    },
+    {
+      "text": "We will then dive a bit deeper where",
+      "startTime": 56.77,
+      "endTime": 58.39
+    },
+    {
+      "text": "modernize an app from a monolithic relational database",
+      "startTime": 58.39,
+      "endTime": 61.14
+    },
+    {
+      "text": "to that of using purpose built databases and",
+      "startTime": 61.14,
+      "endTime": 64.34
+    },
+    {
+      "text": "you the differences in both performance and scale",
+      "startTime": 64.34,
+      "endTime": 67.25
+    },
+    {
+      "text": "So let's get started and look at the",
+      "startTime": 67.26,
+      "endTime": 68.76
+    },
+    {
+      "text": "from our modern apps",
+      "startTime": 68.76,
+      "endTime": 70.22
+    },
+    {
+      "text": "And we first look at the apps that",
+      "startTime": 70.85,
+      "endTime": 72.17
+    },
+    {
+      "text": "each use every day like our ride sharing",
+      "startTime": 72.17,
+      "endTime": 74.72
+    },
+    {
+      "text": "media , streaming , banking , gaming and",
+      "startTime": null,
+      "endTime": 76.8
+    },
+    {
+      "text": "media",
+      "startTime": 76.8,
+      "endTime": 77.59
+    },
+    {
+      "text": "We begin to see some common patterns",
+      "startTime": 77.6,
+      "endTime": 79.89
+    },
+    {
+      "text": "These patterns could be millions of users accessing",
+      "startTime": 79.9,
+      "endTime": 82.59
+    },
+    {
+      "text": "apps across different geographies",
+      "startTime": 82.59,
+      "endTime": 84.5
+    },
+    {
+      "text": "And these same users are expecting instant experiences",
+      "startTime": 84.51,
+      "endTime": 87.91
+    },
+    {
+      "text": "could boil down to consistent millisecond or even",
+      "startTime": 87.92,
+      "endTime": 90.87
+    },
+    {
+      "text": "millisecond response times",
+      "startTime": 90.87,
+      "endTime": 92.6
+    },
+    {
+      "text": "Our apps will need to hyper scale to",
+      "startTime": 93.24,
+      "endTime": 95.07
+    },
+    {
+      "text": "demands for events such as our flash sales",
+      "startTime": 95.07,
+      "endTime": 97.89
+    },
+    {
+      "text": "urine processing and then scale back down",
+      "startTime": 97.9,
+      "endTime": 100.7
+    },
+    {
+      "text": "We're not in use so that we can",
+      "startTime": 100.7,
+      "endTime": 102.15
+    },
+    {
+      "text": "costs",
+      "startTime": 102.15,
+      "endTime": 103.15
+    },
+    {
+      "text": "It is anticipated that will capture more data",
+      "startTime": 104.21,
+      "endTime": 106.84
+    },
+    {
+      "text": "the next three years than that of the",
+      "startTime": 106.85,
+      "endTime": 108.97
+    },
+    {
+      "text": "30 years",
+      "startTime": 108.97,
+      "endTime": 110.5
+    },
+    {
+      "text": "And this will need specialized tools to process",
+      "startTime": 110.62,
+      "endTime": 113.53
+    },
+    {
+      "text": "petabytes",
+      "startTime": 113.53,
+      "endTime": 114.35
+    },
+    {
+      "text": "If not zero bytes worth of structured and",
+      "startTime": 114.36,
+      "endTime": 116.37
+    },
+    {
+      "text": "data",
+      "startTime": 116.37,
+      "endTime": 117.46
+    },
+    {
+      "text": "If we take some time now and think",
+      "startTime": 118.46,
+      "endTime": 120.17
+    },
+    {
+      "text": "the architectural patterns of most of these cloud",
+      "startTime": 120.17,
+      "endTime": 122.7
+    },
+    {
+      "text": "apps , you'll find that they are all",
+      "startTime": 122.7,
+      "endTime": 124.88
+    },
+    {
+      "text": "",
+      "startTime": 124.88,
+      "endTime": 126.08
+    },
+    {
+      "text": "That means they are highly distributed , loosely",
+      "startTime": 126.74,
+      "endTime": 129.15
+    },
+    {
+      "text": "and accessed via a P",
+      "startTime": 129.15,
+      "endTime": 130.98
+    },
+    {
+      "text": "I",
+      "startTime": 130.98,
+      "endTime": 131.08
+    },
+    {
+      "text": "S",
+      "startTime": 131.08,
+      "endTime": 131.37
+    },
+    {
+      "text": "So what does that change in architecture mean",
+      "startTime": 132.27,
+      "endTime": 133.99
+    },
+    {
+      "text": "our underlying database As our apps are now",
+      "startTime": 133.99,
+      "endTime": 137.32
+    },
+    {
+      "text": "into services",
+      "startTime": 137.32,
+      "endTime": 138.93
+    },
+    {
+      "text": "It allows each of these services to have",
+      "startTime": 138.94,
+      "endTime": 141.18
+    },
+    {
+      "text": "own independent database",
+      "startTime": 141.18,
+      "endTime": 142.9
+    },
+    {
+      "text": "And that'll bring us a lot of advantages",
+      "startTime": 142.91,
+      "endTime": 145.21
+    },
+    {
+      "text": "for example , will give us the ability",
+      "startTime": null,
+      "endTime": 148.92
+    },
+    {
+      "text": "hyper scale our applications as each service and",
+      "startTime": 148.92,
+      "endTime": 152.22
+    },
+    {
+      "text": "canal scale independently",
+      "startTime": 152.22,
+      "endTime": 154.35
+    },
+    {
+      "text": "Let's take black friday as a use case",
+      "startTime": 155.11,
+      "endTime": 157.17
+    },
+    {
+      "text": "We might need to scale our catalog and",
+      "startTime": 157.18,
+      "endTime": 159.37
+    },
+    {
+      "text": "service to hundreds of thousands of concurrent requests",
+      "startTime": 159.37,
+      "endTime": 162.87
+    },
+    {
+      "text": "a short time frame but our user registrations",
+      "startTime": 162.88,
+      "endTime": 166.18
+    },
+    {
+      "text": "not grow to that same degree",
+      "startTime": 166.19,
+      "endTime": 167.7
+    },
+    {
+      "text": "Another benefit is the added agility",
+      "startTime": 169.34,
+      "endTime": 171.39
+    },
+    {
+      "text": "Since we can now innovate faster across different",
+      "startTime": 171.69,
+      "endTime": 174.3
+    },
+    {
+      "text": "",
+      "startTime": 174.3,
+      "endTime": 175.13
+    },
+    {
+      "text": "We can quickly test and roll back new",
+      "startTime": 175.91,
+      "endTime": 177.91
+    },
+    {
+      "text": "and features on a modular level without dealing",
+      "startTime": 177.91,
+      "endTime": 180.9
+    },
+    {
+      "text": "all the complex coupled dependencies which are related",
+      "startTime": 180.9,
+      "endTime": 184.15
+    },
+    {
+      "text": "monoliths",
+      "startTime": 184.15,
+      "endTime": 185.12
+    },
+    {
+      "text": "A common business challenge is making our apps",
+      "startTime": 186.89,
+      "endTime": 189.49
+    },
+    {
+      "text": "available and by decoupling our databases , it",
+      "startTime": 189.5,
+      "endTime": 192.77
+    },
+    {
+      "text": "increase its overall availability since we no longer",
+      "startTime": 192.77,
+      "endTime": 196.29
+    },
+    {
+      "text": "a monolithic database which serves as that single",
+      "startTime": 196.29,
+      "endTime": 199.54
+    },
+    {
+      "text": "of contention for our events such as code",
+      "startTime": 199.54,
+      "endTime": 201.82
+    },
+    {
+      "text": "or upgrades and patches",
+      "startTime": 201.82,
+      "endTime": 204.22
+    },
+    {
+      "text": "So now that we understand the advantages of",
+      "startTime": 204.23,
+      "endTime": 206.33
+    },
+    {
+      "text": "our data",
+      "startTime": 206.33,
+      "endTime": 207.17
+    },
+    {
+      "text": "T why would we consider purpose built databases",
+      "startTime": 207.17,
+      "endTime": 210.32
+    },
+    {
+      "text": "our microservices ? Our developers want the right",
+      "startTime": 210.33,
+      "endTime": 214.25
+    },
+    {
+      "text": "to meet the needs of our modern applications",
+      "startTime": 214.25,
+      "endTime": 217.17
+    },
+    {
+      "text": "we described earlier",
+      "startTime": 217.18,
+      "endTime": 218.51
+    },
+    {
+      "text": "And frankly that one size fits all approach",
+      "startTime": 218.52,
+      "endTime": 221.62
+    },
+    {
+      "text": "using a relational database for everything , just",
+      "startTime": 221.63,
+      "endTime": 224.69
+    },
+    {
+      "text": "longer works",
+      "startTime": 224.69,
+      "endTime": 225.66
+    },
+    {
+      "text": "For example , we might need a database",
+      "startTime": 225.8,
+      "endTime": 228.72
+    },
+    {
+      "text": "provide microsecond latency response times so that we",
+      "startTime": 228.73,
+      "endTime": 231.86
+    },
+    {
+      "text": "quickly render our websites or to deliver consistent",
+      "startTime": 231.86,
+      "endTime": 234.95
+    },
+    {
+      "text": "times to cater for a surgeon user demands",
+      "startTime": 234.95,
+      "endTime": 237.79
+    },
+    {
+      "text": "And the relational architecture is not the best",
+      "startTime": 237.8,
+      "endTime": 240.3
+    },
+    {
+      "text": "for these particular use cases",
+      "startTime": 240.3,
+      "endTime": 242.23
+    },
+    {
+      "text": "In fact , by not using the right",
+      "startTime": 242.77,
+      "endTime": 244.86
+    },
+    {
+      "text": "will typically lead to performance issues , lack",
+      "startTime": 244.86,
+      "endTime": 248.45
+    },
+    {
+      "text": "scalability , lack of developer flexibility and an",
+      "startTime": 248.45,
+      "endTime": 251.93
+    },
+    {
+      "text": "to our overall costs",
+      "startTime": 251.94,
+      "endTime": 253.51
+    },
+    {
+      "text": "So traditionally , when I talk to my",
+      "startTime": 255.29,
+      "endTime": 257.34
+    },
+    {
+      "text": "a barrier for adopting these purpose built databases",
+      "startTime": 257.34,
+      "endTime": 261.44
+    },
+    {
+      "text": "a potential operational overheads",
+      "startTime": 261.45,
+      "endTime": 264.03
+    },
+    {
+      "text": "And this included investments in upfront hardware and",
+      "startTime": 264.04,
+      "endTime": 267.32
+    },
+    {
+      "text": "or expertise to make them scalable , highly",
+      "startTime": 267.32,
+      "endTime": 270.62
+    },
+    {
+      "text": "and performant",
+      "startTime": 270.62,
+      "endTime": 272.06
+    },
+    {
+      "text": "And this is where aws comes in",
+      "startTime": 272.66,
+      "endTime": 274.56
+    },
+    {
+      "text": "We'll offer the broadest and deepest portfolio of",
+      "startTime": 274.57,
+      "endTime": 277.61
+    },
+    {
+      "text": "plus purpose built databases that can support the",
+      "startTime": 277.61,
+      "endTime": 280.83
+    },
+    {
+      "text": "data models by leveraging , purpose built and",
+      "startTime": 280.83,
+      "endTime": 284.62
+    },
+    {
+      "text": "managed databases that we built from the ground",
+      "startTime": 284.62,
+      "endTime": 287.06
+    },
+    {
+      "text": "customers can now save time and costs ,",
+      "startTime": 287.06,
+      "endTime": null
+    },
+    {
+      "text": "performance at scale and innovate faster",
+      "startTime": 289.84,
+      "endTime": 293.05
+    },
+    {
+      "text": "We have purpose built databases to match every",
+      "startTime": 293.62,
+      "endTime": 296.35
+    },
+    {
+      "text": "case like relational key value document in memory",
+      "startTime": 296.35,
+      "endTime": 301.47
+    },
+    {
+      "text": "wide column time series ledger and our graph",
+      "startTime": null,
+      "endTime": 304.9
+    },
+    {
+      "text": "",
+      "startTime": 304.9,
+      "endTime": 305.71
+    },
+    {
+      "text": "So now that we understand the need for",
+      "startTime": 307.63,
+      "endTime": 309.17
+    },
+    {
+      "text": "built databases , how then would you go",
+      "startTime": 309.17,
+      "endTime": 311.79
+    },
+    {
+      "text": "selecting the right databases for your particular use",
+      "startTime": 311.79,
+      "endTime": 314.79
+    },
+    {
+      "text": "? What I'd like to tell people is",
+      "startTime": 314.79,
+      "endTime": 317.54
+    },
+    {
+      "text": "of looking at a list of 100 different",
+      "startTime": 317.73,
+      "endTime": 319.82
+    },
+    {
+      "text": ", why don't we start off by thinking",
+      "startTime": 319.82,
+      "endTime": 322.67
+    },
+    {
+      "text": "common database categories ? So now we quickly",
+      "startTime": 322.67,
+      "endTime": 326.43
+    },
+    {
+      "text": "across the categories",
+      "startTime": 326.43,
+      "endTime": 328.5
+    },
+    {
+      "text": "Not only would you find that familiar relational",
+      "startTime": 328.51,
+      "endTime": 331.06
+    },
+    {
+      "text": "there on the left , but you'll also",
+      "startTime": 331.06,
+      "endTime": 333.38
+    },
+    {
+      "text": "other databases , databases like our amazon document",
+      "startTime": 333.38,
+      "endTime": 338.24
+    },
+    {
+      "text": "which is optimized for storing the data in",
+      "startTime": 338.24,
+      "endTime": 341.2
+    },
+    {
+      "text": "format",
+      "startTime": 341.2,
+      "endTime": 342.2
+    },
+    {
+      "text": "And since it's a no sequel database ,",
+      "startTime": 342.8,
+      "endTime": null
+    },
+    {
+      "text": "will give us that flexibility around changing application",
+      "startTime": 344.68,
+      "endTime": 347.87
+    },
+    {
+      "text": "but it will also allow us to query",
+      "startTime": 347.87,
+      "endTime": 350.56
+    },
+    {
+      "text": "based on any attribute",
+      "startTime": 350.56,
+      "endTime": 353.05
+    },
+    {
+      "text": "And this is really handy for our content",
+      "startTime": 353.06,
+      "endTime": 354.99
+    },
+    {
+      "text": "or mobile apps or a graph database like",
+      "startTime": 354.99,
+      "endTime": 359.68
+    },
+    {
+      "text": "Neptune , which then allows us to work",
+      "startTime": 359.69,
+      "endTime": 362.32
+    },
+    {
+      "text": "highly connected data sets",
+      "startTime": 362.32,
+      "endTime": 364.16
+    },
+    {
+      "text": "We can try to model this out in",
+      "startTime": 364.78,
+      "endTime": 366.49
+    },
+    {
+      "text": "relational database with complicated joints and nested queries",
+      "startTime": 366.49,
+      "endTime": 370.77
+    },
+    {
+      "text": "our latency is will grow as a number",
+      "startTime": 370.78,
+      "endTime": 373.61
+    },
+    {
+      "text": "our relationships increase in graph databases",
+      "startTime": 373.61,
+      "endTime": 377.15
+    },
+    {
+      "text": "However , it allows us to traverse millions",
+      "startTime": 377.15,
+      "endTime": 379.91
+    },
+    {
+      "text": "relationships in seconds , which is great for",
+      "startTime": 379.91,
+      "endTime": 382.64
+    },
+    {
+      "text": "detection , social media and our recommendation engines",
+      "startTime": 382.64,
+      "endTime": 386.34
+    },
+    {
+      "text": "Well lastly like a time series database like",
+      "startTime": 387.53,
+      "endTime": 390.12
+    },
+    {
+      "text": "amazon time stream which is optimized to ingest",
+      "startTime": 390.12,
+      "endTime": 393.15
+    },
+    {
+      "text": "of time sequence data a day as well",
+      "startTime": 393.16,
+      "endTime": 396.23
+    },
+    {
+      "text": "giving us time based functions such as correlation",
+      "startTime": 396.23,
+      "endTime": 399.47
+    },
+    {
+      "text": "interpolation so that we can gain better insights",
+      "startTime": 399.48,
+      "endTime": 402.48
+    },
+    {
+      "text": "that data",
+      "startTime": 402.48,
+      "endTime": 403.91
+    },
+    {
+      "text": "And this is great for our IOT devops",
+      "startTime": 403.97,
+      "endTime": 406.79
+    },
+    {
+      "text": "event tracking apps",
+      "startTime": 406.8,
+      "endTime": 408.23
+    },
+    {
+      "text": "Let's take some time now to dive a",
+      "startTime": 409.29,
+      "endTime": 410.91
+    },
+    {
+      "text": "further into some very common categories that I've",
+      "startTime": 410.91,
+      "endTime": 413.75
+    },
+    {
+      "text": "amongst my customers",
+      "startTime": 413.75,
+      "endTime": 415.28
+    },
+    {
+      "text": "Let's start off with a really familiar relational",
+      "startTime": 416.96,
+      "endTime": 419.22
+    },
+    {
+      "text": "model , relational data is highly structured and",
+      "startTime": 419.22,
+      "endTime": 422.91
+    },
+    {
+      "text": "data is broken up into tables and the",
+      "startTime": 422.91,
+      "endTime": 425.33
+    },
+    {
+      "text": "enforced by the system are primary and referential",
+      "startTime": 425.33,
+      "endTime": 429.12
+    },
+    {
+      "text": "and good use cases for them will be",
+      "startTime": 429.12,
+      "endTime": 432.16
+    },
+    {
+      "text": "where we can't predefined all our access patterns",
+      "startTime": 432.16,
+      "endTime": 435.13
+    },
+    {
+      "text": "front or if we had apps that requires",
+      "startTime": 435.13,
+      "endTime": 437.76
+    },
+    {
+      "text": "referential integrity and strong consistency",
+      "startTime": 437.76,
+      "endTime": 440.76
+    },
+    {
+      "text": "Like for our online payment systems",
+      "startTime": 440.77,
+      "endTime": 442.86
+    },
+    {
+      "text": "A cloud native database we could choose for",
+      "startTime": 443.59,
+      "endTime": 445.56
+    },
+    {
+      "text": "relational models is amazon Arora",
+      "startTime": 445.56,
+      "endTime": 447.98
+    },
+    {
+      "text": "Arora is compatible with both my sequel and",
+      "startTime": 447.99,
+      "endTime": 450.51
+    },
+    {
+      "text": "and can help us enhance our performance by",
+      "startTime": 450.51,
+      "endTime": 454.37
+    },
+    {
+      "text": "up to five times more throughput than that",
+      "startTime": 454.37,
+      "endTime": 456.71
+    },
+    {
+      "text": "standard",
+      "startTime": 456.71,
+      "endTime": 457.12
+    },
+    {
+      "text": "My sequel and three times more than that",
+      "startTime": 457.12,
+      "endTime": 459.52
+    },
+    {
+      "text": "standard Postgres",
+      "startTime": 459.52,
+      "endTime": 460.58
+    },
+    {
+      "text": "It will help us automatically scale both compute",
+      "startTime": 460.66,
+      "endTime": 463.69
+    },
+    {
+      "text": "storage resources and we drew billy store our",
+      "startTime": 463.7,
+      "endTime": 466.62
+    },
+    {
+      "text": "six ways across three availability zones",
+      "startTime": 466.62,
+      "endTime": 469.84
+    },
+    {
+      "text": "And since it's a managed service will provide",
+      "startTime": 470.38,
+      "endTime": 473.06
+    },
+    {
+      "text": "automation for tasks such as deployment and provisioning",
+      "startTime": 473.06,
+      "endTime": 476.52
+    },
+    {
+      "text": "patching and upgrades , backups and give us",
+      "startTime": 476.53,
+      "endTime": 479.83
+    },
+    {
+      "text": "features like encryption in transit and at rest",
+      "startTime": 479.83,
+      "endTime": 483.07
+    },
+    {
+      "text": "Another great category",
+      "startTime": 485.16,
+      "endTime": 486.36
+    },
+    {
+      "text": "To look at our our key value databases",
+      "startTime": 486.36,
+      "endTime": 488.64
+    },
+    {
+      "text": "Key value data is one that uses that",
+      "startTime": 489.29,
+      "endTime": 491.35
+    },
+    {
+      "text": "key value method to store and retrieve data",
+      "startTime": 491.35,
+      "endTime": 494.53
+    },
+    {
+      "text": "its strength lies behind its design to highly",
+      "startTime": 494.58,
+      "endTime": 497.75
+    },
+    {
+      "text": "or shard data and then physically store it",
+      "startTime": 497.75,
+      "endTime": 501.19
+    },
+    {
+      "text": "on that partition key",
+      "startTime": 501.2,
+      "endTime": 502.73
+    },
+    {
+      "text": "That design allows it to horizontally scale to",
+      "startTime": 503.34,
+      "endTime": 506.27
+    },
+    {
+      "text": "any size while still giving us consistent response",
+      "startTime": 506.27,
+      "endTime": 510
+    },
+    {
+      "text": ", irrespective of scale",
+      "startTime": 510,
+      "endTime": 512.16
+    },
+    {
+      "text": "So let's go through a use case for",
+      "startTime": 514.06,
+      "endTime": 515.62
+    },
+    {
+      "text": "online game that needs to store a user's",
+      "startTime": 515.62,
+      "endTime": 518.47
+    },
+    {
+      "text": "data and has a defined access pattern through",
+      "startTime": 518.47,
+      "endTime": 521.99
+    },
+    {
+      "text": "tag for retrieving that data set",
+      "startTime": 521.99,
+      "endTime": 524.38
+    },
+    {
+      "text": "Since it's an online game , we want",
+      "startTime": 524.95,
+      "endTime": 527.23
+    },
+    {
+      "text": "ensure a consistent experience back to the gamer",
+      "startTime": 527.23,
+      "endTime": 530.25
+    },
+    {
+      "text": "of if there were 10 or even 100,000",
+      "startTime": 530.34,
+      "endTime": 533.5
+    },
+    {
+      "text": "",
+      "startTime": 533.5,
+      "endTime": 533.81
+    },
+    {
+      "text": "If the game takes off in this particular",
+      "startTime": 533.81,
+      "endTime": 536.77
+    },
+    {
+      "text": "case , we'll use a key value database",
+      "startTime": 536.77,
+      "endTime": 539.66
+    },
+    {
+      "text": "achieve consistent response times , irrespective of the",
+      "startTime": 539.67,
+      "endTime": 543.01
+    },
+    {
+      "text": "of the application",
+      "startTime": 543.01,
+      "endTime": 544.29
+    },
+    {
+      "text": "A purpose built database we could choose for",
+      "startTime": 545.94,
+      "endTime": 547.97
+    },
+    {
+      "text": "key value databases is amazon dynamodb",
+      "startTime": 547.97,
+      "endTime": 551.28
+    },
+    {
+      "text": "It is fully managed and serverless , meaning",
+      "startTime": 551.94,
+      "endTime": 554.8
+    },
+    {
+      "text": "it will take care of all the provisioning",
+      "startTime": 554.8,
+      "endTime": 556.53
+    },
+    {
+      "text": ", patching security and to help us automatically",
+      "startTime": 556.54,
+      "endTime": 559.92
+    },
+    {
+      "text": "dynamodb enables us to build apps that can",
+      "startTime": 559.92,
+      "endTime": 563.99
+    },
+    {
+      "text": "for single digit millisecond response times at scale",
+      "startTime": 563.99,
+      "endTime": 568.32
+    },
+    {
+      "text": "for our mission critical apps we could use",
+      "startTime": 568.4,
+      "endTime": 570.76
+    },
+    {
+      "text": "replication to replicate our data sets across multiple",
+      "startTime": 570.76,
+      "endTime": 574.41
+    },
+    {
+      "text": "",
+      "startTime": 574.41,
+      "endTime": 575.12
+    },
+    {
+      "text": "A really popular category amongst my customers are",
+      "startTime": 577.54,
+      "endTime": 580.14
+    },
+    {
+      "text": "memory databases In memory databases will store our",
+      "startTime": 580.15,
+      "endTime": 583.95
+    },
+    {
+      "text": "in memory rather than on this , which",
+      "startTime": 583.95,
+      "endTime": 586.89
+    },
+    {
+      "text": "gives us sub millisecond response times",
+      "startTime": 586.89,
+      "endTime": 589.21
+    },
+    {
+      "text": "And that is great for use cases to",
+      "startTime": 589.22,
+      "endTime": 591.38
+    },
+    {
+      "text": "a user session data on maintaining a leaderboard",
+      "startTime": 591.38,
+      "endTime": 594.42
+    },
+    {
+      "text": "online games or training machine learning models",
+      "startTime": 594.42,
+      "endTime": 597.52
+    },
+    {
+      "text": "But the most common use case that I've",
+      "startTime": 598.1,
+      "endTime": 599.71
+    },
+    {
+      "text": "amongst my customers is placed here as a",
+      "startTime": 599.71,
+      "endTime": 602.28
+    },
+    {
+      "text": "in front of our relational databases",
+      "startTime": 602.28,
+      "endTime": 604.7
+    },
+    {
+      "text": "This will give us much better response times",
+      "startTime": 605.03,
+      "endTime": 607.09
+    },
+    {
+      "text": "our end users and alleviates read scaling pressures",
+      "startTime": 607.09,
+      "endTime": 610.29
+    },
+    {
+      "text": "the underlying relational database which can lead to",
+      "startTime": 610.3,
+      "endTime": 613.76
+    },
+    {
+      "text": "resource contention and stability issues , which Makayla",
+      "startTime": 613.76,
+      "endTime": 618.07
+    },
+    {
+      "text": "show you in his subsequent demonstration for in",
+      "startTime": 618.07,
+      "endTime": 623.03
+    },
+    {
+      "text": "databases",
+      "startTime": 623.03,
+      "endTime": 623.94
+    },
+    {
+      "text": "We have the choice of amazon elastic cache",
+      "startTime": 623.95,
+      "endTime": 626
+    },
+    {
+      "text": "It is fully managed service that allows us",
+      "startTime": 626.69,
+      "endTime": 629.25
+    },
+    {
+      "text": "provide for sub millisecond response times and non",
+      "startTime": 629.25,
+      "endTime": 632.28
+    },
+    {
+      "text": "scaling",
+      "startTime": 632.28,
+      "endTime": 633.48
+    },
+    {
+      "text": "It is both compatible with mem cache",
+      "startTime": 633.49,
+      "endTime": 635.72
+    },
+    {
+      "text": "DM Reedus and people were using it for",
+      "startTime": 635.72,
+      "endTime": 638.08
+    },
+    {
+      "text": "cache will typically use it to build simple",
+      "startTime": 638.08,
+      "endTime": 641
+    },
+    {
+      "text": "cation layers for their latency sensitive apps whereas",
+      "startTime": 641.01,
+      "endTime": 645.46
+    },
+    {
+      "text": "Reddit users , they'll use it for more",
+      "startTime": 645.47,
+      "endTime": 647.71
+    },
+    {
+      "text": "use cases like for their gaming real time",
+      "startTime": 647.71,
+      "endTime": 650.83
+    },
+    {
+      "text": "and machine learning with regis",
+      "startTime": 650.83,
+      "endTime": 655.85
+    },
+    {
+      "text": "We also have the choice of amazon Memory",
+      "startTime": 655.86,
+      "endTime": 658.31
+    },
+    {
+      "text": "bay which is a fully managed cluster with",
+      "startTime": 658.31,
+      "endTime": 661.58
+    },
+    {
+      "text": "",
+      "startTime": 661.59,
+      "endTime": 662.39
+    },
+    {
+      "text": "Memory debate provides us with ultrafast performance with",
+      "startTime": 663.2,
+      "endTime": 666.53
+    },
+    {
+      "text": "compatibility with open source regis which then allows",
+      "startTime": 666.53,
+      "endTime": 670.13
+    },
+    {
+      "text": "to use all of this is rich data",
+      "startTime": 670.13,
+      "endTime": 672.19
+    },
+    {
+      "text": "such as sorted sets for online leaderboards by",
+      "startTime": 672.19,
+      "endTime": 676.44
+    },
+    {
+      "text": "",
+      "startTime": 676.44,
+      "endTime": 676.91
+    },
+    {
+      "text": "A distributed transaction log across availability zones",
+      "startTime": 676.91,
+      "endTime": 680.39
+    },
+    {
+      "text": "Memory DB provides us with fast database recovery",
+      "startTime": 680.46,
+      "endTime": 683.5
+    },
+    {
+      "text": "restarts without the risk of data loss ,",
+      "startTime": 683.5,
+      "endTime": null
+    },
+    {
+      "text": "that we can now use this as our",
+      "startTime": 686.38,
+      "endTime": 688.56
+    },
+    {
+      "text": "database for persistent data sets",
+      "startTime": 688.56,
+      "endTime": 691.34
+    },
+    {
+      "text": "So now that we understand the need and",
+      "startTime": 692.87,
+      "endTime": 694.84
+    },
+    {
+      "text": "of a decoupled database architecture and have gone",
+      "startTime": 694.84,
+      "endTime": 698.35
+    },
+    {
+      "text": "some use cases that particular purpose built databases",
+      "startTime": 698.35,
+      "endTime": 701.36
+    },
+    {
+      "text": "",
+      "startTime": 701.36,
+      "endTime": 702.23
+    },
+    {
+      "text": "I'd like to introduce you to Michaeli who",
+      "startTime": 702.24,
+      "endTime": 704.74
+    },
+    {
+      "text": "all this into action in the form of",
+      "startTime": 704.74,
+      "endTime": 707.02
+    },
+    {
+      "text": "demonstration over to Michael",
+      "startTime": 707.02,
+      "endTime": 709.41
+    },
+    {
+      "text": "Thank you William",
+      "startTime": 711.27,
+      "endTime": 712.08
+    },
+    {
+      "text": "In this demo we will look at awesome",
+      "startTime": 712.81,
+      "endTime": 714.64
+    },
+    {
+      "text": ", awesome pets is a fictitious company and",
+      "startTime": 714.64,
+      "endTime": 719.62
+    },
+    {
+      "text": "this made up scenario , awesome pets is",
+      "startTime": 719.62,
+      "endTime": 721.56
+    },
+    {
+      "text": "online pet store , awesome pets has all",
+      "startTime": 721.56,
+      "endTime": 725.38
+    },
+    {
+      "text": "the characteristics of an e commerce store where",
+      "startTime": 725.38,
+      "endTime": 728.3
+    },
+    {
+      "text": "can browse the catalog , add items to",
+      "startTime": 728.3,
+      "endTime": 730.63
+    },
+    {
+      "text": "basket and check out currently awesome pets tech",
+      "startTime": 730.63,
+      "endTime": 735.81
+    },
+    {
+      "text": "consists of a legacy monolithic back end and",
+      "startTime": 735.81,
+      "endTime": 739.44
+    },
+    {
+      "text": "monolithic",
+      "startTime": 739.44,
+      "endTime": 740.11
+    },
+    {
+      "text": "My sequel database",
+      "startTime": 740.11,
+      "endTime": 741.28
+    },
+    {
+      "text": "This monolithic application powers all the different features",
+      "startTime": 742.4,
+      "endTime": 746.01
+    },
+    {
+      "text": "functionality of awesome pets",
+      "startTime": 746.02,
+      "endTime": 748.1
+    },
+    {
+      "text": "Awesome pets is facing a number of challenges",
+      "startTime": 749.92,
+      "endTime": 752.59
+    },
+    {
+      "text": "their legacy monoliths",
+      "startTime": 752.59,
+      "endTime": 753.79
+    },
+    {
+      "text": "First , they have found that some queries",
+      "startTime": 753.91,
+      "endTime": 756.99
+    },
+    {
+      "text": "painfully slow , especially in cases of high",
+      "startTime": 757,
+      "endTime": 759.67
+    },
+    {
+      "text": "",
+      "startTime": 759.67,
+      "endTime": 760.04
+    },
+    {
+      "text": "Then , as a result of each query",
+      "startTime": 760.9,
+      "endTime": 763.16
+    },
+    {
+      "text": "slower and slower during peak traffic , user",
+      "startTime": 763.16,
+      "endTime": 767.03
+    },
+    {
+      "text": "are failing and users are unable to complete",
+      "startTime": 767.03,
+      "endTime": 770.16
+    },
+    {
+      "text": "",
+      "startTime": 770.16,
+      "endTime": 770.97
+    },
+    {
+      "text": "Lastly , the database runs out of resources",
+      "startTime": 772.58,
+      "endTime": 775.27
+    },
+    {
+      "text": "the Lord which can cause the database to",
+      "startTime": 775.27,
+      "endTime": 777.67
+    },
+    {
+      "text": "and the entire application to be unavailable",
+      "startTime": 777.67,
+      "endTime": 780.77
+    },
+    {
+      "text": "If you are also trying to scale monolithic",
+      "startTime": 782.57,
+      "endTime": 784.65
+    },
+    {
+      "text": "",
+      "startTime": 784.65,
+      "endTime": 785.59
+    },
+    {
+      "text": "These challenges may sound very familiar to you",
+      "startTime": 785.6,
+      "endTime": 788.29
+    },
+    {
+      "text": "So now I will show you how the",
+      "startTime": 790.26,
+      "endTime": 792.62
+    },
+    {
+      "text": "awesome pets application performs by running a simple",
+      "startTime": 792.62,
+      "endTime": 796.45
+    },
+    {
+      "text": "",
+      "startTime": 796.46,
+      "endTime": 797.07
+    },
+    {
+      "text": "Then I will show you how awesome pets",
+      "startTime": 798.06,
+      "endTime": 800.46
+    },
+    {
+      "text": "be decoupled with microservices and purpose built databases",
+      "startTime": 800.46,
+      "endTime": 804
+    },
+    {
+      "text": "How to pick the right database for the",
+      "startTime": 804.58,
+      "endTime": 806.14
+    },
+    {
+      "text": "job and show you the differences in performance",
+      "startTime": 806.14,
+      "endTime": 809.25
+    },
+    {
+      "text": "the legacy monolithic application and microservices application",
+      "startTime": 809.26,
+      "endTime": 814.14
+    },
+    {
+      "text": "Lastly , I will briefly touch on some",
+      "startTime": 815.77,
+      "endTime": 817.64
+    },
+    {
+      "text": "the design patterns used in the new architecture",
+      "startTime": 817.64,
+      "endTime": 819.92
+    },
+    {
+      "text": "Let me start by showing you a sample",
+      "startTime": 821.94,
+      "endTime": 824.2
+    },
+    {
+      "text": "journey on awesome pets",
+      "startTime": 824.2,
+      "endTime": 825.96
+    },
+    {
+      "text": "As you can see here when I visit",
+      "startTime": 826.85,
+      "endTime": 828.69
+    },
+    {
+      "text": "pets",
+      "startTime": 828.7,
+      "endTime": 829.38
+    },
+    {
+      "text": "I am presented with the pets catalog",
+      "startTime": 829.39,
+      "endTime": 831.31
+    },
+    {
+      "text": "The catalog shows the pet types available in",
+      "startTime": 832.05,
+      "endTime": 834.4
+    },
+    {
+      "text": "commentary and account for each type",
+      "startTime": 834.4,
+      "endTime": 836.72
+    },
+    {
+      "text": "I can add pets to the cart by",
+      "startTime": 838.09,
+      "endTime": 839.96
+    },
+    {
+      "text": "the add to cart button and once I",
+      "startTime": 839.96,
+      "endTime": 843.1
+    },
+    {
+      "text": "all of the pets , I can take",
+      "startTime": 843.1,
+      "endTime": 844.96
+    },
+    {
+      "text": "look at the card and proceed to the",
+      "startTime": 844.96,
+      "endTime": 846.85
+    },
+    {
+      "text": "",
+      "startTime": 846.85,
+      "endTime": 847.36
+    },
+    {
+      "text": "In the checkout page",
+      "startTime": 849.15,
+      "endTime": 850.28
+    },
+    {
+      "text": "I can enter all the details required to",
+      "startTime": 850.29,
+      "endTime": 852.37
+    },
+    {
+      "text": "the transaction and confirm the payment and once",
+      "startTime": 852.37,
+      "endTime": 858.56
+    },
+    {
+      "text": "confirmation message is displayed , user journey is",
+      "startTime": 858.56,
+      "endTime": 861.18
+    },
+    {
+      "text": "",
+      "startTime": 861.18,
+      "endTime": 861.72
+    },
+    {
+      "text": "So let's now run the load test to",
+      "startTime": 863.53,
+      "endTime": 865.26
+    },
+    {
+      "text": "how the monolithic application performs on the load",
+      "startTime": 865.26,
+      "endTime": 867.89
+    },
+    {
+      "text": "There are many tools available to run performance",
+      "startTime": 869.59,
+      "endTime": 872.02
+    },
+    {
+      "text": "such as j meter or artillery",
+      "startTime": 872.02,
+      "endTime": 874.52
+    },
+    {
+      "text": "To name a few",
+      "startTime": 874.52,
+      "endTime": 875.47
+    },
+    {
+      "text": "But for this demo , I'm going to",
+      "startTime": 875.48,
+      "endTime": 877.06
+    },
+    {
+      "text": "blaze meter",
+      "startTime": 877.06,
+      "endTime": 878.47
+    },
+    {
+      "text": "This test simulates a real user journey on",
+      "startTime": 879.98,
+      "endTime": 882.71
+    },
+    {
+      "text": "pets where each user will get a catalog",
+      "startTime": 882.72,
+      "endTime": 886.26
+    },
+    {
+      "text": "an item to the cart and submit another",
+      "startTime": 886.27,
+      "endTime": 889.31
+    },
+    {
+      "text": "This test is configured with a total of",
+      "startTime": 892.87,
+      "endTime": 895.26
+    },
+    {
+      "text": "concurrent users navigating through the journey for a",
+      "startTime": 895.26,
+      "endTime": 899.13
+    },
+    {
+      "text": "of 10 minutes And the number of users",
+      "startTime": 899.13,
+      "endTime": 902.71
+    },
+    {
+      "text": "ramp up gradually over the duration of one",
+      "startTime": 902.71,
+      "endTime": 905.2
+    },
+    {
+      "text": "",
+      "startTime": 905.2,
+      "endTime": 905.71
+    },
+    {
+      "text": "Lastly , this test will run in the",
+      "startTime": 907.16,
+      "endTime": 909.45
+    },
+    {
+      "text": "Oregon region",
+      "startTime": 909.46,
+      "endTime": 911.18
+    },
+    {
+      "text": "I will now start the load test and",
+      "startTime": 912.54,
+      "endTime": 915.04
+    },
+    {
+      "text": "the test takes about 10 minutes to complete",
+      "startTime": 915.05,
+      "endTime": 917.68
+    },
+    {
+      "text": "I will speed up the video and we",
+      "startTime": null,
+      "endTime": 920.01
+    },
+    {
+      "text": "take a look at the results once the",
+      "startTime": 920.01,
+      "endTime": 921.84
+    },
+    {
+      "text": "is complete",
+      "startTime": 921.84,
+      "endTime": 922.79
+    },
+    {
+      "text": "So the test is now complete and we",
+      "startTime": 923.64,
+      "endTime": 926.13
+    },
+    {
+      "text": "take a look at the results in these",
+      "startTime": 926.13,
+      "endTime": 928.6
+    },
+    {
+      "text": ", we have two graphs",
+      "startTime": 928.6,
+      "endTime": 930.38
+    },
+    {
+      "text": "The one on the left shows how many",
+      "startTime": 930.59,
+      "endTime": 932.57
+    },
+    {
+      "text": "over the duration of the test succeeded and",
+      "startTime": 932.57,
+      "endTime": 935.66
+    },
+    {
+      "text": "many requests failed",
+      "startTime": 935.66,
+      "endTime": 937.01
+    },
+    {
+      "text": "And the graph on the right displays the",
+      "startTime": 937.81,
+      "endTime": 940.04
+    },
+    {
+      "text": "response time over the duration of the test",
+      "startTime": 940.05,
+      "endTime": 942.87
+    },
+    {
+      "text": "If we focus on the graph on the",
+      "startTime": 944.43,
+      "endTime": 945.99
+    },
+    {
+      "text": "hand side , we can see that as",
+      "startTime": 945.99,
+      "endTime": 948.25
+    },
+    {
+      "text": "number of users ramps up , the average",
+      "startTime": 948.25,
+      "endTime": 950.57
+    },
+    {
+      "text": "time of the application keeps increasing , reaching",
+      "startTime": 950.57,
+      "endTime": 953.8
+    },
+    {
+      "text": "peak response time of about seven seconds",
+      "startTime": 953.8,
+      "endTime": 956.4
+    },
+    {
+      "text": "And at some point , the response times",
+      "startTime": 957.4,
+      "endTime": 959.34
+    },
+    {
+      "text": "drastically to only a few hundreds of milliseconds",
+      "startTime": 959.34,
+      "endTime": 962.65
+    },
+    {
+      "text": "after a few minutes , the response time",
+      "startTime": 963.45,
+      "endTime": 965.64
+    },
+    {
+      "text": "back up to seven seconds",
+      "startTime": 965.65,
+      "endTime": 967.52
+    },
+    {
+      "text": "If we look at the graph on the",
+      "startTime": 969.66,
+      "endTime": 971.3
+    },
+    {
+      "text": ", it's clear why there is a drop",
+      "startTime": 971.3,
+      "endTime": 973.63
+    },
+    {
+      "text": "response time at around 1750",
+      "startTime": 973.63,
+      "endTime": 976.14
+    },
+    {
+      "text": "We can see that at this time almost",
+      "startTime": 976.23,
+      "endTime": 980.04
+    },
+    {
+      "text": "of the requests fail and there are no",
+      "startTime": 980.05,
+      "endTime": 982.47
+    },
+    {
+      "text": "requests",
+      "startTime": 982.47,
+      "endTime": 983.68
+    },
+    {
+      "text": "This tells us that the website was down",
+      "startTime": 984.59,
+      "endTime": 986.8
+    },
+    {
+      "text": "that time and the user request was failing",
+      "startTime": 986.8,
+      "endTime": 989.49
+    },
+    {
+      "text": "quickly",
+      "startTime": 989.49,
+      "endTime": 990.26
+    },
+    {
+      "text": "So let's go a bit deeper to see",
+      "startTime": 991.24,
+      "endTime": 992.96
+    },
+    {
+      "text": "causing these issues here",
+      "startTime": 992.96,
+      "endTime": 995.5
+    },
+    {
+      "text": "I am using AWS X ray which is",
+      "startTime": 995.5,
+      "endTime": 997.74
+    },
+    {
+      "text": "tracing service to dive deeper into the failed",
+      "startTime": 997.74,
+      "endTime": 1000.33
+    },
+    {
+      "text": "from the X ray service map",
+      "startTime": 1000.33,
+      "endTime": 1003.95
+    },
+    {
+      "text": "I can see my monolithic application and the",
+      "startTime": 1003.96,
+      "endTime": 1006.45
+    },
+    {
+      "text": "going to the database",
+      "startTime": 1006.45,
+      "endTime": 1008.1
+    },
+    {
+      "text": "The red color here represents the amount of",
+      "startTime": 1009.02,
+      "endTime": 1011.67
+    },
+    {
+      "text": "that have failed in the database",
+      "startTime": 1011.67,
+      "endTime": 1014.06
+    },
+    {
+      "text": "So I'm now going to use X ray",
+      "startTime": 1015.9,
+      "endTime": 1017.81
+    },
+    {
+      "text": ", AWS x ray insights identifies where in",
+      "startTime": 1017.82,
+      "endTime": 1022.09
+    },
+    {
+      "text": "applications issues are occurring , the records of",
+      "startTime": 1022.09,
+      "endTime": 1025.15
+    },
+    {
+      "text": "issue and the associated impact",
+      "startTime": 1025.16,
+      "endTime": 1027.48
+    },
+    {
+      "text": "And when I open an insight I can",
+      "startTime": 1028.57,
+      "endTime": 1030.77
+    },
+    {
+      "text": "immediately what is the root cause of the",
+      "startTime": 1030.77,
+      "endTime": 1032.9
+    },
+    {
+      "text": "and the impact it's having In this case",
+      "startTime": 1032.9,
+      "endTime": 1036.24
+    },
+    {
+      "text": "telling me that 23% of the request failed",
+      "startTime": 1036.33,
+      "endTime": 1039.7
+    },
+    {
+      "text": "the database",
+      "startTime": 1039.71,
+      "endTime": 1040.56
+    },
+    {
+      "text": "Then I can click on analyze insight to",
+      "startTime": 1041.45,
+      "endTime": 1044.21
+    },
+    {
+      "text": "down to each individual failed request",
+      "startTime": 1044.21,
+      "endTime": 1047.09
+    },
+    {
+      "text": "Once I opened a failed request , I",
+      "startTime": 1047.75,
+      "endTime": 1050.31
+    },
+    {
+      "text": "see all of the components that executed for",
+      "startTime": 1050.31,
+      "endTime": 1053
+    },
+    {
+      "text": "request as well as how long each one",
+      "startTime": 1053,
+      "endTime": 1056.12
+    },
+    {
+      "text": "them took",
+      "startTime": 1056.12,
+      "endTime": 1057.14
+    },
+    {
+      "text": "In this specific case the database returned an",
+      "startTime": 1058.23,
+      "endTime": 1060.63
+    },
+    {
+      "text": "after 17 seconds due to a deadlock",
+      "startTime": 1060.63,
+      "endTime": 1063.93
+    },
+    {
+      "text": "Lastly , let's take a look at the",
+      "startTime": 1063.94,
+      "endTime": 1065.66
+    },
+    {
+      "text": "based metrics to understand in more details what",
+      "startTime": 1065.66,
+      "endTime": 1068.2
+    },
+    {
+      "text": "",
+      "startTime": 1068.2,
+      "endTime": 1068.98
+    },
+    {
+      "text": "If we focus on the CPU utilization ,",
+      "startTime": 1068.99,
+      "endTime": null
+    },
+    {
+      "text": "can see that the database CPU utilization spikes",
+      "startTime": 1071.82,
+      "endTime": 1075.36
+    },
+    {
+      "text": "to 100% very quickly and after a few",
+      "startTime": 1075.36,
+      "endTime": 1080.26
+    },
+    {
+      "text": "of sustained 100% CPU utilization , the database",
+      "startTime": 1080.26,
+      "endTime": 1084.5
+    },
+    {
+      "text": "utilization goes back to 0% And then it",
+      "startTime": 1084.5,
+      "endTime": 1088.9
+    },
+    {
+      "text": "back up to 100%",
+      "startTime": 1088.9,
+      "endTime": 1090.64
+    },
+    {
+      "text": "This is because the database crashes and restarts",
+      "startTime": 1091.61,
+      "endTime": 1094.64
+    },
+    {
+      "text": "to high CPU utilization",
+      "startTime": 1094.65,
+      "endTime": 1096.74
+    },
+    {
+      "text": "You can also validate this by looking at",
+      "startTime": 1097.93,
+      "endTime": 1100.46
+    },
+    {
+      "text": "metrics such as right I",
+      "startTime": 1100.47,
+      "endTime": 1102.53
+    },
+    {
+      "text": "Ops and database connections",
+      "startTime": 1102.53,
+      "endTime": 1104.61
+    },
+    {
+      "text": "As we've seen this legacy application does not",
+      "startTime": 1105.74,
+      "endTime": 1108.68
+    },
+    {
+      "text": "well , requests can take up to 10",
+      "startTime": 1108.68,
+      "endTime": 1111.61
+    },
+    {
+      "text": "during the traffic peaks and the database crashes",
+      "startTime": 1111.61,
+      "endTime": 1114.98
+    },
+    {
+      "text": "outages awesome pets could look at implementing many",
+      "startTime": 1114.98,
+      "endTime": 1120.32
+    },
+    {
+      "text": "the common optimization for monolithic applications",
+      "startTime": 1120.32,
+      "endTime": 1123.21
+    },
+    {
+      "text": "However , they expect to grow 10 times",
+      "startTime": 1123.81,
+      "endTime": 1126.45
+    },
+    {
+      "text": "the next year and they know that even",
+      "startTime": 1126.46,
+      "endTime": 1128.99
+    },
+    {
+      "text": "common optimizations for monolithic applications , they will",
+      "startTime": 1128.99,
+      "endTime": 1132.4
+    },
+    {
+      "text": "be able to support their planned growth",
+      "startTime": 1132.4,
+      "endTime": 1134.78
+    },
+    {
+      "text": "This is why awesome pets decided to move",
+      "startTime": 1135.67,
+      "endTime": 1138.41
+    },
+    {
+      "text": "microservices with purpose built databases",
+      "startTime": 1138.41,
+      "endTime": 1140.94
+    },
+    {
+      "text": "So let's try to understand how they decompose",
+      "startTime": 1142.52,
+      "endTime": 1144.97
+    },
+    {
+      "text": "application , how they decided which database to",
+      "startTime": 1144.97,
+      "endTime": 1147.82
+    },
+    {
+      "text": "for each use case in this new architecture",
+      "startTime": 1147.82,
+      "endTime": 1152.58
+    },
+    {
+      "text": "awesome pets is split into four microservices ,",
+      "startTime": null,
+      "endTime": null
+    },
+    {
+      "text": "inventory order cart and catalog the inventory",
+      "startTime": 1155.6,
+      "endTime": 1161.44
+    },
+    {
+      "text": "Micro service uses dynamodb",
+      "startTime": 1161.44,
+      "endTime": 1163.76
+    },
+    {
+      "text": "The inventory data can be stored in a",
+      "startTime": 1164.57,
+      "endTime": 1166.33
+    },
+    {
+      "text": "key value format and there is a well",
+      "startTime": 1166.33,
+      "endTime": 1168.99
+    },
+    {
+      "text": "pattern such as adding or removing pets to",
+      "startTime": 1168.99,
+      "endTime": 1172.33
+    },
+    {
+      "text": "inventory",
+      "startTime": 1172.33,
+      "endTime": 1173.05
+    },
+    {
+      "text": "Then we have the older processing",
+      "startTime": 1175.17,
+      "endTime": 1176.78
+    },
+    {
+      "text": "This use case requires data consistency and stores",
+      "startTime": 1177.37,
+      "endTime": 1180.48
+    },
+    {
+      "text": "in a de normalized relational format",
+      "startTime": 1180.48,
+      "endTime": 1183.19
+    },
+    {
+      "text": "Some of the previous logic can also be",
+      "startTime": 1184.03,
+      "endTime": 1185.73
+    },
+    {
+      "text": "and this is why it's a great fit",
+      "startTime": 1185.73,
+      "endTime": 1187.84
+    },
+    {
+      "text": "a my sequel compatible amazon aurora",
+      "startTime": 1187.84,
+      "endTime": 1190.69
+    },
+    {
+      "text": "Then we have the cast microservices",
+      "startTime": 1192.44,
+      "endTime": 1194.23
+    },
+    {
+      "text": "The cast functionality is the second most used",
+      "startTime": 1194.78,
+      "endTime": 1197.26
+    },
+    {
+      "text": "on awesome pets",
+      "startTime": 1197.26,
+      "endTime": 1198.96
+    },
+    {
+      "text": "It has high volume of reads and writes",
+      "startTime": 1199.8,
+      "endTime": 1202.14
+    },
+    {
+      "text": "the response times needed should be in seven",
+      "startTime": 1202.69,
+      "endTime": 1204.95
+    },
+    {
+      "text": "as you may remember from Williams session",
+      "startTime": 1204.95,
+      "endTime": 1209.3
+    },
+    {
+      "text": "This is a great use case for an",
+      "startTime": 1209.31,
+      "endTime": 1211.03
+    },
+    {
+      "text": "memory database such as brady's on elastic cache",
+      "startTime": 1211.04,
+      "endTime": 1214.29
+    },
+    {
+      "text": "And lastly we have the catalog , the",
+      "startTime": 1216.4,
+      "endTime": 1218.77
+    },
+    {
+      "text": "at the moment , queries all of the",
+      "startTime": 1218.77,
+      "endTime": 1220.93
+    },
+    {
+      "text": "inventory and performs account based on the pet",
+      "startTime": 1220.93,
+      "endTime": 1224.46
+    },
+    {
+      "text": "because awesome pets utilizes a relational database",
+      "startTime": 1224.46,
+      "endTime": 1229.37
+    },
+    {
+      "text": "They are currently not able to provide rich",
+      "startTime": 1229.38,
+      "endTime": 1231.81
+    },
+    {
+      "text": "functionality and therefore one of the technologies that",
+      "startTime": 1231.81,
+      "endTime": 1235.41
+    },
+    {
+      "text": "can use for the catalog is the amazon",
+      "startTime": 1235.41,
+      "endTime": 1237.98
+    },
+    {
+      "text": "Search service",
+      "startTime": 1237.99,
+      "endTime": 1239.2
+    },
+    {
+      "text": "Open search can easily ingest search and aggregate",
+      "startTime": 1240.43,
+      "endTime": 1243.84
+    },
+    {
+      "text": "of documents",
+      "startTime": 1243.85,
+      "endTime": 1245.01
+    },
+    {
+      "text": "So now that we've seen how the target",
+      "startTime": 1246.81,
+      "endTime": 1248.45
+    },
+    {
+      "text": "looks like , let's run another performance test",
+      "startTime": 1248.45,
+      "endTime": 1251.64
+    },
+    {
+      "text": "see how the new architecture performs as you",
+      "startTime": 1251.65,
+      "endTime": 1254.94
+    },
+    {
+      "text": "see I can add the parameters to the",
+      "startTime": 1254.94,
+      "endTime": 1256.86
+    },
+    {
+      "text": "",
+      "startTime": 1256.86,
+      "endTime": 1257.01
+    },
+    {
+      "text": "R",
+      "startTime": 1257.01,
+      "endTime": 1257.15
+    },
+    {
+      "text": "L",
+      "startTime": 1257.15,
+      "endTime": 1257.49
+    },
+    {
+      "text": "To start using the microservices back end and",
+      "startTime": 1257.75,
+      "endTime": 1261.89
+    },
+    {
+      "text": "these microservices back end , I have around",
+      "startTime": 1261.9,
+      "endTime": 1264.21
+    },
+    {
+      "text": "same number of pets if not more compared",
+      "startTime": 1264.21,
+      "endTime": 1266.8
+    },
+    {
+      "text": "the monolithic application and the functionality is exactly",
+      "startTime": 1266.8,
+      "endTime": 1270.11
+    },
+    {
+      "text": "same",
+      "startTime": 1270.11,
+      "endTime": 1270.6
+    },
+    {
+      "text": "So I can go ahead and open the",
+      "startTime": 1271.38,
+      "endTime": 1272.97
+    },
+    {
+      "text": "for my microservices back end",
+      "startTime": 1272.97,
+      "endTime": 1274.8
+    },
+    {
+      "text": "As you can see , the performance test",
+      "startTime": 1275.76,
+      "endTime": 1277.58
+    },
+    {
+      "text": "the same as the same configuration as the",
+      "startTime": 1277.58,
+      "endTime": 1279.63
+    },
+    {
+      "text": "test and the user journey is the same",
+      "startTime": 1279.63,
+      "endTime": 1282.36
+    },
+    {
+      "text": "We're getting the catalog , adding a card",
+      "startTime": 1282.36,
+      "endTime": 1284.78
+    },
+    {
+      "text": "submit an order",
+      "startTime": 1285.54,
+      "endTime": 1286.69
+    },
+    {
+      "text": "And also the configuration is the same with",
+      "startTime": 1288.15,
+      "endTime": 1290.36
+    },
+    {
+      "text": "total users for up to 10 minutes duration",
+      "startTime": 1290.36,
+      "endTime": 1293.72
+    },
+    {
+      "text": "with among one minute ramp up",
+      "startTime": 1293.73,
+      "endTime": 1296.06
+    },
+    {
+      "text": "So let's go ahead and run this new",
+      "startTime": 1298.4,
+      "endTime": 1300.06
+    },
+    {
+      "text": "and take a look at the results",
+      "startTime": 1300.06,
+      "endTime": 1301.98
+    },
+    {
+      "text": "Once the test is complete",
+      "startTime": 1301.98,
+      "endTime": 1303.31
+    },
+    {
+      "text": "Like before I will speed up this part",
+      "startTime": 1304.45,
+      "endTime": 1306.22
+    },
+    {
+      "text": "the video until the test completes",
+      "startTime": 1306.22,
+      "endTime": 1308.02
+    },
+    {
+      "text": "Let's take a look at these results at",
+      "startTime": 1310.01,
+      "endTime": 1312.45
+    },
+    {
+      "text": "glance",
+      "startTime": 1312.45,
+      "endTime": 1312.93
+    },
+    {
+      "text": "We can already see that the performance is",
+      "startTime": 1312.94,
+      "endTime": 1314.86
+    },
+    {
+      "text": "lot more consistent that there were no errors",
+      "startTime": 1314.86,
+      "endTime": 1317.74
+    },
+    {
+      "text": "the performance test",
+      "startTime": 1317.74,
+      "endTime": 1319.25
+    },
+    {
+      "text": "And overall the average response time is around",
+      "startTime": 1319.38,
+      "endTime": 1322.06
+    },
+    {
+      "text": "milliseconds , which is 45 times faster than",
+      "startTime": 1322.06,
+      "endTime": 1325.97
+    },
+    {
+      "text": "monolithic application",
+      "startTime": 1325.97,
+      "endTime": 1327.35
+    },
+    {
+      "text": "So let's take a look at the X",
+      "startTime": 1329.43,
+      "endTime": 1331.03
+    },
+    {
+      "text": "and here we can see all of the",
+      "startTime": 1331.03,
+      "endTime": 1335.61
+    },
+    {
+      "text": "between the microservices",
+      "startTime": 1335.61,
+      "endTime": 1337.66
+    },
+    {
+      "text": "For example , we can see how the",
+      "startTime": 1339.22,
+      "endTime": 1341.42
+    },
+    {
+      "text": "all the functionality actually spans multiple microservices",
+      "startTime": 1341.42,
+      "endTime": 1345.4
+    },
+    {
+      "text": "And here we can see the api calls",
+      "startTime": 1347.61,
+      "endTime": 1349.52
+    },
+    {
+      "text": "getting the catalog and adding items to the",
+      "startTime": 1349.52,
+      "endTime": 1351.66
+    },
+    {
+      "text": "",
+      "startTime": 1351.66,
+      "endTime": 1352.05
+    },
+    {
+      "text": "I can now look at specific traces to",
+      "startTime": 1352.87,
+      "endTime": 1354.99
+    },
+    {
+      "text": "deeper on a single submit order request here",
+      "startTime": 1354.99,
+      "endTime": 1362.54
+    },
+    {
+      "text": "we can see the breakdown of where the",
+      "startTime": null,
+      "endTime": 1364.63
+    },
+    {
+      "text": "was spent for the duration of the submit",
+      "startTime": 1364.63,
+      "endTime": 1366.97
+    },
+    {
+      "text": "the transaction",
+      "startTime": 1366.97,
+      "endTime": 1367.97
+    },
+    {
+      "text": "We can see that under load",
+      "startTime": 1368.88,
+      "endTime": 1370.32
+    },
+    {
+      "text": "This operation only took about 300 milliseconds ,",
+      "startTime": 1370.33,
+      "endTime": null
+    },
+    {
+      "text": "is 25 times faster that the submit to",
+      "startTime": 1373.22,
+      "endTime": 1376.54
+    },
+    {
+      "text": "functionality in the monolithic application under the same",
+      "startTime": 1376.54,
+      "endTime": 1379.7
+    },
+    {
+      "text": "in the demo , we saw how the",
+      "startTime": 1379.7,
+      "endTime": 1384.93
+    },
+    {
+      "text": "architecture is able to scale well to cope",
+      "startTime": 1384.93,
+      "endTime": 1388.31
+    },
+    {
+      "text": "the traffic and provide consistent response times",
+      "startTime": 1388.31,
+      "endTime": 1391.36
+    },
+    {
+      "text": "Another characteristic of this new architecture is they",
+      "startTime": 1392.12,
+      "endTime": 1395.53
+    },
+    {
+      "text": "achieve much greater availability",
+      "startTime": 1395.53,
+      "endTime": 1397.76
+    },
+    {
+      "text": "If one of the databases fails , only",
+      "startTime": 1397.77,
+      "endTime": 1400.61
+    },
+    {
+      "text": "of the microservices is affected and the application",
+      "startTime": 1400.61,
+      "endTime": 1403.62
+    },
+    {
+      "text": "partially still function by moving to microservices",
+      "startTime": 1403.62,
+      "endTime": 1407.68
+    },
+    {
+      "text": "Not only we can scale and perform better",
+      "startTime": 1407.69,
+      "endTime": 1410.42
+    },
+    {
+      "text": "but we also gain greater availability",
+      "startTime": null,
+      "endTime": 1412.96
+    },
+    {
+      "text": "Lastly , I'd like to briefly mention to",
+      "startTime": 1414.58,
+      "endTime": 1416.78
+    },
+    {
+      "text": "patterns that were used in this composition",
+      "startTime": 1416.78,
+      "endTime": 1419.4
+    },
+    {
+      "text": "The first is event notification in this new",
+      "startTime": 1420.31,
+      "endTime": 1423.42
+    },
+    {
+      "text": "",
+      "startTime": 1423.42,
+      "endTime": 1424.11
+    },
+    {
+      "text": "The catalog micro service needs to be updated",
+      "startTime": 1424.26,
+      "endTime": 1427.18
+    },
+    {
+      "text": "there is an item added or removed from",
+      "startTime": 1427.18,
+      "endTime": 1429.77
+    },
+    {
+      "text": "inventory",
+      "startTime": 1429.77,
+      "endTime": 1430.55
+    },
+    {
+      "text": "To implement this pattern , we leverage dynamodb",
+      "startTime": 1431.46,
+      "endTime": 1434.29
+    },
+    {
+      "text": ", which is a feature of dynamodb that",
+      "startTime": 1434.29,
+      "endTime": 1438.01
+    },
+    {
+      "text": "you to stream every change on the table",
+      "startTime": 1438.01,
+      "endTime": 1440.76
+    },
+    {
+      "text": "The second pattern is the saga pattern",
+      "startTime": 1441.82,
+      "endTime": 1443.94
+    },
+    {
+      "text": "This pattern allows us to execute business transactions",
+      "startTime": 1444.5,
+      "endTime": 1448.24
+    },
+    {
+      "text": "multiple microservices",
+      "startTime": 1448.25,
+      "endTime": 1450.26
+    },
+    {
+      "text": "In this example , the cycle pattern was",
+      "startTime": 1451.04,
+      "endTime": 1453.59
+    },
+    {
+      "text": "using AWS step functions and the transaction spans",
+      "startTime": 1453.6,
+      "endTime": 1458.86
+    },
+    {
+      "text": "inventory , the order and the cat microservices",
+      "startTime": 1458.86,
+      "endTime": 1462.64
+    },
+    {
+      "text": "If you'd like to find out more about",
+      "startTime": 1464.23,
+      "endTime": 1466.08
+    },
+    {
+      "text": "patterns",
+      "startTime": 1466.08,
+      "endTime": 1467.26
+    },
+    {
+      "text": "I'd recommend watching the session named build Brazilian",
+      "startTime": 1467.72,
+      "endTime": 1471.1
+    },
+    {
+      "text": "using fault tolerant patterns in this session ,",
+      "startTime": 1471.1,
+      "endTime": null
+    },
+    {
+      "text": "looked at what are today's modern application requirements",
+      "startTime": 1476.44,
+      "endTime": 1479.36
+    },
+    {
+      "text": "We then explored why customers moved from a",
+      "startTime": 1480.06,
+      "endTime": 1482.27
+    },
+    {
+      "text": "size fits all approach to purpose built databases",
+      "startTime": 1482.27,
+      "endTime": 1485.62
+    },
+    {
+      "text": "We looked at how you can choose the",
+      "startTime": 1486.62,
+      "endTime": 1488.16
+    },
+    {
+      "text": "database for the right job and we saw",
+      "startTime": 1488.16,
+      "endTime": 1491.03
+    },
+    {
+      "text": "it can help you achieve greater scale ,",
+      "startTime": 1491.03,
+      "endTime": null
+    },
+    {
+      "text": "performance and greater availability",
+      "startTime": 1493.31,
+      "endTime": 1495.88
+    },
+    {
+      "text": "We covered a number of different topics in",
+      "startTime": 1497.9,
+      "endTime": 1499.92
+    },
+    {
+      "text": "session , but the learning does not have",
+      "startTime": 1499.92,
+      "endTime": 1502.14
+    },
+    {
+      "text": "stop here",
+      "startTime": 1502.14,
+      "endTime": 1503.12
+    },
+    {
+      "text": "We encourage you to check out our training",
+      "startTime": 1503.13,
+      "endTime": 1505.66
+    },
+    {
+      "text": "certification content",
+      "startTime": 1505.66,
+      "endTime": 1507.01
+    },
+    {
+      "text": "We offer over 500 free digital courses that",
+      "startTime": 1507.7,
+      "endTime": 1510.94
+    },
+    {
+      "text": "help you and your team build new cloud",
+      "startTime": 1510.94,
+      "endTime": 1513.22
+    },
+    {
+      "text": "and learn about the latest services",
+      "startTime": 1513.22,
+      "endTime": 1515.5
+    },
+    {
+      "text": "And as you build your skills , consider",
+      "startTime": 1516.36,
+      "endTime": 1518.26
+    },
+    {
+      "text": "for one of our 11 aws certifications",
+      "startTime": 1518.26,
+      "endTime": 1521.85
+    },
+    {
+      "text": "You can scan the QR codes in this",
+      "startTime": 1523.1,
+      "endTime": 1524.9
+    },
+    {
+      "text": "to find out more",
+      "startTime": 1524.9,
+      "endTime": 1526.14
+    },
+    {
+      "text": "Thank you for attending this talk",
+      "startTime": 1527.89,
+      "endTime": 1529.57
+    },
+    {
+      "text": "We would love to hear your feedback to",
+      "startTime": 1529.58,
+      "endTime": 1531.73
+    },
+    {
+      "text": "us improve the AWS summit experience",
+      "startTime": 1531.73,
+      "endTime": 1534.39
+    },
+    {
+      "text": "So please remember to complete the session survey",
+      "startTime": 1534.4,
+      "endTime": 1537.5
+    }
+  ]
+}

@@ -1,0 +1,1028 @@
+[
+    {
+        "sent": "Bonjour et bienvenue à choisir la base de données adaptée aux applications modernes dans le cadre de notre nouvelle série en ligne « West Summit.",
+        "startTime": 15.19,
+        "endTime": 21.56
+    },
+    {
+        "sent": "Je m'appelle William Wong et je suis un architecte spécialisé en solutions de bases de données.",
+        "startTime": 21.57,
+        "endTime": 25.3
+    },
+    {
+        "sent": "Aujourd'hui, je serai rejoint par Michael Riccardi, notre architecte spécialisé en solutions de développement.",
+        "startTime": 25.31,
+        "endTime": 30.19
+    },
+    {
+        "sent": "Aujourd'hui.",
+        "startTime": 31.76,
+        "endTime": 32.18
+    },
+    {
+        "sent": "Nous sommes très heureux d'être ici pour vous montrer comment des bases de données spécialement conçues peuvent être utilisées pour améliorer l'échelle, les performances et la disponibilité de vos applications.",
+        "startTime": 31.76,
+        "endTime": 32.18
+    },
+    {
+        "sent": "Notre agenda présentera les exigences des applications modernes.",
+        "startTime": 32.18,
+        "endTime": 45.42
+    },
+    {
+        "sent": "Je vais ensuite examiner les défis qui sont résolus à l'aide de microservices et de bases de données spécialisées.",
+        "startTime": 32.18,
+        "endTime": 45.42
+    },
+    {
+        "sent": "Avant d'examiner comment nous pouvons sélectionner les bases de données adaptées à vos charges de travail particulières.",
+        "startTime": 45.43,
+        "endTime": 55.91
+    },
+    {
+        "sent": "Michael.",
+        "startTime": 56.34,
+        "endTime": 56.77
+    },
+    {
+        "sent": "Nous allons ensuite approfondir la question, où il modernisera une application, passant d'une pile de bases de données relationnelles monolithique à une application utilisant des bases de données spécialement conçues, et vous montrera les différences en termes de performances et d'échelle.",
+        "startTime": 56.77,
+        "endTime": 67.25
+    },
+    {
+        "sent": "Commençons donc et examinons les exigences de nos applications modernes.",
+        "startTime": 67.26,
+        "endTime": 70.22
+    },
+    {
+        "sent": "Et nous examinons d'abord les applications que nous utilisons tous au quotidien, comme le covoiturage, les médias, le streaming, les services bancaires, les jeux vidéo et les réseaux sociaux.",
+        "startTime": 70.85,
+        "endTime": 77.59
+    },
+    {
+        "sent": "Nous commençons à voir quelques modèles courants.",
+        "startTime": 77.6,
+        "endTime": 79.89
+    },
+    {
+        "sent": "Ces modèles peuvent être des millions d'utilisateurs accédant à nos applications dans différentes zones géographiques.",
+        "startTime": 79.9,
+        "endTime": 84.5
+    },
+    {
+        "sent": "Et ces mêmes utilisateurs s'attendent à des expériences instantanées qui pourraient se résumer à des temps de réponse constants en millisecondes, voire en moins de la milliseconde.",
+        "startTime": 84.51,
+        "endTime": 92.6
+    },
+    {
+        "sent": "Nos applications devront être surdimensionnées pour répondre aux demandes liées à des événements tels que nos ventes flash ou le traitement de l'urine, puis être réduites à la baisse.",
+        "startTime": 93.24,
+        "endTime": 100.7
+    },
+    {
+        "sent": "Nous ne sommes pas utilisés afin de minimiser les coûts.",
+        "startTime": 100.7,
+        "endTime": 103.15
+    },
+    {
+        "sent": "Il est prévu de recueillir davantage de données au cours des trois prochaines années que celles des 30 dernières années.",
+        "startTime": 104.21,
+        "endTime": 110.5
+    },
+    {
+        "sent": "Et cela nécessitera des outils spécialisés pour traiter les pétaoctets.",
+        "startTime": 110.62,
+        "endTime": 114.35
+    },
+    {
+        "sent": "Si ce n'est pas zéro octet de données structurées et non structurées.",
+        "startTime": 114.36,
+        "endTime": 117.46
+    },
+    {
+        "sent": "Si nous prenons le temps de réfléchir aux modèles architecturaux de la plupart de ces applications basées sur le cloud, vous constaterez qu'il s'agit toutes de microservices.",
+        "startTime": 118.46,
+        "endTime": 126.08
+    },
+    {
+        "sent": "Cela signifie qu'ils sont hautement distribués, faiblement couplés et accessibles via un P.",
+        "startTime": 126.74,
+        "endTime": 130.98
+    },
+    {
+        "sent": "I.",
+        "startTime": 130.98,
+        "endTime": 131.08
+    },
+    {
+        "sent": "S.",
+        "startTime": 131.08,
+        "endTime": 131.37
+    },
+    {
+        "sent": "Que signifie donc ce changement d'architecture pour notre base de données sous-jacente alors que nos applications sont désormais découplées en services.",
+        "startTime": 132.27,
+        "endTime": 138.93
+    },
+    {
+        "sent": "Il permet à chacun de ces services de disposer de sa propre base de données indépendante.",
+        "startTime": 138.94,
+        "endTime": 142.9
+    },
+    {
+        "sent": "Et cela nous apportera de nombreux avantages, par exemple, nous donnera la possibilité d'hyperdimensionner nos applications, car chaque service et canal de base de données évolue indépendamment.",
+        "startTime": 142.91,
+        "endTime": 154.35
+    },
+    {
+        "sent": "Prenons le Black Friday comme cas d'utilisation.",
+        "startTime": 155.11,
+        "endTime": 157.17
+    },
+    {
+        "sent": "Il se peut que nous devions adapter notre catalogue et notre service de paiement à des centaines de milliers de demandes simultanées sur une courte période, mais le nombre de nos inscriptions d'utilisateurs risque de ne pas augmenter au même degré.",
+        "startTime": 157.18,
+        "endTime": 167.7
+    },
+    {
+        "sent": "Un autre avantage est l'agilité supplémentaire.",
+        "startTime": 169.34,
+        "endTime": 171.39
+    },
+    {
+        "sent": "Puisque nous pouvons désormais innover plus rapidement sur différents composants.",
+        "startTime": 171.69,
+        "endTime": 175.13
+    },
+    {
+        "sent": "Nous pouvons rapidement tester et restaurer de nouvelles versions et fonctionnalités à un niveau modulaire sans avoir à gérer toutes les dépendances couplées complexes liées aux monolithes.",
+        "startTime": 175.91,
+        "endTime": 185.12
+    },
+    {
+        "sent": "L'un des défis commerciaux courants consiste à rendre nos applications plus disponibles et, en découplant nos bases de données, nous augmenterons leur disponibilité globale, étant donné que nous ne disposons plus d'une base de données monolithique qui sert de point de conflit unique pour nos événements tels que les déploiements de code ou les mises à niveau et les correctifs.",
+        "startTime": 186.89,
+        "endTime": 204.22
+    },
+    {
+        "sent": "Maintenant que nous comprenons les avantages du découplage de nos données.",
+        "startTime": 204.23,
+        "endTime": 207.17
+    },
+    {
+        "sent": "Pourquoi envisagerions-nous des bases de données spécialement conçues pour nos microservices ? Nos développeurs veulent disposer de la base de données adaptée aux besoins de nos applications modernes, comme nous l'avons décrit précédemment.",
+        "startTime": 207.17,
+        "endTime": 218.51
+    },
+    {
+        "sent": "Et franchement, cette approche universelle qui consiste à utiliser une base de données relationnelle pour tout ne fonctionne tout simplement plus.",
+        "startTime": 218.52,
+        "endTime": 225.66
+    },
+    {
+        "sent": "Par exemple, nous pouvons avoir besoin d'une base de données pour fournir des temps de réponse de latence de l'ordre de la microseconde afin de pouvoir afficher rapidement nos sites Web ou pour fournir des temps de réponse cohérents afin de répondre aux demandes des utilisateurs d'un chirurgien.",
+        "startTime": 225.8,
+        "endTime": 237.79
+    },
+    {
+        "sent": "Et l'architecture relationnelle n'est pas la mieux adaptée à ces cas d'utilisation particuliers.",
+        "startTime": 237.8,
+        "endTime": 242.23
+    },
+    {
+        "sent": "En fait, le fait de ne pas utiliser la bonne base de données entraîne généralement des problèmes de performances, un manque d'évolutivité, un manque de flexibilité pour les développeurs et une augmentation de nos coûts globaux.",
+        "startTime": 242.77,
+        "endTime": 253.51
+    },
+    {
+        "sent": "Donc, traditionnellement, lorsque je parle à mes clients, je me heurte à un obstacle à l'adoption de ces bases de données spécialement conçues avec des frais généraux opérationnels potentiels.",
+        "startTime": 255.29,
+        "endTime": 264.03
+    },
+    {
+        "sent": "Cela comprenait des investissements dans du matériel et des logiciels initiaux ou une expertise pour les rendre évolutifs, hautement disponibles et performants.",
+        "startTime": 264.04,
+        "endTime": 272.06
+    },
+    {
+        "sent": "Et c'est là qu'AWS entre en jeu.",
+        "startTime": 272.66,
+        "endTime": 274.56
+    },
+    {
+        "sent": "Nous proposerons le portefeuille le plus large et le plus complet de plus de 15 bases de données spécialisées capables de prendre en charge les différents modèles de données en exploitant les bases de données personnalisées et entièrement gérées que nous avons créées à partir de zéro.",
+        "startTime": 272.66,
+        "endTime": 274.56
+    },
+    {
+        "sent": "Les clients peuvent désormais gagner du temps et de l'argent, améliorer les performances à grande échelle et innover plus rapidement.",
+        "startTime": 274.57,
+        "endTime": 293.05
+    },
+    {
+        "sent": "Nous avons créé des bases de données spécialement conçues pour répondre à tous les cas d'utilisation, comme le document à valeur clé relationnelle en mémoire, le registre des séries chronologiques à colonnes larges et nos bases de données graphiques.",
+        "startTime": 293.62,
+        "endTime": 305.71
+    },
+    {
+        "sent": "Maintenant que nous avons compris la nécessité de disposer de bases de données spécialement conçues, comment procéderiez-vous pour sélectionner les bases de données adaptées à vos cas d'utilisation particuliers ? Ce que j'aimerais dire aux gens, c'est qu'au lieu de regarder une liste de 100 bases de données différentes, pourquoi ne pas commencer par réfléchir à des catégories de bases de données communes ? Maintenant, nous examinons rapidement les catégories.",
+        "startTime": 307.63,
+        "endTime": 328.5
+    },
+    {
+        "sent": "Non seulement vous y trouverez cette base de données relationnelle familière sur la gauche, mais vous verrez également d'autres bases de données, comme notre base de données de documents Amazon qui est optimisée pour stocker les données au format Jason.",
+        "startTime": 328.51,
+        "endTime": 342.2
+    },
+    {
+        "sent": "Et comme il s'agit d'une base de données sans suite, elle nous donnera la flexibilité nécessaire pour modifier les schémas d'applications, mais elle nous permettra également d'interroger des documents en fonction de n'importe quel attribut.",
+        "startTime": 342.8,
+        "endTime": 353.05
+    },
+    {
+        "sent": "Et c'est très pratique pour notre gestion de contenu, nos applications mobiles ou une base de données graphique comme Amazon Neptune, qui nous permet ensuite de travailler avec des ensembles de données hautement connectés.",
+        "startTime": 353.06,
+        "endTime": 364.16
+    },
+    {
+        "sent": "Nous pouvons essayer de modéliser cela dans une base de données relationnelle avec des articulations complexes et des requêtes imbriquées, mais notre latence augmentera à mesure que le nombre de nos relations augmentera dans les bases de données graphiques.",
+        "startTime": 364.78,
+        "endTime": 377.15
+    },
+    {
+        "sent": "Cependant, cela nous permet de parcourir des millions de relations en quelques secondes, ce qui est idéal pour la détection des fraudes, les réseaux sociaux et nos moteurs de recommandation.",
+        "startTime": 377.15,
+        "endTime": 386.34
+    },
+    {
+        "sent": "Enfin, comme une base de données de séries chronologiques comme notre flux temporel Amazon, qui est optimisée pour ingérer des milliards de données de séquence temporelle par jour et nous fournir des fonctions basées sur le temps telles que la corrélation et l'interpolation afin que nous puissions obtenir de meilleures informations à partir de ces données.",
+        "startTime": 387.53,
+        "endTime": 403.91
+    },
+    {
+        "sent": "Et c'est idéal pour nos applications de développement IoT ou de suivi d'événements.",
+        "startTime": 403.97,
+        "endTime": 408.23
+    },
+    {
+        "sent": "Prenons maintenant le temps d'examiner un peu plus en détail certaines catégories très courantes que j'ai observées chez mes clients.",
+        "startTime": 409.29,
+        "endTime": 415.28
+    },
+    {
+        "sent": "Commençons par un modèle de données relationnelles très familier.",
+        "startTime": 409.29,
+        "endTime": 415.28
+    },
+    {
+        "sent": "Les données relationnelles sont hautement structurées, les données sont divisées en tables et les relations imposées par le système sont des clés primaires et référentielles et de bons cas d'utilisation seront les charges de travail pour lesquelles nous ne pouvons pas prédéfinir tous nos modèles d'accès avant ou si nous avions des applications qui nécessitent une intégrité référentielle élevée et une forte cohérence.",
+        "startTime": 416.96,
+        "endTime": 440.76
+    },
+    {
+        "sent": "Comme pour nos systèmes de paiement en ligne.",
+        "startTime": 440.77,
+        "endTime": 442.86
+    },
+    {
+        "sent": "Amazon Arora."
+    },
+    {
+        "sent": "Arora est compatible à la fois avec ma suite et avec Postgres et peut nous aider à améliorer nos performances en fournissant un débit jusqu'à cinq fois supérieur à celui du standard.",
+        "startTime": 447.99,
+        "endTime": 457.12
+    },
+    {
+        "sent": "Ma suite et trois fois plus que celle du standard Postgres.",
+        "startTime": 457.12,
+        "endTime": 460.58
+    },
+    {
+        "sent": "Cela nous aidera à dimensionner automatiquement les ressources de calcul et de stockage et nous avons conçu Billy pour stocker nos données de six manières dans trois zones de disponibilité.",
+        "startTime": 460.66,
+        "endTime": 469.84
+    },
+    {
+        "sent": "Et comme il s'agit d'un service géré, il permettra d'automatiser des tâches telles que le déploiement et le provisionnement, des correctifs et des mises à niveau réguliers, des sauvegardes et nous fournira des fonctionnalités de sécurité telles que le chiffrement en transit et au repos.",
+        "startTime": 470.38,
+        "endTime": 483.07
+    },
+    {
+        "sent": "Une autre excellente catégorie.",
+        "startTime": 485.16,
+        "endTime": 486.36
+    },
+    {
+        "sent": "Pour consulter nos bases de données de valeurs clés.",
+        "startTime": 486.36,
+        "endTime": 488.64
+    },
+    {
+        "sent": "Les données de valeur clé utilisent cette méthode simple pour stocker et récupérer des données.",
+        "startTime": 486.36,
+        "endTime": 488.64
+    },
+    {
+        "sent": "Leur point fort réside dans leur conception qui permet de partitionner ou de partager des données de manière importante, puis de les stocker physiquement en fonction de cette clé de partition.",
+        "startTime": 489.29,
+        "endTime": 502.73
+    },
+    {
+        "sent": "Cette conception lui permet de s'adapter horizontalement à pratiquement n'importe quelle taille tout en nous offrant des temps de réponse constants, quelle que soit l'échelle.",
+        "startTime": 503.34,
+        "endTime": 512.16
+    },
+    {
+        "sent": "Passons donc en revue un cas d'utilisation d'un jeu en ligne qui doit stocker les données de session d'un utilisateur et qui possède un modèle d'accès défini via une balise gamer pour récupérer cet ensemble de données.",
+        "startTime": 514.06,
+        "endTime": 524.38
+    },
+    {
+        "sent": "Comme il s'agit d'un jeu en ligne, nous voulons garantir une expérience constante au joueur, qu'il y ait 10 ou même 100 000 utilisateurs.",
+        "startTime": 524.95,
+        "endTime": 533.81
+    },
+    {
+        "sent": "Si le jeu prend son envol dans ce cas d'utilisation particulier, nous utiliserons une base de données de valeurs clés pour obtenir des temps de réponse cohérents, quelle que soit la croissance de l'application.",
+        "startTime": 533.81,
+        "endTime": 544.29
+    },
+    {
+        "sent": "Amazon Dynamodb."
+    },
+    {
+        "sent": "Il est entièrement géré et sans serveur, ce qui signifie qu'il se chargera de tous les logiciels de provisionnement, de correctifs de sécurité et, pour nous aider à faire évoluer automatiquement, dynamodb nous permet de créer des applications capables de fournir des temps de réponse à une milliseconde à grande échelle et pour nos applications critiques que nous pourrions utiliser à l'échelle mondiale."
+    },
+    {
+        "sent": "réplication pour répliquer nos ensembles de données dans plusieurs régions.",
+        "startTime": 551.94,
+        "endTime": 575.12
+    },
+    {
+        "sent": "Une catégorie très populaire parmi mes clients concerne les bases de données en mémoire.",
+        "startTime": 551.94,
+        "endTime": 575.12
+    },
+    {
+        "sent": "Les bases de données en mémoire stockent nos données en mémoire plutôt que sur celle-ci, ce qui nous donne des temps de réponse inférieurs à la milliseconde.",
+        "startTime": 577.54,
+        "endTime": 589.21
+    },
+    {
+        "sent": "Et c'est idéal pour les cas d'utilisation visant à stocker les données de session d'un utilisateur sur le maintien d'un classement pour les jeux en ligne ou l'entraînement de modèles d'apprentissage automatique.",
+        "startTime": 589.22,
+        "endTime": 597.52
+    },
+    {
+        "sent": "Mais le cas d'utilisation le plus courant que j'ai vu chez mes clients est de placer ici un cash devant nos bases de données relationnelles.",
+        "startTime": 598.1,
+        "endTime": 604.7
+    },
+    {
+        "sent": "Cela nous donnera des temps de réponse bien meilleurs pour nos utilisateurs finaux et atténuera les pressions d'échelle en lecture sur la base de données relationnelle sous-jacente, ce qui peut entraîner des problèmes de blocage des ressources et de stabilité, que Makayla vous montrera dans sa démonstration suivante pour les bases de données en mémoire.",
+        "startTime": 605.03,
+        "endTime": 623.94
+    },
+    {
+        "sent": "Nous avons le choix entre Amazon Elastic Cache.",
+        "startTime": 623.95,
+        "endTime": 626
+    },
+    {
+        "sent": "Il s'agit d'un service entièrement géré qui nous permet de fournir des temps de réponse inférieurs à la milliseconde et une mise à l'échelle."
+    },
+    {
+        "sent": "Il est à la fois compatible avec mem cache.",
+        "startTime": 633.49,
+        "endTime": 635.72
+    },
+    {
+        "sent": "DM Reedus et les personnes qui l'utilisaient pour le cache mém l'utiliseront généralement pour créer des couches de cations simples et évolutives pour leurs applications sensibles à la latence, tandis que nos utilisateurs de Reddit l'utiliseront pour des cas d'utilisation plus polyvalents, tels que pour leurs jeux, leurs analyses en temps réel et leur apprentissage automatique avec Regis.",
+        "startTime": 635.72,
+        "endTime": 655.85
+    },
+    {
+        "sent": "Nous avons également le choix d'Amazon Memory Day Bay, qui est un cluster entièrement géré avec une durabilité de.",
+        "startTime": 655.86,
+        "endTime": 662.39
+    },
+    {
+        "sent": "Memory Debate nous fournit des performances ultrarapides et une compatibilité totale avec Regis open source, ce qui nous permet ensuite d'utiliser toutes ces structures de données riches, telles que des ensembles triés pour les classements en ligne en tirant parti de.",
+        "startTime": 663.2,
+        "endTime": 676.91
+    },
+    {
+        "sent": "Un journal des transactions distribué dans les zones de disponibilité.",
+        "startTime": 676.91,
+        "endTime": 680.39
+    },
+    {
+        "sent": "Memory DB nous permet de restaurer rapidement la base de données et de redémarrer sans risque de perte de données, ce qui signifie que nous pouvons désormais l'utiliser comme base de données principale pour les ensembles de données persistants.",
+        "startTime": 680.46,
+        "endTime": 691.34
+    },
+    {
+        "sent": "Maintenant que nous comprenons la nécessité et les avantages d'une architecture de base de données découplée et que nous avons examiné certains cas d'utilisation que des bases de données spécialement conçues peuvent résoudre.",
+        "startTime": 692.87,
+        "endTime": 702.23
+    },
+    {
+        "sent": "J'aimerais vous présenter Michaeli qui a mis tout cela en pratique sous la forme d'une démonstration à Michael.",
+        "startTime": 702.24,
+        "endTime": 709.41
+    },
+    {
+        "sent": "Merci William.",
+        "startTime": 711.27,
+        "endTime": 712.08
+    },
+    {
+        "sent": "Dans cette démo, nous allons examiner des animaux de compagnie géniaux, awesome pets est une entreprise fictive et dans ce scénario inventé, awesome pets est une animalerie en ligne, awesome pets possède toutes les caractéristiques d'une boutique de commerce électronique où vous pouvez parcourir le catalogue, ajouter des articles au panier et découvrir la technologie pour animaux de compagnie actuellement géniale La pile se compose d'un back-end monolithique existant et d'un."
+    },
+    {
+        "sent": "Ma base de données de suites.",
+        "startTime": 740.11,
+        "endTime": 741.28
+    },
+    {
+        "sent": "Cette application monolithique intègre toutes les caractéristiques et fonctionnalités d'Awesome Pets.",
+        "startTime": 742.4,
+        "endTime": 748.1
+    },
+    {
+        "sent": "Awesome Pets fait face à de nombreux défis avec leurs monolithes hérités.",
+        "startTime": 749.92,
+        "endTime": 753.79
+    },
+    {
+        "sent": "Tout d'abord, ils ont découvert que certaines requêtes sont extrêmement lentes, en particulier en cas de charge élevée.",
+        "startTime": 753.91,
+        "endTime": 760.04
+    },
+    {
+        "sent": "Ensuite, chaque requête devenant de plus en plus lente pendant les pics de trafic, les demandes des utilisateurs échouent et les utilisateurs ne peuvent pas effectuer les transactions.",
+        "startTime": 760.9,
+        "endTime": 770.97
+    },
+    {
+        "sent": "Enfin, la base de données est à court de ressources et de Seigneur, ce qui peut provoquer le blocage de la base de données et l'indisponibilité de l'ensemble de l'application.",
+        "startTime": 772.58,
+        "endTime": 780.77
+    },
+    {
+        "sent": "Si vous essayez également de dimensionner des applications monolithiques.",
+        "startTime": 782.57,
+        "endTime": 785.59
+    },
+    {
+        "sent": "Ces défis peuvent vous sembler très familiers.",
+        "startTime": 785.6,
+        "endTime": 788.29
+    },
+    {
+        "sent": "Maintenant, je vais vous montrer comment fonctionne l'ancienne application Awesome Pets en exécutant un simple test.",
+        "startTime": 790.26,
+        "endTime": 797.07
+    },
+    {
+        "sent": "Ensuite, je vais vous montrer comment des animaux de compagnie géniaux peuvent être découplés grâce à des microservices et à des bases de données spécialement conçues.",
+        "startTime": 798.06,
+        "endTime": 804
+    },
+    {
+        "sent": "Comment choisir la bonne base de données pour la bonne tâche et vous montrer les différences de performances entre l'application monolithique existante et l'application de microservices.",
+        "startTime": 804.58,
+        "endTime": 814.14
+    },
+    {
+        "sent": "Enfin, j'aborderai brièvement certains des modèles de conception utilisés dans la nouvelle architecture.",
+        "startTime": 815.77,
+        "endTime": 819.92
+    },
+    {
+        "sent": "Permettez-moi de commencer par vous montrer un exemple de parcours utilisateur sur des animaux de compagnie géniaux.",
+        "startTime": 821.94,
+        "endTime": 825.96
+    },
+    {
+        "sent": "Comme vous pouvez le voir ici lorsque je visite des animaux géniaux.",
+        "startTime": 826.85,
+        "endTime": 829.38
+    },
+    {
+        "sent": "On me présente le catalogue des animaux de compagnie.",
+        "startTime": 829.39,
+        "endTime": 831.31
+    },
+    {
+        "sent": "Le catalogue indique les types d'animaux de compagnie disponibles dans les commentaires et rend compte de chaque type.",
+        "startTime": 832.05,
+        "endTime": 836.72
+    },
+    {
+        "sent": "Je peux ajouter des animaux de compagnie au panier en cliquant sur le bouton Ajouter au panier.",
+        "startTime": 832.05,
+        "endTime": 836.72
+    },
+    {
+        "sent": "Une fois que j'ai ajouté tous les animaux, je peux regarder la carte et passer au paiement.",
+        "startTime": 838.09,
+        "endTime": 847.36
+    },
+    {
+        "sent": "Sur la page de paiement.",
+        "startTime": 849.15,
+        "endTime": 850.28
+    },
+    {
+        "sent": "Je peux saisir toutes les informations nécessaires pour terminer la transaction et confirmer le paiement.",
+        "startTime": 849.15,
+        "endTime": 850.28
+    },
+    {
+        "sent": "Une fois le message de confirmation affiché, le parcours utilisateur est terminé.",
+        "startTime": 850.29,
+        "endTime": 861.72
+    },
+    {
+        "sent": "Nous allons donc maintenant exécuter le test de charge pour voir comment l'application monolithique se comporte sur la charge.",
+        "startTime": 863.53,
+        "endTime": 867.89
+    },
+    {
+        "sent": "De nombreux outils sont disponibles pour exécuter des tests de performance tels que j meter ou artillerie.",
+        "startTime": 869.59,
+        "endTime": 874.52
+    },
+    {
+        "sent": "Pour n'en nommer que quelques-uns.",
+        "startTime": 874.52,
+        "endTime": 875.47
+    },
+    {
+        "sent": "Mais pour cette démo, je vais utiliser Blaze Meter.",
+        "startTime": 875.48,
+        "endTime": 878.47
+    },
+    {
+        "sent": "Ce test simule un véritable parcours utilisateur sur des animaux de compagnie géniaux où chaque utilisateur recevra un catalogue d'un article au panier et en soumettra un autre.",
+        "startTime": 879.98,
+        "endTime": 889.31
+    },
+    {
+        "sent": "Ce test est configuré avec un total de 50 utilisateurs simultanés naviguant dans le trajet pendant une durée de 10 minutes et le nombre d'utilisateurs augmentera progressivement sur une durée d'une minute.",
+        "startTime": 892.87,
+        "endTime": 905.71
+    },
+    {
+        "sent": "Enfin, ce test sera exécuté dans la région AWS Oregon.",
+        "startTime": 907.16,
+        "endTime": 911.18
+    },
+    {
+        "sent": "Je vais maintenant commencer le test de charge et comme le test dure environ 10 minutes, je vais accélérer la vidéo et nous examinerons les résultats une fois le test terminé.",
+        "startTime": 912.54,
+        "endTime": 922.79
+    },
+    {
+        "sent": "Le test est donc maintenant terminé et nous pouvons regarder les résultats dans ces écrans, nous avons deux graphiques.",
+        "startTime": 923.64,
+        "endTime": 930.38
+    },
+    {
+        "sent": "Celui de gauche indique le nombre de demandes réussies pendant la durée du test et le nombre de demandes ayant échoué.",
+        "startTime": 930.59,
+        "endTime": 937.01
+    },
+    {
+        "sent": "Et le graphique de droite affiche le temps de réponse moyen sur la durée du test.",
+        "startTime": 937.81,
+        "endTime": 942.87
+    },
+    {
+        "sent": "Si nous nous concentrons sur le graphique de droite, nous pouvons voir qu'à mesure que le nombre d'utilisateurs augmente, le temps de réponse moyen de l'application ne cesse d'augmenter, atteignant un temps de réponse maximal d'environ sept secondes.",
+        "startTime": 944.43,
+        "endTime": 956.4
+    },
+    {
+        "sent": "Et à un moment donné, les temps de réponse ont chuté de façon drastique à quelques centaines de millisecondes seulement et après quelques minutes, le temps de réponse remonte à sept secondes.",
+        "startTime": 957.4,
+        "endTime": 967.52
+    },
+    {
+        "sent": "Si nous regardons le graphique de gauche, nous voyons clairement pourquoi il y a une baisse du temps de réponse aux alentours de 1750.",
+        "startTime": 969.66,
+        "endTime": 976.14
+    },
+    {
+        "sent": "Nous pouvons constater qu'à l'heure actuelle, presque toutes les requêtes échouent et qu'il n'y a aucune demande réussie.",
+        "startTime": 976.23,
+        "endTime": 983.68
+    },
+    {
+        "sent": "Cela nous indique que le site Web était en panne pendant cette période et que la demande de l'utilisateur a échoué très rapidement.",
+        "startTime": 984.59,
+        "endTime": 990.26
+    },
+    {
+        "sent": "Allons donc un peu plus loin pour voir la cause de ces problèmes ici.",
+        "startTime": 991.24,
+        "endTime": 995.5
+    },
+    {
+        "sent": "J'utilise AWS X ray, un service de suivi qui permet d'approfondir la demande ayant échoué à partir de la carte de service X ray.",
+        "startTime": 995.5,
+        "endTime": 1003.95
+    },
+    {
+        "sent": "Je peux voir mon application monolithique et les requêtes envoyées à la base de données.",
+        "startTime": 1003.96,
+        "endTime": 1008.1
+    },
+    {
+        "sent": "La couleur rouge représente ici le nombre de requêtes qui ont échoué dans la base de données.",
+        "startTime": 1009.02,
+        "endTime": 1014.06
+    },
+    {
+        "sent": "Je vais donc maintenant utiliser X Ray Insights, AWS X Ray Insights identifie où se produisent les problèmes dans les applications, les enregistrements de chaque problème et l'impact associé.",
+        "startTime": 1015.9,
+        "endTime": 1027.48
+    },
+    {
+        "sent": "Et lorsque j'ouvre un aperçu, je peux voir immédiatement quelle est la cause première du problème et l'impact qu'il a.",
+        "startTime": 1015.9,
+        "endTime": 1027.48
+    },
+    {
+        "sent": "Dans ce cas, cela me dit que 23 % de la demande a échoué dans la base de données.",
+        "startTime": 1028.57,
+        "endTime": 1040.56
+    },
+    {
+        "sent": "Ensuite, je peux cliquer sur Analyser les informations pour accéder à chaque demande échouée.",
+        "startTime": 1041.45,
+        "endTime": 1047.09
+    },
+    {
+        "sent": "Une fois que j'ai ouvert une demande qui a échoué, je peux voir tous les composants qui ont été exécutés pour cette demande ainsi que la durée pendant laquelle chacun d'entre eux a pris.",
+        "startTime": 1047.75,
+        "endTime": 1057.14
+    },
+    {
+        "sent": "Dans ce cas précis, la base de données a renvoyé une erreur au bout de 17 secondes en raison d'un blocage.",
+        "startTime": 1058.23,
+        "endTime": 1063.93
+    },
+    {
+        "sent": "Enfin, examinons les métriques basées sur les données pour comprendre plus en détail ce qui s'est passé.",
+        "startTime": 1063.94,
+        "endTime": 1068.98
+    },
+    {
+        "sent": "Si nous nous concentrons sur l'utilisation du processeur, nous pouvons constater que l'utilisation du processeur de la base de données atteint 100 % très rapidement et qu'après quelques minutes d'utilisation continue du processeur à 100 %, l'utilisation de l'adresse IP de la base de données revient à 0 %, puis elle revient à 100 %.",
+        "startTime": 1068.99,
+        "endTime": 1090.64
+    },
+    {
+        "sent": "Cela est dû au fait que la base de données se bloque et redémarre en raison d'une utilisation élevée du processeur.",
+        "startTime": 1091.61,
+        "endTime": 1096.74
+    },
+    {
+        "sent": "Vous pouvez également le valider en examinant d'autres indicateurs tels que right I.",
+        "startTime": 1097.93,
+        "endTime": 1102.53
+    },
+    {
+        "sent": "Opérations et connexions à la base de données.",
+        "startTime": 1102.53,
+        "endTime": 1104.61
+    },
+    {
+        "sent": "Comme nous l'avons vu, cette ancienne application ne fonctionne pas bien, les requêtes peuvent prendre jusqu'à 10 secondes pendant les pics de trafic et les pannes de base de données provoquant des pannes.",
+        "startTime": 1102.53,
+        "endTime": 1104.61
+    },
+    {
+        "sent": "Des animaux de compagnie géniaux pourraient envisager de mettre en œuvre de nombreuses optimisations courantes pour les applications monolithiques.",
+        "startTime": 1105.74,
+        "endTime": 1123.21
+    },
+    {
+        "sent": "Cependant, ils prévoient de multiplier leur croissance par 10 au cours de la prochaine année et savent que même avec des optimisations communes pour les applications monolithiques, ils ne seront pas en mesure de soutenir la croissance prévue.",
+        "startTime": 1123.81,
+        "endTime": 1134.78
+    },
+    {
+        "sent": "C'est pourquoi des animaux géniaux ont décidé de passer aux microservices avec des bases de données spécialement conçues.",
+        "startTime": 1135.67,
+        "endTime": 1140.94
+    },
+    {
+        "sent": "Essayons donc de comprendre comment ils décomposent cette application, comment ils ont décidé quelle base de données utiliser pour chaque cas d'utilisation.",
+        "startTime": 1135.67,
+        "endTime": 1140.94
+    },
+    {
+        "sent": "Dans cette nouvelle architecture, awesome pets est divisé en quatre microservices, le panier de commande d'inventaire et le catalogue de l'inventaire.",
+        "startTime": 1142.52,
+        "endTime": 1161.44
+    },
+    {
+        "sent": "Le service Micro utilise dynamodb.",
+        "startTime": 1161.44,
+        "endTime": 1163.76
+    },
+    {
+        "sent": "Les données d'inventaire peuvent être stockées dans un format de valeur clé simple et il existe un schéma bien défini, tel que l'ajout ou la suppression d'animaux de compagnie à l'inventaire.",
+        "startTime": 1164.57,
+        "endTime": 1173.05
+    },
+    {
+        "sent": "Ensuite, nous avons l'ancien traitement.",
+        "startTime": 1175.17,
+        "endTime": 1176.78
+    },
+    {
+        "sent": "Ce cas d'utilisation nécessite la cohérence des données et stocke les données dans un format relationnel dénormalisé.",
+        "startTime": 1177.37,
+        "endTime": 1183.19
+    },
+    {
+        "sent": "Certaines des logiques précédentes peuvent également être réutilisées et c'est pourquoi elle convient parfaitement à un Amazon Aurora."
+    },
+    {
+        "sent": "Ensuite, nous avons les microservices Cast.",
+        "startTime": 1192.44,
+        "endTime": 1194.23
+    },
+    {
+        "sent": "La fonctionnalité de casting est la deuxième fonctionnalité la plus utilisée sur Awesome Pets.",
+        "startTime": 1194.78,
+        "endTime": 1198.96
+    },
+    {
+        "sent": "Son volume de lectures et d'écritures est élevé et les temps de réponse nécessaires devraient être de sept millisecondes, comme vous vous en souvenez peut-être lors de la session."
+    },
+    {
+        "sent": "Il s'agit d'un excellent cas d'utilisation pour une base de données en mémoire telle que celle de Brady sur Elastic Cache.",
+        "startTime": 1209.31,
+        "endTime": 1214.29
+    },
+    {
+        "sent": "Enfin, nous avons le catalogue, le catalogue actuel, interroge tout l'inventaire disponible et gère un compte en fonction du type d'animal de compagnie, car Awesome Pets utilise une base de données relationnelle.",
+        "startTime": 1216.4,
+        "endTime": 1229.37
+    },
+    {
+        "sent": "Ils ne sont actuellement pas en mesure de fournir des fonctionnalités de recherche riches et, par conséquent, l'une des technologies qu'ils peuvent utiliser pour le catalogue est le service Amazon Open Search.",
+        "startTime": 1229.38,
+        "endTime": 1239.2
+    },
+    {
+        "sent": "La recherche ouverte permet d'assimiler facilement des recherches et d'agréger des milliards de documents.",
+        "startTime": 1240.43,
+        "endTime": 1245.01
+    },
+    {
+        "sent": "Maintenant que nous avons vu à quoi ressemble l'architecture cible, lançons un autre test de performance pour voir comment fonctionne la nouvelle architecture.",
+        "startTime": 1240.43,
+        "endTime": 1245.01
+    },
+    {
+        "sent": "Comme vous pouvez le constater, je peux ajouter les paramètres au U.",
+        "startTime": 1246.81,
+        "endTime": 1257.01
+    },
+    {
+        "sent": "OU.",
+        "startTime": 1257.01,
+        "endTime": 1257.15
+    },
+    {
+        "sent": "L.",
+        "startTime": 1257.15,
+        "endTime": 1257.49
+    },
+    {
+        "sent": "Pour commencer à utiliser le backend des microservices et dans ces derniers, j'ai à peu près le même nombre d'animaux de compagnie, sinon plus, par rapport à l'application monolithique et les fonctionnalités sont exactement les mêmes.",
+        "startTime": 1257.75,
+        "endTime": 1270.6
+    },
+    {
+        "sent": "Je peux donc commencer et ouvrir le test pour mon backend de microservices.",
+        "startTime": 1271.38,
+        "endTime": 1274.8
+    },
+    {
+        "sent": "Comme vous pouvez le constater, le test de performance est identique à la même configuration que le test précédent et le parcours utilisateur est le même.",
+        "startTime": 1275.76,
+        "endTime": 1282.36
+    },
+    {
+        "sent": "Nous allons récupérer le catalogue, ajouter une carte et soumettre une commande.",
+        "startTime": 1282.36,
+        "endTime": 1286.69
+    },
+    {
+        "sent": "De plus, la configuration est la même avec 50 utilisateurs au total pour une durée maximale de 10 minutes et avec une augmentation d'une minute.",
+        "startTime": 1288.15,
+        "endTime": 1296.06
+    },
+    {
+        "sent": "Alors allons-y, lançons ce nouveau test et examinons les résultats.",
+        "startTime": 1298.4,
+        "endTime": 1301.98
+    },
+    {
+        "sent": "Une fois le test terminé.",
+        "startTime": 1301.98,
+        "endTime": 1303.31
+    },
+    {
+        "sent": "Comme avant, je vais accélérer cette partie de la vidéo jusqu'à ce que le test soit terminé.",
+        "startTime": 1304.45,
+        "endTime": 1308.02
+    },
+    {
+        "sent": "Examinons ces résultats en un coup d'œil.",
+        "startTime": 1310.01,
+        "endTime": 1312.93
+    },
+    {
+        "sent": "Nous pouvons déjà constater que les performances sont beaucoup plus constantes qu'il n'y a pas eu d'erreur lors du test de performance.",
+        "startTime": 1312.94,
+        "endTime": 1319.25
+    },
+    {
+        "sent": "Et dans l'ensemble, le temps de réponse moyen est d'environ 160 millisecondes, soit 45 fois plus rapide que notre application monolithique.",
+        "startTime": 1319.38,
+        "endTime": 1327.35
+    },
+    {
+        "sent": "Jetons donc un coup d'œil à la radiographie et nous pouvons voir ici toutes les interactions entre les microservices.",
+        "startTime": 1329.43,
+        "endTime": 1337.66
+    },
+    {
+        "sent": "Par exemple, nous pouvons voir comment la fonctionnalité d'envoi de toutes les fonctionnalités couvre réellement plusieurs microservices.",
+        "startTime": 1339.22,
+        "endTime": 1345.4
+    },
+    {
+        "sent": "Et ici, nous pouvons voir les appels d'API pour obtenir le catalogue et ajouter des articles au panier.",
+        "startTime": 1347.61,
+        "endTime": 1352.05
+    },
+    {
+        "sent": "Je peux maintenant examiner des traces spécifiques pour approfondir une seule demande de commande ici.",
+        "startTime": 1347.61,
+        "endTime": 1352.05
+    },
+    {
+        "sent": "Nous pouvons voir la répartition du temps passé pendant la durée de l'envoi ou de la transaction.",
+        "startTime": 1352.87,
+        "endTime": 1367.97
+    },
+    {
+        "sent": "Nous pouvons le voir sous la charge.",
+        "startTime": 1368.88,
+        "endTime": 1370.32
+    },
+    {
+        "sent": "Cette opération n'a pris qu'environ 300 millisecondes, soit 25 fois plus rapide que la soumission à la fonctionnalité de l'application monolithique dans les mêmes conditions.",
+        "startTime": 1368.88,
+        "endTime": 1370.32
+    },
+    {
+        "sent": "Dans la démo, nous avons vu comment l'architecture des microservices est capable de bien évoluer pour faire face au trafic et fournir des temps de réponse cohérents.",
+        "startTime": 1370.33,
+        "endTime": 1391.36
+    },
+    {
+        "sent": "Une autre caractéristique de cette nouvelle architecture est qu'elle permet d'obtenir une disponibilité bien supérieure.",
+        "startTime": 1392.12,
+        "endTime": 1397.76
+    },
+    {
+        "sent": "Si l'une des bases de données tombe en panne, un seul des microservices est affecté et l'application peut encore fonctionner partiellement en passant aux microservices.",
+        "startTime": 1397.77,
+        "endTime": 1407.68
+    },
+    {
+        "sent": "Non seulement nous pouvons nous adapter et améliorer nos performances, mais nous pouvons également bénéficier d'une plus grande disponibilité.",
+        "startTime": 1407.69,
+        "endTime": 1412.96
+    },
+    {
+        "sent": "Enfin, je voudrais mentionner brièvement les motifs de conception qui ont été utilisés dans cette composition.",
+        "startTime": 1414.58,
+        "endTime": 1419.4
+    },
+    {
+        "sent": "La première est la notification d'événements dans cette nouvelle architecture.",
+        "startTime": 1420.31,
+        "endTime": 1424.11
+    },
+    {
+        "sent": "Le microservice du catalogue doit être mis à jour chaque fois qu'un article est ajouté ou retiré de l'inventaire.",
+        "startTime": 1424.26,
+        "endTime": 1430.55
+    },
+    {
+        "sent": "Pour implémenter ce modèle, nous utilisons les flux de dynamodb, qui est une fonctionnalité de dynamodb qui vous permet de diffuser chaque modification sur la table.",
+        "startTime": 1431.46,
+        "endTime": 1440.76
+    },
+    {
+        "sent": "Le deuxième modèle est le modèle saga.",
+        "startTime": 1441.82,
+        "endTime": 1443.94
+    },
+    {
+        "sent": "Ce modèle nous permet d'exécuter des transactions commerciales sur plusieurs microservices.",
+        "startTime": 1444.5,
+        "endTime": 1450.26
+    },
+    {
+        "sent": "Dans cet exemple, le modèle de cycle a été implémenté à l'aide des fonctions d'étape AWS et la transaction couvre l'inventaire, la commande et les microservices cat.",
+        "startTime": 1451.04,
+        "endTime": 1462.64
+    },
+    {
+        "sent": "Si vous souhaitez en savoir plus sur les modèles de microservices.",
+        "startTime": 1464.23,
+        "endTime": 1467.26
+    },
+    {
+        "sent": "Je vous recommande de regarder la session intitulée Créer des microservices brésiliens à l'aide de modèles tolérants aux pannes.",
+        "startTime": 1464.23,
+        "endTime": 1467.26
+    },
+    {
+        "sent": "Au cours de cette session, nous avons examiné quelles sont les exigences actuelles des applications modernes.",
+        "startTime": 1467.72,
+        "endTime": 1479.36
+    },
+    {
+        "sent": "Nous avons ensuite exploré les raisons pour lesquelles les clients sont passés d'une approche universelle à des bases de données personnalisées.",
+        "startTime": 1480.06,
+        "endTime": 1485.62
+    },
+    {
+        "sent": "Nous avons examiné comment vous pouvez choisir la bonne base de données pour la bonne tâche et nous avons vu comment elle peut vous aider à atteindre une plus grande échelle, de meilleures performances et une plus grande disponibilité.",
+        "startTime": 1486.62,
+        "endTime": 1495.88
+    },
+    {
+        "sent": "Nous avons abordé un certain nombre de sujets différents au cours de cette session, mais l'apprentissage ne doit pas s'arrêter là.",
+        "startTime": 1497.9,
+        "endTime": 1503.12
+    },
+    {
+        "sent": "Nous vous encourageons à consulter notre contenu de formation et de certification.",
+        "startTime": 1503.13,
+        "endTime": 1507.01
+    },
+    {
+        "sent": "Nous proposons plus de 500 cours numériques gratuits qui peuvent vous aider, vous et votre équipe, à acquérir de nouvelles compétences en matière de cloud et à découvrir les derniers services.",
+        "startTime": 1507.7,
+        "endTime": 1515.5
+    },
+    {
+        "sent": "Et au fur et à mesure que vous développez vos compétences, pensez à vous préparer à l'une de nos 11 certifications aws.",
+        "startTime": 1516.36,
+        "endTime": 1521.85
+    },
+    {
+        "sent": "Vous pouvez scanner les codes QR de cette diapositive pour en savoir plus.",
+        "startTime": 1523.1,
+        "endTime": 1526.14
+    },
+    {
+        "sent": "Merci d'avoir participé à cette conférence.",
+        "startTime": 1527.89,
+        "endTime": 1529.57
+    },
+    {
+        "sent": "Nous aimerions connaître vos commentaires pour nous aider à améliorer l'expérience du sommet AWS.",
+        "startTime": 1529.58,
+        "endTime": 1534.39
+    },
+    {
+        "sent": "N'oubliez donc pas de répondre à l'enquête de session.",
+        "startTime": 1534.4,
+        "endTime": 1537.5
+    },
+    {
+        "sent": "Merci.",
+        "startTime": 1537.51,
+        "endTime": null
+    },
+    {
+        "sent": ".",
+        "startTime": 1537.51,
+        "endTime": null
+    }
+]
