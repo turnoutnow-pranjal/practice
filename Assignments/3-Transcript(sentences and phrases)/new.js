@@ -52,42 +52,42 @@ const dataHandler = async (d) => {
     }
     // console.log(sents);
     // console.log(chars);
-    var str=''
-    var phrs=[]
-    var c=0;
-    var cp=0
-    var phrsE=[]
-    var phrsS=[]
+    var str = ''
+    var phrs = []
+    var c = 0;
+    var cp = 0
+    var phrsE = []
+    var phrsS = []
     phrsS.push(0)
-    for(let i=0;i<chars.length;i++){
-        if(chars[i]!=='.' && c<8){
-            str+=chars[i]+' '
+    for (let i = 0; i < chars.length; i++) {
+        if (chars[i] !== '.' && c < 8) {
+            str += chars[i] + ' '
             c++
             cp++
         }
-        else{
-            phrsS.push(cp+1)
+        else {
+            phrsS.push(cp + 1)
             phrs.push(str)
-            str=''
+            str = ''
             phrsE.push(cp)
-            c=0
+            c = 0
         }
     }
-    console.log(phrsS.length,phrsE.length,phrs.length);
-    var phrases=[]
-    for(let i=0;i<phrs.length;i++){
-        var obj={}
-        obj[`text`]=phrs[i].trim()
-        obj[`startTime`]=stTime[phrsS[i]]
-        obj[`endTime`]=enTime[phrsE[i]]
+    console.log(phrsS.length, phrsE.length, phrs.length);
+    var phrases = []
+    for (let i = 0; i < phrs.length; i++) {
+        var obj = {}
+        obj[`text`] = phrs[i].trim()
+        obj[`startTime`] = stTime[phrsS[i]]
+        obj[`endTime`] = enTime[phrsE[i]]
         phrases.push(obj)
     }
-    var obj={
-        sentences:sents,
-        phrases:phrases
+    var obj = {
+        sentences: sents,
+        phrases: phrases
     }
     // writeResult(obj)
-    
+
 }
 
 const writeResult = async (obj1) => {
@@ -101,7 +101,28 @@ const writeResult = async (obj1) => {
     });
 }
 
-
+let obj = { eventId:olVYX2q4SOBUScjFVCGhx, 
+    notes:{ RokWBxC0r_IQrld6fF2Sx:{ createdAt:2022 - 07 - 27T08: 23: 32.755Z, noteId:RokWBxC0r_IQrld6fF2Sx, content:test, createdById:12884602 }, VoUPUHAiWr45DHG2h7- E_:{ createdAt : 2022 - 07 - 27T12:36:07.356Z, noteId : VoUPUHAiWr45DHG2h7 - E_, content : declining, createdById : 8140810 }}, 
+    lastActionAt : 2022 - 07 - 27T12: 36: 07.356Z, 
+    requiredParticipant : { itemType:USER, id:8140810 }, 
+    declinedBy : 8140810, 
+    meetingId :20_FbPDlnJ0QXgLJk7G9p, 
+    type : Meeting, 
+    title : test meeting request AUG 14 - 1pm, 
+    createdAt : 2022 - 07 - 27T08: 23: 32.755Z, 
+    lastActionById : 8140810, 
+    organizerId : 12884602, 
+    GSI1PK : EVENT#olVYX2q4SOBUScjFVCGhx#MEETING, 
+    GSI1SK : CANCELED#20_FbPDlnJ0QXgLJk7G9p, 
+    SK : MEETING#20_FbPDlnJ0QXgLJk7G9p, 
+    location : { code:3rdPartyVirtualMeeting, name:Meet Virtually Online, value:"https://web.zoom.us"}, 
+    startTime:2022-08-14T07:30:00.000Z, 
+    endTime:2022-08-14T07:45:00.000Z, 
+    PK:MEETING#20_FbPDlnJ0QXgLJk7G9p, 
+    optionalParticipantIds:[14960771], 
+    lastActionType:DECLINE, 
+    participants:{14960771:CANCELED, 12884602:CANCELED, 8140810:CANCELED}, status:CANCELED, 
+    updatedAt:2022-07-27T12:36:07.356Z}
 
 
 
