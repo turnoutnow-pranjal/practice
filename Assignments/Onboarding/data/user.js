@@ -99,6 +99,84 @@ exports.getUserInfo = async (eventId, userId) => {
     }
 };
 
+
+exports.getAllMeetings = async (meetingId) => {
+    initDynamoDBClient();
+    let mIds = meetingId.split(',')
+    let keys = []
+    for (let x in mIds) {
+        // console.log("=++=",mIds[x])
+        keys.push(marshall({ "PK": `MEETING#${mIds[x]}`, "SK": `MEETING#${mIds[x]}` }))
+    }
+    const input = {
+        RequestItems: {
+            "onboarding": {
+                Keys: keys
+            },
+        }
+    };
+    try {
+        const result = await dynamoDbclient.send(new BatchGetItemCommand(input))
+        let res = result.Responses["onboarding"];
+        // console.log("res", res);
+        let items = [];
+        if (res && res) {
+            for (let x in res) {
+                res[x] = unmarshall(res[x]);
+                items.push({ "itemType": "USER", "id": res[x].organizerId, 'eventId': res[x].eventId });
+                items.push({ "itemType": "USER", "id": res[x].requiredParticipant.id, 'eventId': res[x].eventId });
+                if (res[x].optionalParticipantIds && res[x].optionalParticipantIds.length) {
+                    // console.log("&&&&&&&",res[x].optionalParticipantIds)
+                    for (let y in res[x].optionalParticipantIds) {
+                        items.push({ itemType: "USER", "id": res[x].optionalParticipantIds[y], eventId: res[x].eventId });
+                    }
+                }
+            }
+            // console.log();
+            keys = [];
+            let PKobj = {}
+            for (let x in items) {
+                let PK = `EVENT#${items[x].eventId}#USER#${items[x].id}`;
+                let SK = `EVENT#${items[x].eventId}#USER#${items[x].id}`;
+                if (!PKobj[PK]) {
+                    keys.push(marshall({ "PK": PK, "SK": SK }));
+                    PKobj[PK] = PK
+                }
+            }
+            
+            const input1 = {
+                RequestItems: {
+                    "onboarding": {
+                        Keys: keys
+                    },
+                }
+            };
+            const result1 = await dynamoDbclient.send(new BatchGetItemCommand(input1))
+            var res1 = result1.Responses["onboarding"]
+            returnThis=[]
+            returnThis.push(res1.map)
+            // unmarshall(...result1.Responses["onboarding"]);
+            for(let z of res1){
+                returnThis.push(unmarshall(z))
+            }
+            console.log('keys====>', 
+            // keys,
+            // "inp",input.RequestItems.onboarding.Keys
+            returnThis
+            )
+
+        }
+        // let unm=unmarshall(res1[0]);
+        // console.log(unm);
+        return returnThis
+    } catch (error) {
+        console.log("err", error);
+    }
+    // return keys
+
+}
+
+
 // (async()=>{
 //     let res=await getMeetingInfo("5pzQIClszCuxhMXU7UbhP")
 //     console.log(res);

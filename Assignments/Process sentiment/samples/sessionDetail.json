@@ -1,0 +1,32 @@
+[
+    {
+        "itemId": "PXjKAr2NFoHoIW7AssDFF",
+        "itemType": "Session",
+        "startTime": "2023-01-04T12:00:00.101Z",
+        "endTime": "2023-01-04T13:00:00.101Z"
+    },
+    {
+        "itemId": "PXjKAr2NFoHoIW7AssDFF",
+        "itemType": "Session",
+        "startTime": "2023-01-04T13:00:00.101Z",
+        "endTime": "2023-01-04T15:00:00.101Z"
+    },
+    {
+        "itemId": "Cd17oyzLRcrucTnbMAub",
+        "itemType": "Session",
+        "startTime": "2023-01-04T15:00:00.101Z",
+        "endTime": "2023-01-04T15:30:00.101Z"
+    },
+    {
+        "itemId": "wcvpkycM5rxtG2xqVEk0",
+        "itemType": "Session",
+        "startTime": "2023-01-04T15:30:00.101Z",
+        "endTime": "2023-01-04T15:45:00.101Z"
+    },
+    {
+        "itemId": "PXjKAr2NFoHoIW7AssDFF",
+        "itemType": "Session",
+        "startTime": "2023-01-04T15:45:00.101Z",
+        "endTime": "2023-01-04T16:15:00.101Z"
+    }
+]

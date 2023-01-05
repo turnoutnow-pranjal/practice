@@ -1,0 +1,699 @@
+{
+    "usersDetails": {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#01GMQJR5Y2K8QSFT4FYPD8EKPQ",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#01GMQJR5Y2K8QSFT4FYPD8EKPQ",
+        "company": "Towne - Rice",
+        "country": "Isle of Man",
+        "createdAt": "2022-12-20T10:54:56.968Z",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Noe",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#Ward#Noe#01GMQJR5Y2K8QSFT4FYPD8EKPQ",
+        "id": "01GMQJR5Y2K8QSFT4FYPD8EKPQ",
+        "jobTitle": "Legacy Response Officer",
+        "lastName": "Ward",
+        "profileImageUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/161.jpg",
+        "type": "User",
+        "updatedAt": "2022-12-20T10:54:56.968Z"
+    },
+    {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177156",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177156",
+        "categories": [
+            {
+                "id": "973d438fe5d3cf552c5fcd3b2265fe9bff3d71c6",
+                "name": "Industry",
+                "values": [
+                    {
+                        "id": "9e9eddd8ffdbcf3a4d735a33b665ef4df8f65d94",
+                        "value": "Engineering, Construction, and Operations"
+                    }
+                ]
+            },
+            {
+                "id": "c3f104d1365744b538bfde9f4adb6a6df4b80355",
+                "name": "Role",
+                "values": [
+                    {
+                        "id": "f6f988a1d7429fbcf9d4724d22e1486b7d71c943",
+                        "value": "Payroll, Time and Attendance"
+                    }
+                ]
+            },
+            {
+                "id": "d4297792511794487e9d5d68553fa85cdc117a43",
+                "name": "Job Title",
+                "values": [
+                    {
+                        "id": "a36a5ffa6e0dcfb64fac1b2b3d6fb176de9689de",
+                        "value": "Controller"
+                    }
+                ]
+            }
+        ],
+        "company": "Goldberg Segalla",
+        "createdAt": "2022-05-12T13:41:58.275Z",
+        "email": "judy.beck7@turnoutnow.com",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Judy",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#OPTIN#true#Beck#Judy#8177156",
+        "id": "8177156",
+        "industry": "Engineering, Construction, and Operations",
+        "jobTitle": "Controller",
+        "lastName": "Beck",
+        "optin": true,
+        "profileImageUrl": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1287&q=80",
+        "role": "Payroll, Time and Attendance",
+        "type": "User",
+        "updatedAt": "2022-05-12T13:41:58.275Z"
+    },
+    {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177164",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177164",
+        "categories": [
+            {
+                "id": "973d438fe5d3cf552c5fcd3b2265fe9bff3d71c6",
+                "name": "Industry",
+                "values": [
+                    {
+                        "id": "5b33406347fd540153213109add745ef98f43554",
+                        "value": "Sports and Entertainment"
+                    }
+                ]
+            },
+            {
+                "id": "c3f104d1365744b538bfde9f4adb6a6df4b80355",
+                "name": "Role",
+                "values": [
+                    {
+                        "id": "75988eafbc6c3f345a9edccaa8837b0551440b1b",
+                        "value": "Executive"
+                    }
+                ]
+            },
+            {
+                "id": "d4297792511794487e9d5d68553fa85cdc117a43",
+                "name": "Job Title",
+                "values": [
+                    {
+                        "id": "06b4291fabbfac64f79d6f71de871264b04d3c27",
+                        "value": "Solution Atchitect"
+                    }
+                ]
+            }
+        ],
+        "company": "Boardman Consulting Group",
+        "createdAt": "2022-05-12T13:41:58.258Z",
+        "email": "alan.allardice5@turnoutnow.com",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Alan",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#OPTIN#true#Allardice#Alan#8177164",
+        "id": "8177164",
+        "industry": "Sports and Entertainment",
+        "jobTitle": "Solution Atchitect",
+        "lastName": "Allardice",
+        "optin": true,
+        "profileImageUrl": "https://images.unsplash.com/photo-1602268806507-0ac045af9c64?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTczfHxtYW4lMjBmYWNlJTIwcG9ydHJhaXR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60",
+        "role": "Executive",
+        "type": "User",
+        "updatedAt": "2022-05-12T13:41:58.258Z"
+    },
+    {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177199",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177199",
+        "categories": [
+            {
+                "id": "973d438fe5d3cf552c5fcd3b2265fe9bff3d71c6",
+                "name": "Industry",
+                "values": [
+                    {
+                        "id": "c823555116f3342e1263631e892406c260e48f1f",
+                        "value": "Consumer Products"
+                    }
+                ]
+            },
+            {
+                "id": "c3f104d1365744b538bfde9f4adb6a6df4b80355",
+                "name": "Role",
+                "values": [
+                    {
+                        "id": "f6f988a1d7429fbcf9d4724d22e1486b7d71c943",
+                        "value": "Payroll, Time and Attendance"
+                    }
+                ]
+            },
+            {
+                "id": "d4297792511794487e9d5d68553fa85cdc117a43",
+                "name": "Job Title",
+                "values": [
+                    {
+                        "id": "75bac1c4d2398dc104b56e73c2f497bdeddfc973",
+                        "value": "Marketing Head"
+                    }
+                ]
+            }
+        ],
+        "company": "Bricker Consulting LLC",
+        "createdAt": "2022-05-12T13:41:58.274Z",
+        "email": "ann.marie.brown6@turnoutnow.com",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Ann Marie",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#OPTIN#true#Brown#Ann Marie#8177199",
+        "id": "8177199",
+        "industry": "Consumer Products",
+        "jobTitle": "Marketing Head",
+        "lastName": "Brown",
+        "optin": true,
+        "profileImageUrl": "https://images.unsplash.com/photo-1513792859704-f49baf5c0b70?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTg3fHx3b21hbiUyMGZhY2UlMjBwb3J0cmFpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60",
+        "role": "Payroll, Time and Attendance",
+        "type": "User",
+        "updatedAt": "2022-05-12T13:41:58.274Z"
+    },
+    {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177219",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177219",
+        "categories": [
+            {
+                "id": "973d438fe5d3cf552c5fcd3b2265fe9bff3d71c6",
+                "name": "Industry",
+                "values": [
+                    {
+                        "id": "920c2d11c27a1a8df63736b8da0702b23789fb3c",
+                        "value": "Defense and Security"
+                    }
+                ]
+            },
+            {
+                "id": "d4297792511794487e9d5d68553fa85cdc117a43",
+                "name": "Job Title",
+                "values": [
+                    {
+                        "id": "c61dfcf7bfb0574b18d92de12f9be26a8c6eab27",
+                        "value": "Vice President"
+                    }
+                ]
+            }
+        ],
+        "company": "Gursey Veltrop & Harkrider",
+        "createdAt": "2022-05-12T13:41:58.270Z",
+        "email": "william.james@turnoutnow.com",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "William",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#OPTIN#true#Gonzalez#Ruth#8177219",
+        "id": "8177219",
+        "industry": "Defense and Security",
+        "jobTitle": "Tester",
+        "lastName": "James",
+        "optin": true,
+        "profileImageUrl": "https://images.unsplash.com/photo-1542632877-134fbc8daf59?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjA0fHx3b21hbiUyMGZhY2UlMjBwb3J0cmFpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60",
+        "type": "User",
+        "updatedAt": "2022-12-21T07:51:59.183Z"
+    },
+    {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#01G8D7RVQP1WPAGG1AP8FTWCGM",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#01G8D7RVQP1WPAGG1AP8FTWCGM",
+        "company": "Re-Think Hard Pvt. Ltd.",
+        "country": "India",
+        "createdAt": "2022-07-20T07:22:18.748Z",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Shyam",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#Murazik#Cade#01G8D7RVQP1WPAGG1AP8FTWCGM",
+        "id": "01G8D7RVQP1WPAGG1AP8FTWCGM",
+        "jobTitle": "CIAO",
+        "lastName": "Sunders",
+        "profileImageUrl": "https://images.unsplash.com/photo-1655161758277-aef5f9272b79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+        "type": "User",
+        "updatedAt": "2022-09-21T15:01:43.753Z"
+    },
+    {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#01GMQJ6KSFD3YP498PRADA3H2W",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#01GMQJ6KSFD3YP498PRADA3H2W",
+        "company": "Bauch, Murphy and Mitchell",
+        "country": "Lithuania",
+        "createdAt": "2022-12-20T10:45:21.334Z",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Ada",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#Lockman#Ada#01GMQJ6KSFD3YP498PRADA3H2W",
+        "id": "01GMQJ6KSFD3YP498PRADA3H2W",
+        "jobTitle": "Human Paradigm Executive",
+        "lastName": "Lockman",
+        "optin": true,
+        "profileImageUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1111.jpg",
+        "type": "User",
+        "updatedAt": "2022-12-20T10:45:21.334Z"
+    },
+    {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#01GMQJR5Y2K8QSFT4FYPD8EKPQ",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#01GMQJR5Y2K8QSFT4FYPD8EKPQ",
+        "company": "Towne - Rice",
+        "country": "Isle of Man",
+        "createdAt": "2022-12-20T10:54:56.968Z",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Noe",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#Ward#Noe#01GMQJR5Y2K8QSFT4FYPD8EKPQ",
+        "id": "01GMQJR5Y2K8QSFT4FYPD8EKPQ",
+        "jobTitle": "Legacy Response Officer",
+        "lastName": "Ward",
+        "optin": true,
+        "profileImageUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/161.jpg",
+        "type": "User",
+        "updatedAt": "2022-12-20T10:54:56.968Z"
+    },
+    {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177137",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177137",
+        "categories": [
+            {
+                "id": "973d438fe5d3cf552c5fcd3b2265fe9bff3d71c6",
+                "name": "Industry",
+                "values": [
+                    {
+                        "id": "faabcf8b4b60db60c68de051a1a48d71151952ab",
+                        "value": "Mining"
+                    }
+                ]
+            },
+            {
+                "id": "c3f104d1365744b538bfde9f4adb6a6df4b80355",
+                "name": "Role",
+                "values": [
+                    {
+                        "id": "e3ca519cdd2cd1f018c5bb0ebd4ded55c9d2523d",
+                        "value": "Operations/Service Delivery"
+                    }
+                ]
+            },
+            {
+                "id": "d4297792511794487e9d5d68553fa85cdc117a43",
+                "name": "Job Title",
+                "values": [
+                    {
+                        "id": "2ed0a6daf99a1444430ae9bcc1b8ee322a78cf22",
+                        "value": "Senior Director"
+                    }
+                ]
+            }
+        ],
+        "company": "Bilzin Coburn LLP",
+        "createdAt": "2022-05-12T13:41:58.265Z",
+        "email": "robert.fischenich5@turnoutnow.com",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Robert",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#OPTIN#true#Fischenich#Robert#8177137",
+        "id": "8177137",
+        "industry": "Mining",
+        "jobTitle": "Senior Director",
+        "lastName": "Fischenich",
+        "optin": true,
+        "profileImageUrl": "https://images.unsplash.com/photo-1545254644-a60835b8d36e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTcwfHxtYW4lMjBmYWNlJTIwcG9ydHJhaXR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60",
+        "role": "Operations/Service Delivery",
+        "type": "User",
+        "updatedAt": "2022-05-12T13:41:58.265Z"
+    },
+    {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177148",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177148",
+        "categories": [
+         {
+          "id": "973d438fe5d3cf552c5fcd3b2265fe9bff3d71c6",
+          "name": "Industry",
+          "values": [
+           {
+            "id": "a1fe45b2137a8e3c8d3c1b1d6b94d5dd0e8ec106",
+            "value": "Life Sciences"
+           },
+           {
+            "id": "925dd33f90827d86774456648125c88ac726dc3a",
+            "value": "Retail"
+           },
+           {
+            "id": "18fdc5ee8b1f8fba8dabaa933373c0483ab7fad7",
+            "value": "Utilities"
+           },
+           {
+            "id": "d2891f4fe6f8b0d519b8748e8d5f368e7e3cfaca",
+            "value": "Industrial Machinery and Components"
+           },
+           {
+            "id": "a1a5d3ef3d49db52113197a50f30e657f9ac0798",
+            "value": "Wholesale Distribution"
+           }
+          ]
+         },
+         {
+          "id": "d4297792511794487e9d5d68553fa85cdc117a43",
+          "name": "Job Title",
+          "values": [
+           {
+            "id": "78a705c3b80624317f527fb3cdc5316a23d40993",
+            "value": "Vice President & Co-founer"
+           }
+          ]
+         }
+        ],
+        "company": "Atkinson & Porter",
+        "createdAt": "2022-05-12T13:41:58.270Z",
+        "directMessageChannelsUnreadCount": 1,
+        "email": "adam.agenbroad6@turnoutnow.com",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Adam",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#OPTIN#true#Agenbroad#Adam#8177148",
+        "id": "8177148",
+        "industry": "Life Sciences",
+        "jobTitle": "Vice President & Co-founer",
+        "lastName": "Agenbroad",
+        "optin": true,
+        "profileImageUrl": "https://images.unsplash.com/photo-1583674392771-2abf6be75965?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTE4fHxtYW4lMjBmYWNlJTIwcG9ydHJhaXR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60",
+        "type": "User",
+        "updatedAt": "2022-07-28T15:42:45.672Z"
+       },
+
+       {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177206",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177206",
+        "categories": [
+         {
+          "id": "973d438fe5d3cf552c5fcd3b2265fe9bff3d71c6",
+          "name": "Industry",
+          "values": [
+           {
+            "id": "1f06e88c6c1f1d4981a36438699fdff23ff7c7fb",
+            "value": "Travel and Transportation"
+           },
+           {
+            "id": "fe98d87f07e7a7bab55c9d1e685367d35d0ff119",
+            "value": "Information Techtnology"
+           },
+           {
+            "id": "6f1764e22defd5908a0848308e824d620e1559f3",
+            "value": "Public Sector"
+           },
+           {
+            "id": "db17fe39be1106bf4c9c2b35c2cd21f88f5ff91a",
+            "value": "High Tech"
+           },
+           {
+            "id": "7ced80c3b524874b1635c8c570d175fae35372a0",
+            "value": "Automotive"
+           },
+           {
+            "id": "faabcf8b4b60db60c68de051a1a48d71151952ab",
+            "value": "Mining"
+           },
+           {
+            "id": "5b33406347fd540153213109add745ef98f43554",
+            "value": "Sports and Entertainment"
+           },
+           {
+            "id": "a1fe45b2137a8e3c8d3c1b1d6b94d5dd0e8ec106",
+            "value": "Life Sciences"
+           },
+           {
+            "id": "63c1be6392a32f9b47b3d55ba14179518fe9a077",
+            "value": "Higher Education and Research"
+           },
+           {
+            "id": "9e9eddd8ffdbcf3a4d735a33b665ef4df8f65d94",
+            "value": "Engineering, Construction, and Operations"
+           },
+           {
+            "id": "c823555116f3342e1263631e892406c260e48f1f",
+            "value": "Consumer Products"
+           },
+           {
+            "id": "214e2ba6c635d2e5ae6e2b656067c01462759d83",
+            "value": "Telecommunications"
+           },
+           {
+            "id": "d2891f4fe6f8b0d519b8748e8d5f368e7e3cfaca",
+            "value": "Industrial Machinery and Components"
+           },
+           {
+            "id": "a1a5d3ef3d49db52113197a50f30e657f9ac0798",
+            "value": "Wholesale Distribution"
+           },
+           {
+            "id": "920c2d11c27a1a8df63736b8da0702b23789fb3c",
+            "value": "Defense and Security"
+           },
+           {
+            "id": "0a83b9860153f238715ecd972a0d3b6cc8883ca2",
+            "value": "Agribusiness"
+           },
+           {
+            "id": "e3149c89b03e1acb74f1af5803e97d03945edc59",
+            "value": "Insurance"
+           },
+           {
+            "id": "abad9f7cd00dec9171b227be67601f0d5b8c2665",
+            "value": "Aerospace and Defense"
+           }
+          ]
+         },
+         {
+          "id": "c9b005568d2d5586baab9c84ff535c9b0f2d04e5",
+          "name": "Interest Statement Topics",
+          "values": [
+           {
+            "id": "fc811de4c92fe9fa53cbb002819fa6c4e35d369b",
+            "value": "bigdata"
+           }
+          ]
+         },
+         {
+          "id": "d4297792511794487e9d5d68553fa85cdc117a43",
+          "name": "Job Title",
+          "values": [
+           {
+            "id": "abb616b6d7f0b294c0c430fcf41d2c0c057d86bf",
+            "value": "Chief Marketing Officer"
+           }
+          ]
+         }
+        ],
+        "company": "AAC & Bingham LLP",
+        "createdAt": "2022-05-12T13:41:58.267Z",
+        "email": "alisia.baek8@turnoutnow.com",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Alisia",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#OPTIN#true#Baek#Alisia#8177206",
+        "id": "8177206",
+        "industry": "Travel and Transportation",
+        "jobTitle": "Chief Marketing Officer",
+        "lastName": "Baek",
+        "optin": true,
+        "profileImageUrl": "https://peerconnect-assets.turnoutnow.com/demo-tnvep/profilePhotos/371x358293_1635960380.jpg",
+        "type": "User",
+        "updatedAt": "2022-05-12T13:41:58.267Z"
+       },
+
+       {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177207",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177207",
+        "categories": [
+         {
+          "id": "973d438fe5d3cf552c5fcd3b2265fe9bff3d71c6",
+          "name": "Industry",
+          "values": [
+           {
+            "id": "920c2d11c27a1a8df63736b8da0702b23789fb3c",
+            "value": "Defense and Security"
+           }
+          ]
+         },
+         {
+          "id": "d4297792511794487e9d5d68553fa85cdc117a43",
+          "name": "Job Title",
+          "values": [
+           {
+            "id": "a36a5ffa6e0dcfb64fac1b2b3d6fb176de9689de",
+            "value": "Controller"
+           }
+          ]
+         }
+        ],
+        "company": "AAC & Bowen LLP",
+        "createdAt": "2022-05-12T13:41:58.260Z",
+        "directMessageChannelsUnreadCount": 1,
+        "email": "kalvin.barrett6@turnoutnow.com",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Kalvin",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#OPTIN#true#Barrett#Kalvin#8177207",
+        "id": "8177207",
+        "industry": "Defense and Security",
+        "jobTitle": "Controller",
+        "lastName": "Barrett",
+        "optin": true,
+        "profileImageUrl": "https://images.unsplash.com/photo-1597346821471-183bde7a7e76?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEyfHxtYW4lMjBmYWNlJTIwcG9ydHJhaXR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60",
+        "type": "User",
+        "updatedAt": "2022-07-28T15:42:45.831Z"
+       },
+
+       {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177167",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177167",
+        "categories": [
+         {
+          "id": "973d438fe5d3cf552c5fcd3b2265fe9bff3d71c6",
+          "name": "Industry",
+          "values": [
+           {
+            "id": "6f1764e22defd5908a0848308e824d620e1559f3",
+            "value": "Public Sector"
+           }
+          ]
+         },
+         {
+          "id": "d4297792511794487e9d5d68553fa85cdc117a43",
+          "name": "Job Title",
+          "values": [
+           {
+            "id": "c61dfcf7bfb0574b18d92de12f9be26a8c6eab27",
+            "value": "Vice President"
+           }
+          ]
+         }
+        ],
+        "company": "Archer & Greiner P.C.",
+        "createdAt": "2022-05-12T13:41:58.274Z",
+        "email": "monica.bennert6@turnoutnow.com",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Monica",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#OPTIN#true#Bennert#Monica#8177167",
+        "id": "8177167",
+        "industry": "Public Sector",
+        "jobTitle": "Vice President",
+        "lastName": "Bennert",
+        "optin": true,
+        "profileImageUrl": "https://images.unsplash.com/photo-1551474618-378329030b6f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTI5fHx3b21hbiUyMGZhY2UlMjBwb3J0cmFpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60",
+        "type": "User",
+        "updatedAt": "2022-05-12T13:41:58.274Z"
+       },
+
+       {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177214",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177214",
+        "categories": [
+         {
+          "id": "973d438fe5d3cf552c5fcd3b2265fe9bff3d71c6",
+          "name": "Industry",
+          "values": [
+           {
+            "id": "9e9eddd8ffdbcf3a4d735a33b665ef4df8f65d94",
+            "value": "Engineering, Construction, and Operations"
+           }
+          ]
+         },
+         {
+          "id": "d4297792511794487e9d5d68553fa85cdc117a43",
+          "name": "Job Title",
+          "values": [
+           {
+            "id": "abb616b6d7f0b294c0c430fcf41d2c0c057d86bf",
+            "value": "Chief Marketing Officer"
+           }
+          ]
+         }
+        ],
+        "company": "Bennett Brown",
+        "createdAt": "2022-05-12T13:41:58.271Z",
+        "email": "nina.brugger8@turnoutnow.com",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Nina",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#OPTIN#true#Brugger#Nina#8177214",
+        "id": "8177214",
+        "industry": "Engineering, Construction, and Operations",
+        "jobTitle": "Chief Marketing Officer",
+        "lastName": "Brugger",
+        "optin": true,
+        "profileImageUrl": "https://images.unsplash.com/photo-1507101105822-7472b28e22ac?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTQ5fHx3b21hbiUyMGZhY2UlMjBwb3J0cmFpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60",
+        "type": "User",
+        "updatedAt": "2022-05-12T13:41:58.271Z"
+       },
+
+       {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177202",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#USER#8177202",
+        "categories": [
+         {
+          "id": "973d438fe5d3cf552c5fcd3b2265fe9bff3d71c6",
+          "name": "Industry",
+          "values": [
+           {
+            "id": "c823555116f3342e1263631e892406c260e48f1f",
+            "value": "Consumer Products"
+           }
+          ]
+         },
+         {
+          "id": "c3f104d1365744b538bfde9f4adb6a6df4b80355",
+          "name": "Role",
+          "values": [
+           {
+            "id": "8ad239a83e2de1ef8f61e488df31dc66c8508d10",
+            "value": "Director/Manager"
+           }
+          ]
+         },
+         {
+          "id": "d4297792511794487e9d5d68553fa85cdc117a43",
+          "name": "Job Title",
+          "values": [
+           {
+            "id": "9845bac6551fb0aaffed7bf1e89a49b1cfa77cb9",
+            "value": "BPO Consultant"
+           }
+          ]
+         }
+        ],
+        "company": "Skadden Mitchell LLP",
+        "createdAt": "2022-05-12T13:41:58.273Z",
+        "email": "rachael.derouchie8@turnoutnow.com",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "firstName": "Rachael",
+        "GSI1PK": "EVENT#st6GLdflwQAvXqVbEBhlX#USERS",
+        "GSI1SK": "USER#OPTIN#true#Derouchie#Rachael#8177202",
+        "id": "8177202",
+        "industry": "Consumer Products",
+        "jobTitle": "BPO Consultant",
+        "lastName": "Derouchie",
+        "optin": true,
+        "profileImageUrl": "https://images.unsplash.com/photo-1591562421607-3981df4eaf58?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODl8fHdvbWFuJTIwZmFjZSUyMHBvcnRyYWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60",
+        "role": "Director/Manager",
+        "type": "User",
+        "updatedAt": "2022-05-12T13:41:58.273Z"
+       },
+
+       {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#SESSION#43225",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#SESSION#43225",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "id": "43225",
+        "type": "SESSION",
+        "startTime": "2022-12-28T10:00:00Z",
+        "endTime": "2022-12-28T11:00:00Z"
+       },
+
+       {
+        "PK": "EVENT#st6GLdflwQAvXqVbEBhlX#SESSION#43225",
+        "SK": "EVENT#st6GLdflwQAvXqVbEBhlX#SESSION#43225",
+        "eventId": "st6GLdflwQAvXqVbEBhlX",
+        "id": "43225",
+        "type": "SESSION",
+        "startTime": "2022-12-28T10:00:00Z",
+        "endTime": "2022-12-28T11:00:00Z"
+       }
+}
